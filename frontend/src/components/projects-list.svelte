@@ -36,12 +36,12 @@ import ProjectHighlight from './project-highlight.svelte'
 		description="Redefining simplicity and reliability for students, parents and teachers. <br/>Offline ready, fast and easy to use app for checking timetables"
 	/>
 	<ProjectHighlight
-		href="https://kulki.wegrzyn.dev"
-		title="Color lines"
-		type="Web Game"
-		date="Oct 2020 - now"
-		imgSrc="/kulki.png"
-		description="Simple logic game as a PWA. <br/>You need to place at least 5 balls with the same color in one line, but every time you do a move - 3 new spawn at random places. <br/>How many points can you score?"
+		href="https://github.com/jakweg/sleepy-student"
+		title="Wojtek"
+		type="Discord bot"
+		date="Oct 2022 - now"
+		imgSrc="/wojtek.png"
+		description="Are you a sleepy student that just can't wake up for remote lectures?<br/>I might be, but Wojtek is not. Wojtek is this one student that is always on time, records remote lectures and publishes them on his webpage..."
 	/>
 	<ProjectHighlight
 		href="https://kulki.wegrzyn.dev"

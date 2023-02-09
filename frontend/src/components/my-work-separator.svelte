@@ -2,8 +2,8 @@
 	<small />
 	<span>Featured projects</span>
 	<small />
-	<a href="/portfolio">Show more</a>
-	<small />
+	<!-- <a href="/portfolio">Show more</a>
+	<small /> -->
 </div>
 
 <style>

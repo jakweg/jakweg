@@ -1,13 +1,13 @@
 <script>
-	import GithubIcon from './github-icon.svelte';
-	import TelegramIcon from './telegram-icon.svelte';
+	import GithubIcon from './github-icon.svelte'
+	import TelegramIcon from './telegram-icon.svelte'
 </script>
 
 <nav>
-	<a href="/portfolio">Portfolio</a>
-	<a href="/about">About</a>
-	<a href="https://github.com/jakweg" target="_blank" rel="noreferrer"><GithubIcon /></a>
-	<a href="https://t.me/jakweg" target="_blank" rel="noreferrer"><TelegramIcon /></a>
+	<!-- <a href="/portfolio">Portfolio</a> -->
+	<!-- <a href="/about">About</a> -->
+	<a href="https://github.com/jakweg" target="_blank" rel="noreferrer" aria-label="View my GitHub"><GithubIcon /></a>
+	<a href="https://t.me/jakweg" target="_blank" rel="noreferrer" aria-label="Message me on Telegram"><TelegramIcon /></a>
 </nav>
 
 <style>
