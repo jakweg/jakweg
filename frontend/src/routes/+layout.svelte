@@ -1,28 +1,35 @@
 <script>
-	import DottedBackground from '../components/dotted-background.svelte';
+import { onMount } from 'svelte'
+import DottedBackground from '../components/dotted-background.svelte'
+onMount(() => {
+	const { port } = location
+	if (port === '' && 'serviceWorker' in navigator) {
+		navigator.serviceWorker.register('/sw.js')
+	}
+})
 </script>
 
 <DottedBackground />
 <div><slot /></div>
 
 <style>
-	:root {
-		font-family: 'Fira Sans', Verdana, Geneva, Tahoma, sans-serif;
-		color: white;
-		background-color: black;
-	}
-	:global(body) {
-		-webkit-tap-highlight-color: transparent;
-		margin: 0;
-		position: relative;
-		min-height: 100vh;
-		box-sizing: border-box;
-	}
-	:global(a) {
-		color: #eee;
-		text-decoration: none;
-	}
-	div {
-		position: relative;
-	}
+:root {
+	font-family: 'Fira Sans', Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+	background-color: black;
+}
+:global(body) {
+	-webkit-tap-highlight-color: transparent;
+	margin: 0;
+	position: relative;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+:global(a) {
+	color: #eee;
+	text-decoration: none;
+}
+div {
+	position: relative;
+}
 </style>
