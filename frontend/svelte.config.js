@@ -1,5 +1,5 @@
-import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/kit/vite';
+import adapter from '@sveltejs/adapter-static'
+import { vitePreprocess } from '@sveltejs/kit/vite'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,8 +8,14 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
-	}
-};
+		adapter: adapter(),
+		csp: {
+			directives: {
+				'script-src': ['self'],
+			},
+		},
+		inlineStyleThreshold: 1024,
+	},
+}
 
-export default config;
+export default config
