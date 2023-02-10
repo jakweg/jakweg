@@ -1,55 +1,56 @@
 <script>
+import LL from '../i18n/i18n-svelte'
 import ProjectHighlight from './project-highlight.svelte'
 </script>
 
 <div>
 	<ProjectHighlight
 		href="https://kulki.wegrzyn.dev"
-		title="Color lines"
-		type="Web Game"
-		date="Oct 2020 - now"
+		title="{$LL.colorLines_title()}"
+		date="{$LL.colorLines_date()}"
+		description="{$LL.colorLines_description()}"
+		type="{$LL.webGame()}"
 		imgSrc="/kulki.png"
-		description="Simple logic game as a PWA. <br/>You need to place at least 5 balls with the same color in one line, but every time you do a move - 3 new spawn at random places. <br/>How many points can you score?"
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/warcaby"
-		title="Checkers"
-		type="Web Game"
-		date="Apr 2020"
+		title="{$LL.checkers_title()}"
+		date="{$LL.checkers_date()}"
+		description="{$LL.checkers_description()}"
+		type="{$LL.webGame()}"
 		imgSrc="/warcaby.png"
-		description="It was supposed to be a simple school 3D project. I took it to the next level!<br/>Multiplayer checkers styled to mimic <em>Minecraft</em>."
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/mc-wallpaper-generator"
-		title="Wallpaper generator"
-		type="Native app"
-		date="Mar 2021"
+		title="{$LL.mcwallpaper_title()}"
+		date="{$LL.mcwallpaper_date()}"
+		description="{$LL.mcwallpaper_description()}"
+		type="{$LL.nativeApp()}"
 		imgSrc="/wallpaper-generator.png"
-		description="Have you ever played <en>Minecraft</en> and liked the look of textures placed next to each other?<br/>I thought how would my desktop look all covered with single block, spoiler: It looks gorgeous ❤️"
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/plan-zsl"
-		title="ZSŁ Timetable"
-		type="PWA"
+		title="{$LL.planZsl_title()}"
+		date="{$LL.planZsl_date()}"
+		description="{$LL.planZsl_description()}"
+		type="{$LL.pwa()}"
 		imgSrc="/zsl-plan.png"
-		date="Oct 2021"
-		description="Redefining simplicity and reliability for students, parents and teachers. <br/>Offline ready, fast and easy to use app for checking timetables"
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/sleepy-student"
-		title="Wojtek"
-		type="Discord bot"
-		date="Oct 2022 - now"
+		title="{$LL.wojtek_title()}"
+		date="{$LL.wojtek_date()}"
+		description="{$LL.wojtek_description()}"
+		type="{$LL.discordBot()}"
 		imgSrc="/wojtek.png"
-		description="Are you a sleepy student that just can't wake up for remote lectures?<br/>I might be, but Wojtek is not. Wojtek is this one student that is always on time, records remote lectures and publishes them on his webpage..."
 	/>
 	<ProjectHighlight
-		href="https://kulki.wegrzyn.dev"
-		title="Color lines"
-		type="Web Game"
-		date="Oct 2020 - now"
-		imgSrc="/kulki.png"
-		description="Simple logic game as a PWA. <br/>You need to place at least 5 balls with the same color in one line, but every time you do a move - 3 new spawn at random places. <br/>How many points can you score?"
+		href="https://github.com/jakweg/file-upload"
+		title="{$LL.upload_title()}"
+		date="{$LL.upload_date()}"
+		description="{$LL.upload_description()}"
+		type="{$LL.pwa()}"
+		imgSrc="/upload.png"
 	/>
 </div>
 

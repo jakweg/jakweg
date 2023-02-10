@@ -1,6 +1,7 @@
-<script>
+<script lang="ts">
 import { onMount } from 'svelte'
 import DottedBackground from '../components/dotted-background.svelte'
+
 onMount(() => {
 	const { port } = location
 	if (port === '' && 'serviceWorker' in navigator) {
@@ -10,7 +11,9 @@ onMount(() => {
 </script>
 
 <DottedBackground />
-<div><slot /></div>
+<div>
+	<slot />
+</div>
 
 <style>
 :root {

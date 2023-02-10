@@ -1,4 +1,5 @@
 <script lang="ts">
+import LL from '../i18n/i18n-svelte'
 import Bullet from './bullet.svelte'
 
 export let href: string
@@ -17,7 +18,7 @@ export let description: string
 			<aside>{type} <Bullet /> {date}</aside>
 			<main>
 				<p>{@html description}</p>
-				<small>Read More...</small>
+				<small>{$LL.readMore()}</small>
 			</main>
 		</div>
 	</a>

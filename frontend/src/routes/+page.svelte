@@ -1,8 +1,9 @@
 <script lang="ts">
-	import HiThere from '../components/hi-there.svelte'
-	import MyWorkSeparator from '../components/my-work-separator.svelte'
-	import ProjectsList from '../components/projects-list.svelte'
-	import TopNavigation from '../components/top-navigation.svelte'
+import HiThere from '../components/hi-there.svelte'
+import MyWorkSeparator from '../components/my-work-separator.svelte'
+import ProjectsList from '../components/projects-list.svelte'
+import TopNavigation from '../components/top-navigation.svelte'
+import LL from '../i18n/i18n-svelte'
 </script>
 
 <div class="content">
@@ -14,9 +15,9 @@
 	<ProjectsList />
 </div>
 <svelte:head>
-	<title>Jakub Węgrzyn · Software Developer</title>
-	<meta name="description" content="Hey! I'm Jakub, software developer from Poland. 
-	I do numerous projects in various technologies for people myself included, currently working at IBM. 
-	I also like running, working out with Rozbiegane Dobczyce 💪.
-	Food is my 3rd passion - preparing and eating of course">
+	<title>Jakub Węgrzyn · {$LL.softwareEngineer()}</title>
+	<meta name="description" content="{$LL.siteDescription()}" />
+
+	<link rel="alternate" href="https://jakub.wegrzyn/pl/" hreflang="pl" />
+	<link rel="alternate" href="https://jakub.wegrzyn/" hreflang="x-default" />
 </svelte:head>
