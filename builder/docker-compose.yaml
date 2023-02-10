@@ -1,0 +1,29 @@
+version: '3'
+
+volumes:
+  dist:
+
+
+services:
+  webhook:
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: webhook.Dockerfile
+    environment:
+      - GITHUB_SECRET=${GITHUB_SECRET-}
+      - REPO_URL=${REPO_URL-}
+    volumes:
+      - ${DIST:-dist}:/output:rw
+    ports:
+      - ${WEBHOOK_PORT:-0}:3000
+  server:
+    environment:
+      - SERVE=${SERVE-}
+    build:
+      context: .
+      dockerfile: server.Dockerfile
+    ports:
+      - ${SERVE:-0}:80
+    volumes:
+      - ${DIST:-dist}:/app:ro
