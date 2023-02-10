@@ -18,6 +18,6 @@ import LL from '../i18n/i18n-svelte'
 	<title>Jakub Węgrzyn · {$LL.softwareEngineer()}</title>
 	<meta name="description" content="{$LL.siteDescription()}" />
 
-	<link rel="alternate" href="https://jakub.wegrzyn/pl/" hreflang="pl" />
-	<link rel="alternate" href="https://jakub.wegrzyn/" hreflang="x-default" />
+	<link rel="alternate" href="https://jakub.wegrzyn.dev/pl/" hreflang="pl" />
+	<link rel="alternate" href="https://jakub.wegrzyn.dev/" hreflang="x-default" />
 </svelte:head>
