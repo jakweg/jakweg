@@ -2,13 +2,13 @@ const url = (path: string, polishPath: string | undefined = undefined): string =
     return `
 <url>
     <loc>https://jakub.wegrzyn.dev/${path}</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jakub.wegrzyn.dev/${path}">
-    <xhtml:link rel="alternate" hreflang="pl" href="https://jakub.wegrzyn.dev/pl/${polishPath || path}">
+    <xhtml:link rel="alternate" hreflang="en" href="https://jakub.wegrzyn.dev/${path}"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://jakub.wegrzyn.dev/pl/${polishPath || path}"/>
 </url>
 <url>
     <loc>https://jakub.wegrzyn.dev/pl/${polishPath || path}</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jakub.wegrzyn.dev/${path}">
-    <xhtml:link rel="alternate" hreflang="pl" href="https://jakub.wegrzyn.dev/pl/${polishPath || path}">
+    <xhtml:link rel="alternate" hreflang="en" href="https://jakub.wegrzyn.dev/${path}"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://jakub.wegrzyn.dev/pl/${polishPath || path}"/>
 </url>
 `
 }
