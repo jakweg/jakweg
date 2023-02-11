@@ -8,7 +8,7 @@ const pl = {
 	featuredProjects: 'Wybrane projekty',
 	checkoutGithub: 'Zobacz mojego GitHuba',
 	messageTelegram: 'Napisz na Telegramie',
-	siteDescription: 'Cześć! Jestem Jakub, młody i ambitny programista. Robię wiele projektów w różnorodnych technologiach dla mnie i dla innych. Obecnie pracuję w IBM. Uwielbiam też biegać - często trenuję ze znajomymi💪. Jedzenie to moja pasja numer 3 - zarówno przygotowanie jak i samo spożywanie',
+	siteDescription: 'Cześć! Jestem Jakub, młody i ambitny programista, obecnie pracuję w IBM. Robię wiele projektów w różnorodnych technologiach. Uwielbiam też biegać 💪',
 	webGame: 'Gra internetowa',
 	nativeApp: 'Natywna aplikacja',
 	discordBot: 'Bot Discordowy',

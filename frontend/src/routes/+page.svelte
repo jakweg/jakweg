@@ -19,5 +19,5 @@ import LL from '../i18n/i18n-svelte'
 	<meta name="description" content="{$LL.siteDescription()}" />
 
 	<link rel="alternate" href="https://jakub.wegrzyn.dev/pl/" hreflang="pl" />
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/" hreflang="x-default" />
+	<link rel="alternate" href="https://jakub.wegrzyn.dev/" hreflang="en" />
 </svelte:head>

@@ -43,7 +43,7 @@ type RootTranslation = {
 	 */
 	messageTelegram: string
 	/**
-	 * H​e​y​!​ ​I​'​m​ ​J​a​k​u​b​,​ ​s​o​f​t​w​a​r​e​ ​d​e​v​e​l​o​p​e​r​ ​f​r​o​m​ ​P​o​l​a​n​d​.​ ​I​ ​d​o​ ​n​u​m​e​r​o​u​s​ ​p​r​o​j​e​c​t​s​ ​i​n​ ​v​a​r​i​o​u​s​ ​t​e​c​h​n​o​l​o​g​i​e​s​ ​f​o​r​ ​p​e​o​p​l​e​ ​m​y​s​e​l​f​ ​i​n​c​l​u​d​e​d​,​ ​c​u​r​r​e​n​t​l​y​ ​w​o​r​k​i​n​g​ ​a​t​ ​I​B​M​.​ ​ ​I​ ​a​l​s​o​ ​l​i​k​e​ ​r​u​n​n​i​n​g​,​ ​w​o​r​k​i​n​g​ ​o​u​t​ ​w​i​t​h​ ​R​o​z​b​i​e​g​a​n​e​ ​D​o​b​c​z​y​c​e​ ​�​�​.​ ​F​o​o​d​ ​i​s​ ​m​y​ ​3​r​d​ ​p​a​s​s​i​o​n​ ​-​ ​p​r​e​p​a​r​i​n​g​ ​a​n​d​ ​e​a​t​i​n​g​ ​o​f​ ​c​o​u​r​s​e
+	 * H​e​y​!​ ​I​'​m​ ​J​a​k​u​b​,​ ​s​o​f​t​w​a​r​e​ ​d​e​v​e​l​o​p​e​r​ ​f​r​o​m​ ​P​o​l​a​n​d​,​ ​c​u​r​r​e​n​t​l​y​ ​w​o​r​k​i​n​g​ ​a​t​ ​I​B​M​.​ ​I​ ​d​o​ ​n​u​m​e​r​o​u​s​ ​p​r​o​j​e​c​t​s​ ​i​n​ ​v​a​r​i​o​u​s​ ​t​e​c​h​n​o​l​o​g​i​e​s​.​ ​I​ ​a​l​s​o​ ​l​i​k​e​ ​r​u​n​n​i​n​g​ ​�​�
 	 */
 	siteDescription: string
 	/**
@@ -170,7 +170,7 @@ export type TranslationFunctions = {
 	 */
 	messageTelegram: () => LocalizedString
 	/**
-	 * Hey! I'm Jakub, software developer from Poland. I do numerous projects in various technologies for people myself included, currently working at IBM.  I also like running, working out with Rozbiegane Dobczyce 💪. Food is my 3rd passion - preparing and eating of course
+	 * Hey! I'm Jakub, software developer from Poland, currently working at IBM. I do numerous projects in various technologies. I also like running 💪
 	 */
 	siteDescription: () => LocalizedString
 	/**

@@ -8,7 +8,7 @@ const en = {
 	featuredProjects: 'Featured projects',
 	checkoutGithub: 'View my GitHub',
 	messageTelegram: 'Message me on Telegram',
-	siteDescription: 'Hey! I\'m Jakub, software developer from Poland. I do numerous projects in various technologies for people myself included, currently working at IBM.  I also like running, working out with Rozbiegane Dobczyce 💪. Food is my 3rd passion - preparing and eating of course',
+	siteDescription: 'Hey! I\'m Jakub, software developer from Poland, currently working at IBM. I do numerous projects in various technologies. I also like running 💪',
 	webGame: 'Web game',
 	nativeApp: 'Native app',
 	discordBot: 'Discord Bot',

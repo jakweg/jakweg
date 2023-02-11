@@ -8,7 +8,7 @@ import Bullet from './bullet.svelte'
 	<div>
 		<Avatar />
 		<div class="more">
-			<h2>{$LL.hiThere()}</h2>
+			<h1>{$LL.hiThere()}</h1>
 			<h3>{$LL.iam()} <span>Jakub Węgrzyn</span> 🙃</h3>
 
 			<div class="job">
@@ -49,7 +49,7 @@ header > * {
 	align-items: center;
 	justify-content: center;
 }
-h2 {
+h1 {
 	margin: 8px;
 }
 h3 {
