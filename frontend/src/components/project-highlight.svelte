@@ -18,11 +18,11 @@ const borderOpacity = '99'
 <article style:--hc="{color + hoverOpacity}" style:--bc="{color + borderOpacity}">
 	<a href="{href}" rel="noreferrer">
 		<img
-			srcset="{imgSrc} 200w, {imgSrc2x} 400w"
-			sizes="(max-width: 750px) 40vw,(max-width: 1800px) 18vw,12vw"
+			srcset="{imgSrc} 200w, {imgSrc2x} 300w"
+			sizes="(max-width: 900px) 150px,200px"
 			alt="{title}"
 		/>
-		<div>
+		<div class="after-img">
 			<h2>{title}</h2>
 			<aside>{type} <Bullet /> {date}</aside>
 			<main>
@@ -38,16 +38,11 @@ a {
 	color: #ccc;
 	display: grid;
 	justify-content: start;
-	grid-template-columns: auto minmax(10ch, auto);
+	grid-template-columns: auto auto;
 	gap: 1ch;
 	transition: color 0.3s;
 	text-decoration: none;
 }
-/* @media (min-width: 700px) {
-	a {
-		grid-template-columns: auto minmax(10ch, 30ch);
-	}
-} */
 a:hover {
 	color: #9eafc3;
 }
@@ -62,8 +57,13 @@ article:hover {
 }
 img {
 	border-radius: 1ch;
-	/* aspect-ratio: 1 / 1;
-	width: 100%; */
+	aspect-ratio: 1 / 1;
+	width: 200px;
+}
+@media (max-width: 900px) {
+	img {
+		width: 150px;
+	}
 }
 main {
 	line-height: 150%;

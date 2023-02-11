@@ -29,7 +29,8 @@ await Promise.all(
 			convertAsPromise(
 				`${root}/${name}`,
 				'-resize',
-				'66.6666%',
+				// '66.6666%',
+				'50%',
 				`${root}/${name.replace('.w.', '.m.')}`,
 			),
 		]),

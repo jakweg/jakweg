@@ -100,7 +100,7 @@ div {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media (min-width: 1800px) {
+@media (min-width: 1700px) {
 	div {
 		grid-template-columns: repeat(3, 1fr);
 	}
