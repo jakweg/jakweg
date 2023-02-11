@@ -11,13 +11,17 @@ export let description: string
 export let imgSrc2x: string
 export let color: string
 
-const hoverOpacity = '11'
+const hoverOpacity = '18'
 const borderOpacity = '99'
 </script>
 
 <article style:--hc="{color + hoverOpacity}" style:--bc="{color + borderOpacity}">
 	<a href="{href}" rel="noreferrer">
-		<img srcset="{imgSrc}, {imgSrc2x} 2x" src="{imgSrc2x}" alt="{title}" />
+		<img
+			srcset="{imgSrc} 200w, {imgSrc2x} 400w"
+			sizes="(max-width: 750px) 40vw,(max-width: 1800px) 18vw,12vw"
+			alt="{title}"
+		/>
 		<div>
 			<h2>{title}</h2>
 			<aside>{type} <Bullet /> {date}</aside>
@@ -33,11 +37,17 @@ const borderOpacity = '99'
 a {
 	color: #ccc;
 	display: grid;
-	grid-template-columns: 1fr 1.61fr;
+	justify-content: start;
+	grid-template-columns: auto minmax(10ch, auto);
 	gap: 1ch;
 	transition: color 0.3s;
 	text-decoration: none;
 }
+/* @media (min-width: 700px) {
+	a {
+		grid-template-columns: auto minmax(10ch, 30ch);
+	}
+} */
 a:hover {
 	color: #9eafc3;
 }
@@ -52,17 +62,17 @@ article:hover {
 }
 img {
 	border-radius: 1ch;
-	aspect-ratio: 1 / 1;
-	width: 100%;
+	/* aspect-ratio: 1 / 1;
+	width: 100%; */
 }
 main {
 	line-height: 150%;
 	opacity: 0.9;
-	max-width: 40ch;
 }
 h2 {
 	font-size: 2em;
-	font-weight: normal;
+	font-weight: lighter;
+	letter-spacing: 1px;
 	margin: 8px 0;
 	color: #fff;
 }

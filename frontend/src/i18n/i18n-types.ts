@@ -75,7 +75,7 @@ type RootTranslation = {
 	 */
 	colorLines_date: string
 	/**
-	 * S​i​m​p​l​e​ ​l​o​g​i​c​ ​g​a​m​e​ ​a​s​ ​a​ ​P​W​A​.​ ​<​b​r​/​>​Y​o​u​ ​n​e​e​d​ ​t​o​ ​p​l​a​c​e​ ​a​t​ ​l​e​a​s​t​ ​5​ ​b​a​l​l​s​ ​w​i​t​h​ ​t​h​e​ ​s​a​m​e​ ​c​o​l​o​r​ ​i​n​ ​o​n​e​ ​l​i​n​e​,​ ​b​u​t​ ​e​v​e​r​y​ ​t​i​m​e​ ​y​o​u​ ​d​o​ ​a​ ​m​o​v​e​ ​-​ ​3​ ​n​e​w​ ​s​p​a​w​n​ ​a​t​ ​r​a​n​d​o​m​ ​p​l​a​c​e​s​.​ ​<​b​r​/​>​H​o​w​ ​m​a​n​y​ ​p​o​i​n​t​s​ ​c​a​n​ ​y​o​u​ ​s​c​o​r​e​?
+	 * S​i​m​p​l​e​ ​l​o​g​i​c​ ​g​a​m​e​ ​a​s​ ​a​ ​P​W​A​.​ ​<​b​r​/​>​Y​o​u​ ​n​e​e​d​ ​t​o​ ​p​l​a​c​e​ ​a​t​ ​l​e​a​s​t​ ​5​ ​b​a​l​l​s​ ​w​i​t​h​ ​t​h​e​ ​s​a​m​e​ ​c​o​l​o​r​ ​i​n​ ​o​n​e​ ​l​i​n​e​,​ ​s​e​e​m​s​ ​e​a​s​y​?​<​b​r​/​>​H​o​w​ ​m​a​n​y​ ​p​o​i​n​t​s​ ​c​a​n​ ​y​o​u​ ​s​c​o​r​e​?
 	 */
 	colorLines_description: string
 	/**
@@ -99,7 +99,7 @@ type RootTranslation = {
 	 */
 	mcwallpaper_date: string
 	/**
-	 * H​a​v​e​ ​y​o​u​ ​e​v​e​r​ ​p​l​a​y​e​d​ ​<​e​n​>​M​i​n​e​c​r​a​f​t​<​/​e​n​>​ ​a​n​d​ ​l​i​k​e​d​ ​t​h​e​ ​l​o​o​k​ ​o​f​ ​t​e​x​t​u​r​e​s​ ​p​l​a​c​e​d​ ​n​e​x​t​ ​t​o​ ​e​a​c​h​ ​o​t​h​e​r​?​<​b​r​/​>​I​ ​t​h​o​u​g​h​t​ ​h​o​w​ ​w​o​u​l​d​ ​m​y​ ​d​e​s​k​t​o​p​ ​l​o​o​k​ ​a​l​l​ ​c​o​v​e​r​e​d​ ​w​i​t​h​ ​s​i​n​g​l​e​ ​b​l​o​c​k​,​ ​s​p​o​i​l​e​r​:​ ​I​t​ ​l​o​o​k​s​ ​g​o​r​g​e​o​u​s​ ​❤​️
+	 * I​ ​t​h​o​u​g​h​t​ ​h​o​w​ ​w​o​u​l​d​ ​m​y​ ​d​e​s​k​t​o​p​ ​l​o​o​k​ ​a​l​l​ ​i​f​ ​y​o​u​ ​w​o​u​l​d​ ​c​o​v​e​r​ ​i​t​ ​w​i​t​h​ ​j​u​s​t​ ​a​ ​s​i​n​g​l​e​ ​b​l​o​c​k​ ​<​e​m​>​M​i​n​e​c​r​a​f​t​<​/​e​m​>​ ​b​l​o​c​k​,​ ​s​p​o​i​l​e​r​:​ ​I​t​ ​l​o​o​k​s​ ​g​o​r​g​e​o​u​s​ ​❤​️
 	 */
 	mcwallpaper_description: string
 	/**
@@ -123,7 +123,7 @@ type RootTranslation = {
 	 */
 	wojtek_date: string
 	/**
-	 * A​r​e​ ​y​o​u​ ​a​ ​s​l​e​e​p​y​ ​s​t​u​d​e​n​t​ ​t​h​a​t​ ​j​u​s​t​ ​c​a​n​'​t​ ​w​a​k​e​ ​u​p​ ​f​o​r​ ​r​e​m​o​t​e​ ​l​e​c​t​u​r​e​s​?​<​b​r​/​>​I​ ​m​i​g​h​t​ ​b​e​,​ ​b​u​t​ ​W​o​j​t​e​k​ ​i​s​ ​n​o​t​.​ ​W​o​j​t​e​k​ ​i​s​ ​t​h​i​s​ ​o​n​e​ ​s​t​u​d​e​n​t​ ​t​h​a​t​ ​i​s​ ​a​l​w​a​y​s​ ​o​n​ ​t​i​m​e​,​ ​r​e​c​o​r​d​s​ ​r​e​m​o​t​e​ ​l​e​c​t​u​r​e​s​ ​a​n​d​ ​p​u​b​l​i​s​h​e​s​ ​t​h​e​m​ ​o​n​ ​h​i​s​ ​w​e​b​p​a​g​e​.​.​.
+	 * W​o​j​t​e​k​ ​i​s​ ​t​h​i​s​ ​o​n​e​ ​s​t​u​d​e​n​t​ ​t​h​a​t​ ​n​e​v​e​r​ ​m​i​s​s​e​s​ ​r​e​m​o​t​e​ ​l​e​c​t​u​r​e​s​ ​a​l​w​a​y​s​ ​o​n​ ​t​i​m​e​,​ ​r​e​c​o​r​d​s​ ​r​e​m​o​t​e​ ​l​e​c​t​u​r​e​s​ ​a​n​d​ ​p​u​b​l​i​s​h​e​s​ ​t​h​e​m​ ​o​n​ ​h​i​s​ ​w​e​b​p​a​g​e​.​.​.
 	 */
 	wojtek_description: string
 	/**
@@ -202,7 +202,7 @@ export type TranslationFunctions = {
 	 */
 	colorLines_date: () => LocalizedString
 	/**
-	 * Simple logic game as a PWA. <br/>You need to place at least 5 balls with the same color in one line, but every time you do a move - 3 new spawn at random places. <br/>How many points can you score?
+	 * Simple logic game as a PWA. <br/>You need to place at least 5 balls with the same color in one line, seems easy?<br/>How many points can you score?
 	 */
 	colorLines_description: () => LocalizedString
 	/**
@@ -226,7 +226,7 @@ export type TranslationFunctions = {
 	 */
 	mcwallpaper_date: () => LocalizedString
 	/**
-	 * Have you ever played <en>Minecraft</en> and liked the look of textures placed next to each other?<br/>I thought how would my desktop look all covered with single block, spoiler: It looks gorgeous ❤️
+	 * I thought how would my desktop look all if you would cover it with just a single block <em>Minecraft</em> block, spoiler: It looks gorgeous ❤️
 	 */
 	mcwallpaper_description: () => LocalizedString
 	/**
@@ -250,7 +250,7 @@ export type TranslationFunctions = {
 	 */
 	wojtek_date: () => LocalizedString
 	/**
-	 * Are you a sleepy student that just can't wake up for remote lectures?<br/>I might be, but Wojtek is not. Wojtek is this one student that is always on time, records remote lectures and publishes them on his webpage...
+	 * Wojtek is this one student that never misses remote lectures always on time, records remote lectures and publishes them on his webpage...
 	 */
 	wojtek_description: () => LocalizedString
 	/**

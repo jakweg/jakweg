@@ -2,26 +2,26 @@
 import LL, { locale } from '../i18n/i18n-svelte'
 import ProjectHighlight from './project-highlight.svelte'
 
+import kulki2 from '$lib/kulki.m.webp'
 import kulki1 from '$lib/kulki.s.webp'
-import kulki2 from '$lib/kulki.w.webp'
 
+import warcaby2 from '$lib/warcaby.m.webp'
 import warcaby1 from '$lib/warcaby.s.webp'
-import warcaby2 from '$lib/warcaby.w.webp'
 
+import wallpaperGenerator2 from '$lib/wallpaperGenerator.m.webp'
 import wallpaperGenerator1 from '$lib/wallpaperGenerator.s.webp'
-import wallpaperGenerator2 from '$lib/wallpaperGenerator.w.webp'
 
+import zslPlan2 from '$lib/zslPlan.m.webp'
 import zslPlan1 from '$lib/zslPlan.s.webp'
-import zslPlan2 from '$lib/zslPlan.w.webp'
 
+import wojtekEn2 from '$lib/wojtek.en.m.webp'
 import wojtekEn1 from '$lib/wojtek.en.s.webp'
-import wojtekEn2 from '$lib/wojtek.en.w.webp'
 
+import wojtekPl2 from '$lib/wojtek.pl.m.webp'
 import wojtekPl1 from '$lib/wojtek.pl.s.webp'
-import wojtekPl2 from '$lib/wojtek.pl.w.webp'
 
+import upload2 from '$lib/upload.m.webp'
 import upload1 from '$lib/upload.s.webp'
-import upload2 from '$lib/upload.w.webp'
 </script>
 
 <div>
@@ -90,20 +90,17 @@ import upload2 from '$lib/upload.w.webp'
 <style>
 div {
 	display: grid;
-	gap: 6ch;
+	justify-content: space-between;
+	gap: 4ch;
 	padding: 2ch;
-	place-items: center;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: auto;
 }
-@media (min-width: 110ch) {
+@media (min-width: 750px) {
 	div {
-		padding: 4ch 2ch;
-		gap: 4ch;
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-
-@media (min-width: 200ch) {
+@media (min-width: 1800px) {
 	div {
 		grid-template-columns: repeat(3, 1fr);
 	}
