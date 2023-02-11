@@ -8,11 +8,16 @@ export let title: string
 export let type: string
 export let date: string
 export let description: string
+export let imgSrc2x: string
+export let color: string
+
+const hoverOpacity = '11'
+const borderOpacity = '99'
 </script>
 
-<article>
+<article style:--hc="{color + hoverOpacity}" style:--bc="{color + borderOpacity}">
 	<a href="{href}" rel="noreferrer">
-		<img src="{imgSrc}" alt="" />
+		<img srcset="{imgSrc}, {imgSrc2x} 2x" src="{imgSrc2x}" alt="{title}" />
 		<div>
 			<h2>{title}</h2>
 			<aside>{type} <Bullet /> {date}</aside>
@@ -37,12 +42,13 @@ a:hover {
 	color: #9eafc3;
 }
 article {
-	padding: 1ch;
-	transition: background-color 0.3s;
+	transition: background-color 0.3s, border-color 0.3s;
 	border-radius: 1ch;
+	border: 1px solid transparent;
 }
 article:hover {
-	background-color: #ffffff09;
+	background-color: var(--hc);
+	border-color: var(--bc);
 }
 img {
 	border-radius: 1ch;

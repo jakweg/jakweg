@@ -14,7 +14,7 @@ const config = {
 				'script-src': ['self'],
 			},
 		},
-		inlineStyleThreshold: 1024,
+		inlineStyleThreshold: 10240,
 	},
 }
 

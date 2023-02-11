@@ -9,7 +9,7 @@ import Bullet from './bullet.svelte'
 		<Avatar />
 		<div class="more">
 			<h1>{$LL.hiThere()}</h1>
-			<h3>{$LL.iam()} <span>Jakub Węgrzyn</span> 🙃</h3>
+			<h2>{$LL.iam()} <span>Jakub Węgrzyn</span> 🙃</h2>
 
 			<div class="job">
 				<p>IBM <Bullet /> {$LL.cracow()}</p>
@@ -52,10 +52,10 @@ header > * {
 h1 {
 	margin: 8px;
 }
-h3 {
+h2 {
 	margin: 8px;
 }
-h3 > span {
+h2 > span {
 	color: #38bad0;
 }
 .job > p {
