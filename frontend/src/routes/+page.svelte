@@ -1,9 +1,9 @@
 <script lang="ts">
-import HiThere from '../components/hi-there.svelte'
-import MyWorkSeparator from '../components/my-work-separator.svelte'
-import ProjectsList from '../components/projects-list.svelte'
-import TopNavigation from '../components/top-navigation.svelte'
-import LL from '../i18n/i18n-svelte'
+import HiThere from '@components/hi-there.svelte'
+import MyWorkSeparator from '@components/my-work-separator.svelte'
+import ProjectsList from '@components/projects-list.svelte'
+import TopNavigation from '@components/top-navigation.svelte'
+import LL from '@LL'
 </script>
 
 <div class="content">

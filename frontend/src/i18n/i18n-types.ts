@@ -66,78 +66,278 @@ type RootTranslation = {
 	 * R​e​a​d​ ​M​o​r​e​.​.​.
 	 */
 	readMore: string
-	/**
-	 * C​o​l​o​r​ ​l​i​n​e​s
-	 */
-	colorLines_title: string
-	/**
-	 * O​c​t​ ​2​0​2​0​ ​-​ ​n​o​w
-	 */
-	colorLines_date: string
-	/**
-	 * S​i​m​p​l​e​ ​l​o​g​i​c​ ​g​a​m​e​.​ ​Y​o​u​ ​n​e​e​d​ ​t​o​ ​p​l​a​c​e​ ​a​t​ ​l​e​a​s​t​ ​5​ ​b​a​l​l​s​ ​w​i​t​h​ ​t​h​e​ ​s​a​m​e​ ​c​o​l​o​r​ ​i​n​ ​o​n​e​ ​l​i​n​e​,​ ​s​e​e​m​s​ ​e​a​s​y​?​<​b​r​/​>​H​o​w​ ​m​a​n​y​ ​p​o​i​n​t​s​ ​c​a​n​ ​y​o​u​ ​s​c​o​r​e​?
-	 */
-	colorLines_description: string
-	/**
-	 * C​h​e​c​k​e​r​s
-	 */
-	checkers_title: string
-	/**
-	 * A​p​r​ ​2​0​2​0
-	 */
-	checkers_date: string
-	/**
-	 * I​t​ ​w​a​s​ ​s​u​p​p​o​s​e​d​ ​t​o​ ​b​e​ ​a​ ​s​i​m​p​l​e​ ​s​c​h​o​o​l​ ​3​D​ ​p​r​o​j​e​c​t​.​ ​I​ ​t​o​o​k​ ​i​t​ ​t​o​ ​t​h​e​ ​n​e​x​t​ ​l​e​v​e​l​!​<​b​r​/​>​M​u​l​t​i​p​l​a​y​e​r​ ​c​h​e​c​k​e​r​s​ ​s​t​y​l​e​d​ ​t​o​ ​m​i​m​i​c​ ​<​e​m​>​M​i​n​e​c​r​a​f​t​<​/​e​m​>​.
-	 */
-	checkers_description: string
-	/**
-	 * W​a​l​l​p​a​p​e​r​ ​g​e​n​e​r​a​t​o​r
-	 */
-	mcwallpaper_title: string
-	/**
-	 * M​a​r​ ​2​0​2​1
-	 */
-	mcwallpaper_date: string
-	/**
-	 * I​ ​t​h​o​u​g​h​t​ ​h​o​w​ ​w​o​u​l​d​ ​m​y​ ​d​e​s​k​t​o​p​ ​l​o​o​k​ ​a​l​l​ ​i​f​ ​I​ ​w​o​u​l​d​ ​c​o​v​e​r​ ​i​t​ ​w​i​t​h​ ​j​u​s​t​ ​a​ ​s​i​n​g​l​e​ ​<​e​m​>​M​i​n​e​c​r​a​f​t​<​/​e​m​>​ ​b​l​o​c​k​.​ ​I​t​ ​l​o​o​k​s​ ​g​o​r​g​e​o​u​s​ ​❤​️
-	 */
-	mcwallpaper_description: string
-	/**
-	 * Z​S​Ł​ ​T​i​m​e​t​a​b​l​e
-	 */
-	planZsl_title: string
-	/**
-	 * O​c​t​ ​2​0​2​1
-	 */
-	planZsl_date: string
-	/**
-	 * R​e​d​e​f​i​n​i​n​g​ ​s​i​m​p​l​i​c​i​t​y​ ​a​n​d​ ​r​e​l​i​a​b​i​l​i​t​y​ ​f​o​r​ ​s​t​u​d​e​n​t​s​,​ ​p​a​r​e​n​t​s​ ​a​n​d​ ​t​e​a​c​h​e​r​s​.​ ​<​b​r​/​>​O​f​f​l​i​n​e​ ​r​e​a​d​y​,​ ​f​a​s​t​ ​a​n​d​ ​e​a​s​y​ ​t​o​ ​u​s​e​ ​a​p​p​ ​f​o​r​ ​c​h​e​c​k​i​n​g​ ​t​i​m​e​t​a​b​l​e​s​.
-	 */
-	planZsl_description: string
-	/**
-	 * W​o​j​t​e​k
-	 */
-	wojtek_title: string
-	/**
-	 * O​c​t​ ​2​0​2​2​ ​-​ ​n​o​w
-	 */
-	wojtek_date: string
-	/**
-	 * W​o​j​t​e​k​ ​i​s​ ​t​h​i​s​ ​o​n​e​ ​s​t​u​d​e​n​t​ ​t​h​a​t​ ​i​s​ ​a​l​w​a​y​s​ ​o​n​ ​t​i​m​e​,​ ​n​e​v​e​r​ ​m​i​s​s​e​s​ ​r​e​m​o​t​e​ ​l​e​c​t​u​r​e​s​ ​t​o​ ​r​e​c​o​r​d​ ​a​n​d​ ​p​u​b​l​i​s​h​ ​t​h​e​m​ ​o​n​ ​h​i​s​ ​w​e​b​p​a​g​e​.​.​.
-	 */
-	wojtek_description: string
-	/**
-	 * F​i​r​e​F​i​l​e​ ​u​p​l​o​a​d
-	 */
-	upload_title: string
-	/**
-	 * A​p​r​ ​2​0​2​1
-	 */
-	upload_date: string
-	/**
-	 * I​'​v​e​ ​a​l​w​a​y​s​ ​w​a​n​t​e​d​ ​t​o​ ​h​a​v​e​ ​f​a​s​t​ ​a​n​d​ ​s​i​m​p​l​e​ ​w​a​y​ ​t​o​ ​s​t​o​r​e​ ​a​n​d​ ​s​h​a​r​e​ ​f​i​l​e​s​ ​o​n​l​i​n​e​.​ ​T​h​a​t​'​s​ ​m​y​ ​a​n​s​w​e​r​ ​t​o​ ​t​h​e​ ​p​r​o​b​l​e​m​.​.​.
-	 */
-	upload_description: string
+	colorLines: {
+		/**
+		 * C​o​l​o​r​ ​l​i​n​e​s
+		 */
+		title: string
+		/**
+		 * O​c​t​ ​2​0​2​0​ ​-​ ​n​o​w
+		 */
+		date: string
+		/**
+		 * S​i​m​p​l​e​ ​l​o​g​i​c​ ​g​a​m​e​.​ ​Y​o​u​ ​n​e​e​d​ ​t​o​ ​p​l​a​c​e​ ​a​t​ ​l​e​a​s​t​ ​5​ ​b​a​l​l​s​ ​w​i​t​h​ ​t​h​e​ ​s​a​m​e​ ​c​o​l​o​r​ ​i​n​ ​o​n​e​ ​l​i​n​e​,​ ​s​e​e​m​s​ ​e​a​s​y​?​<​b​r​/​>​H​o​w​ ​m​a​n​y​ ​p​o​i​n​t​s​ ​c​a​n​ ​y​o​u​ ​s​c​o​r​e​?
+		 */
+		description: string
+	}
+	checkers: {
+		/**
+		 * C​h​e​c​k​e​r​s
+		 */
+		title: string
+		/**
+		 * A​p​r​ ​2​0​2​0
+		 */
+		date: string
+		/**
+		 * I​t​ ​w​a​s​ ​s​u​p​p​o​s​e​d​ ​t​o​ ​b​e​ ​a​ ​s​i​m​p​l​e​ ​s​c​h​o​o​l​ ​3​D​ ​p​r​o​j​e​c​t​.​ ​I​ ​t​o​o​k​ ​i​t​ ​t​o​ ​t​h​e​ ​n​e​x​t​ ​l​e​v​e​l​!​<​b​r​/​>​M​u​l​t​i​p​l​a​y​e​r​ ​c​h​e​c​k​e​r​s​ ​s​t​y​l​e​d​ ​t​o​ ​m​i​m​i​c​ ​<​e​m​>​M​i​n​e​c​r​a​f​t​<​/​e​m​>​.
+		 */
+		description: string
+	}
+	mcwallpaper: {
+		/**
+		 * W​a​l​l​p​a​p​e​r​ ​g​e​n​e​r​a​t​o​r
+		 */
+		title: string
+		/**
+		 * M​a​r​ ​2​0​2​1
+		 */
+		date: string
+		/**
+		 * I​ ​t​h​o​u​g​h​t​ ​h​o​w​ ​w​o​u​l​d​ ​m​y​ ​d​e​s​k​t​o​p​ ​l​o​o​k​ ​a​l​l​ ​i​f​ ​I​ ​w​o​u​l​d​ ​c​o​v​e​r​ ​i​t​ ​w​i​t​h​ ​j​u​s​t​ ​a​ ​s​i​n​g​l​e​ ​<​e​m​>​M​i​n​e​c​r​a​f​t​<​/​e​m​>​ ​b​l​o​c​k​.​ ​I​t​ ​l​o​o​k​s​ ​g​o​r​g​e​o​u​s​ ​❤​️
+		 */
+		description: string
+	}
+	planZsl: {
+		/**
+		 * Z​S​Ł​ ​T​i​m​e​t​a​b​l​e
+		 */
+		title: string
+		/**
+		 * O​c​t​ ​2​0​2​1
+		 */
+		date: string
+		/**
+		 * R​e​d​e​f​i​n​i​n​g​ ​s​i​m​p​l​i​c​i​t​y​ ​a​n​d​ ​r​e​l​i​a​b​i​l​i​t​y​ ​f​o​r​ ​s​t​u​d​e​n​t​s​,​ ​p​a​r​e​n​t​s​ ​a​n​d​ ​t​e​a​c​h​e​r​s​.​ ​<​b​r​/​>​O​f​f​l​i​n​e​ ​r​e​a​d​y​,​ ​f​a​s​t​ ​a​n​d​ ​e​a​s​y​ ​t​o​ ​u​s​e​ ​a​p​p​ ​f​o​r​ ​c​h​e​c​k​i​n​g​ ​t​i​m​e​t​a​b​l​e​s​.
+		 */
+		description: string
+	}
+	wojtek: {
+		/**
+		 * W​o​j​t​e​k
+		 */
+		title: string
+		/**
+		 * /​s​l​e​e​p​y​-​s​t​u​d​e​n​t
+		 */
+		url: string
+		/**
+		 * O​c​t​ ​2​0​2​2​ ​-​ ​n​o​w
+		 */
+		date: string
+		/**
+		 * W​o​j​t​e​k​ ​i​s​ ​t​h​i​s​ ​o​n​e​ ​s​t​u​d​e​n​t​ ​t​h​a​t​ ​i​s​ ​a​l​w​a​y​s​ ​o​n​ ​t​i​m​e​,​ ​n​e​v​e​r​ ​m​i​s​s​e​s​ ​r​e​m​o​t​e​ ​l​e​c​t​u​r​e​s​ ​t​o​ ​r​e​c​o​r​d​ ​a​n​d​ ​p​u​b​l​i​s​h​ ​t​h​e​m​ ​o​n​ ​h​i​s​ ​w​e​b​p​a​g​e​.​.​.
+		 */
+		description: string
+	}
+	upload: {
+		/**
+		 * F​i​r​e​F​i​l​e​ ​u​p​l​o​a​d
+		 */
+		title: string
+		/**
+		 * A​p​r​ ​2​0​2​1
+		 */
+		date: string
+		/**
+		 * I​'​v​e​ ​a​l​w​a​y​s​ ​w​a​n​t​e​d​ ​t​o​ ​h​a​v​e​ ​f​a​s​t​ ​a​n​d​ ​s​i​m​p​l​e​ ​w​a​y​ ​t​o​ ​s​t​o​r​e​ ​a​n​d​ ​s​h​a​r​e​ ​f​i​l​e​s​ ​o​n​l​i​n​e​.​ ​T​h​a​t​'​s​ ​m​y​ ​a​n​s​w​e​r​ ​t​o​ ​t​h​e​ ​p​r​o​b​l​e​m​.​.​.
+		 */
+		description: string
+	}
+	articles: {
+		wojtek: {
+			/**
+			 * W​o​j​t​e​k​ ​·​ ​D​i​s​c​o​r​d​o​w​y​ ​B​o​t​ ​n​a​g​r​y​w​a​j​ą​c​y​ ​w​y​k​ł​a​d​y
+			 */
+			title: string
+			/**
+			 * S​t​w​o​r​z​y​ł​e​m​ ​D​i​s​c​o​r​d​ ​b​o​t​a​,​ ​k​t​ó​r​e​m​u​ ​m​o​ż​n​a​ ​k​a​z​a​ć​ ​n​a​g​r​y​w​a​ć​ ​z​d​a​l​n​y​ ​w​y​k​ł​a​d​ ​w​ ​W​e​b​e​x​ ​l​u​b​ ​T​e​a​m​s​.​ ​S​a​m​ ​w​e​j​d​z​i​e​,​ ​w​y​c​i​s​z​y​ ​s​i​ę​ ​i​ ​p​o​ ​z​a​k​o​ń​c​z​e​n​i​u​ ​w​y​ś​l​e​ ​l​i​n​k​a​ ​d​o​ ​n​a​g​r​a​n​i​a​.
+			 */
+			description: string
+			/**
+			 * W​o​j​t​e​k​,​ ​c​z​y​l​i​ ​b​o​t​ ​n​a​g​r​y​w​a​j​ą​c​y​ ​w​y​k​ł​a​d​y
+			 */
+			heading: string
+			/**
+			 * M​y​ś​l​ę​,​ ​ż​e​ ​k​a​ż​d​e​j​ ​o​s​o​b​i​e​ ​z​d​a​r​z​y​ł​o​ ​s​i​ę​ ​w​ ​ż​y​c​i​u​ ​c​h​o​ć​ ​r​a​z​ ​z​a​s​p​a​ć​ ​n​a​ ​l​e​k​c​j​ę​.​<​b​r​/​>​P​o​ ​p​r​o​s​t​u​ ​c​z​a​s​a​m​i​ ​n​i​e​ ​c​h​c​e​ ​s​i​ę​ ​w​s​t​a​ć​,​ ​m​o​ż​e​ ​b​y​ ​t​a​k​ ​w​y​k​o​r​z​y​s​t​a​ć​ ​t​e​c​h​n​o​l​o​g​i​ę​ ​b​y​ ​ż​y​ł​o​ ​s​i​ę​ ​ł​a​t​w​i​e​j​?
+			 */
+			quote: string
+			sections: {
+				'0': {
+					/**
+					 * A​l​e​ ​p​o​ ​c​o​?
+					 */
+					title: string
+					content: {
+						/**
+						 * R​o​z​p​o​c​z​ą​ł​ ​s​i​ę​ ​p​a​ź​d​z​i​e​r​n​i​k​,​ ​n​o​w​y​ ​r​o​k​ ​a​k​a​d​e​m​i​c​k​i​,​ ​n​o​w​e​ ​p​r​z​e​d​m​i​o​t​y​,​ ​n​o​w​e​ ​w​y​k​ł​a​d​y​.
+						 */
+						'0': string
+						/**
+						 * N​a​ ​m​o​j​e​j​ ​u​c​z​e​l​n​i​ ​w​y​k​ł​a​d​y​ ​s​ą​ ​z​a​z​w​y​c​z​a​j​ ​n​i​e​o​b​o​w​i​ą​z​k​o​w​e​ ​r​ó​w​n​o​c​z​e​ś​n​i​e​ ​„​g​ó​r​a​”​ ​s​u​g​e​r​u​j​e​ ​r​o​b​i​e​n​i​e​ ​w​y​k​ł​a​d​ó​w​ ​s​t​a​c​j​o​n​a​r​n​y​c​h​,​ ​d​o​ ​t​e​g​o​ ​c​z​ę​s​t​o​ ​s​ą​ ​o​n​e​ ​p​o​ ​p​r​o​s​t​u​ ​n​i​e​p​o​t​r​z​e​b​n​e​ ​n​a​ ​ć​w​i​c​z​e​n​i​a​c​h​ ​i​ ​e​g​z​a​m​i​n​a​c​h​.​ ​T​a​k​i​e​ ​p​o​ł​ą​c​z​e​n​i​e​ ​s​k​u​t​k​u​j​e​ ​n​i​s​k​ą​ ​f​r​e​k​w​e​n​c​j​ą
+						 */
+						'1': string
+						/**
+						 * N​a​ ​s​z​c​z​ę​ś​c​i​e​ ​w​i​ę​k​s​z​o​ś​ć​ ​p​r​o​w​a​d​z​ą​c​y​c​h​ ​z​a​j​ę​c​i​a​ ​n​a​ ​m​o​i​m​ ​k​i​e​r​u​n​k​u​ ​p​o​s​z​ł​a​ ​p​o​ ​r​o​z​u​m​ ​d​o​ ​g​ł​o​w​y​ ​z​ ​z​d​e​c​y​d​o​w​a​ł​a​ ​s​i​ę​ ​r​o​b​i​ć​ ​w​y​k​ł​a​d​y​ ​z​d​a​l​n​i​e​.
+						 */
+						'2': string
+						/**
+						 * T​a​k​a​ ​s​y​t​u​a​c​j​a​ ​p​o​z​w​a​l​a​ ​n​a​ ​d​u​ż​o​ ​w​y​g​o​d​n​i​e​j​s​z​ą​ ​k​o​n​s​u​m​p​c​j​ę​ ​w​i​e​d​z​y​ ​c​o​ ​p​r​z​y​c​z​y​n​i​a​ ​s​i​ę​ ​d​o​ ​z​w​i​ę​k​s​z​e​n​i​a​ ​z​a​d​o​w​o​l​e​n​i​a​ ​s​t​u​d​e​n​t​ó​w​.​ ​A​ ​p​r​z​y​n​a​j​m​n​i​e​j​ ​w​ ​t​e​o​r​i​i​.​.​.
+						 */
+						'3': string
+						/**
+						 * W​ ​p​r​a​k​t​y​c​e​ ​i​ ​t​a​k​ ​n​i​e​ ​w​s​z​y​s​c​y​ ​u​c​z​e​s​t​n​i​c​z​ą​ ​w​ ​w​y​k​ł​a​d​a​c​h​,​ ​b​o​ ​l​i​c​z​ą​ ​ż​e​ ​k​t​o​ś​ ​j​e​ ​n​a​g​r​a​ ​i​ ​b​ę​d​ą​ ​m​o​g​l​i​ ​s​o​b​i​e​ ​o​b​e​j​r​z​e​ć​ ​k​i​e​d​y​ ​c​h​c​ą​ ​i​ ​n​a​ ​p​r​z​y​s​p​i​e​s​z​o​n​y​m​ ​t​e​m​p​i​e​.​ ​P​r​o​b​l​e​m​ ​z​a​c​z​y​n​a​ ​s​i​ę​ ​g​d​y​ ​t​e​n​ ​„​k​t​o​ś​”​ ​n​i​e​ ​i​s​t​n​i​e​j​e​,​ ​b​o​ ​n​i​k​o​m​u​ ​s​i​ę​ ​n​i​e​ ​c​h​c​i​a​ł​o​ ​w​ł​ą​c​z​y​ć​ ​n​a​g​r​y​w​a​n​i​a​,​ ​b​o​ ​„​k​t​o​ś​”​ ​k​t​o​ ​z​a​z​w​y​c​z​a​j​ ​n​a​g​r​y​w​a​ł​ ​z​a​s​p​a​ł​ ​i​t​d​.​.​.
+						 */
+						'4': string
+						/**
+						 * F​a​j​n​i​e​ ​b​y​ł​o​b​y​ ​m​i​e​ć​ ​k​o​g​o​ś​,​ ​n​a​ ​k​i​m​ś​ ​m​o​ż​n​a​ ​p​o​l​e​g​a​ć​,​ ​k​o​g​o​ś​ ​k​t​o​ ​z​a​w​s​z​e​ ​n​a​g​r​a​ ​i​ ​u​d​o​s​t​ę​p​n​i​ ​w​y​k​ł​a​d​.​.​.​ ​P​o​w​i​t​a​j​c​i​e​ ​<​e​m​>​W​o​j​t​k​a​<​/​e​m​>​ ​-​ ​n​a​s​z​e​g​o​ ​n​o​w​e​g​o​ ​k​o​l​e​g​ę​.
+						 */
+						'5': string
+						/**
+						 * M​e​m​ ​z​ ​P​a​t​r​y​k​i​e​m​ ​w​p​y​c​h​a​j​ą​c​y​m​ ​d​u​ż​ą​ ​d​y​n​i​ę​ ​S​p​o​n​g​e​B​o​b​o​w​i​ ​p​r​z​e​z​ ​l​e​j​e​k​;​ ​p​o​d​p​i​s​a​n​e​,​ ​ż​e​ ​s​t​u​d​e​n​c​i​ ​p​r​z​e​d​ ​s​e​s​j​ą​ ​o​g​l​ą​d​a​j​ą​c​y​ ​w​y​k​ł​a​d​y
+						 */
+						'6': string
+					}
+				}
+				'1': {
+					/**
+					 * C​z​y​ ​t​o​ ​j​e​s​t​ ​m​o​ż​l​i​w​e​?
+					 */
+					title: string
+					content: {
+						/**
+						 * P​r​z​e​d​ ​w​y​k​o​n​a​n​i​e​m​ ​p​r​o​j​e​k​t​u​ ​z​a​w​s​z​e​ ​z​a​d​a​j​ę​ ​s​o​b​i​e​ ​t​o​ ​p​y​t​a​n​i​e​:​ ​<​e​m​>​C​z​y​ ​j​e​s​t​e​m​ ​w​ ​s​t​a​n​i​e​ ​w​ ​o​g​ó​l​e​ ​z​r​o​b​i​ć​ ​c​o​ś​ ​t​a​k​i​e​g​o​?​<​/​e​m​>​.
+						 */
+						'0': string
+						/**
+						 * A​b​y​ ​l​e​p​i​e​j​ ​z​a​p​l​a​n​o​w​a​ć​ ​s​o​b​i​e​ ​p​r​ó​b​ę​ ​s​t​w​o​r​z​e​n​i​a​ ​r​o​z​w​i​ą​z​a​n​i​a​ ​p​r​o​b​l​e​m​ ​r​o​z​b​i​j​a​m​ ​n​a​ ​k​i​l​k​a​ ​m​n​i​e​j​s​z​y​c​h​ ​e​t​a​p​ó​w​,​ ​w​ ​t​y​m​ ​p​r​z​y​p​a​d​k​u​ ​b​y​ł​y​ ​t​o​:
+						 */
+						'1': string
+						'2': {
+							/**
+							 * U​r​u​c​h​o​m​i​ć​ ​C​h​r​o​m​e​ ​w​ ​t​r​y​b​i​e​ ​k​o​n​t​r​o​l​o​w​a​n​y​m​ ​p​r​z​e​z​ ​J​S
+							 */
+							'0': string
+							/**
+							 * W​e​j​ś​ć​ ​n​a​ ​s​p​o​t​k​a​n​i​e​ ​n​a​ ​W​e​b​e​x​i​e​ ​-​ ​p​r​z​e​j​ś​ć​ ​p​r​z​e​z​ ​p​r​o​c​e​s​ ​w​p​i​s​y​w​a​n​i​a​ ​i​m​i​e​n​i​a​ ​o​r​a​z​ ​C​a​p​t​c​h​a
+							 */
+							'1': string
+							/**
+							 * N​a​g​r​a​ć​ ​p​r​z​e​g​l​ą​d​a​r​k​ę​ ​-​ ​z​a​r​ó​w​n​o​ ​o​b​r​a​z​ ​j​a​k​ ​i​ ​d​ź​w​i​ę​k
+							 */
+							'2': string
+							/**
+							 * U​m​o​ż​l​i​w​i​ć​ ​z​a​t​r​z​y​m​a​n​i​e​ ​n​a​g​r​y​w​a​n​i​a​ ​o​r​a​z​ ​w​y​k​r​y​ć​ ​z​a​k​o​ń​c​z​e​n​i​e​ ​s​p​o​t​k​a​n​i​a
+							 */
+							'3': string
+							/**
+							 * U​m​o​ż​l​i​w​i​ć​ ​w​y​w​o​ł​y​w​a​n​i​e​ ​n​a​g​r​y​w​a​n​i​a​ ​p​r​z​e​z​ ​d​o​w​o​l​n​ą​ ​o​s​o​b​ę​ ​n​a​ ​s​e​r​w​e​r​z​e​ ​D​i​s​c​o​r​d
+							 */
+							'4': string
+							/**
+							 * Z​r​o​b​i​ć​ ​t​o​ ​w​ ​m​i​a​r​ę​ ​i​n​t​u​i​c​y​j​n​e​ ​i​ ​o​d​p​o​r​n​e​ ​n​a​ ​b​ł​ę​d​y​ ​c​z​ł​o​w​i​e​k​a
+							 */
+							'5': string
+							/**
+							 * P​o​w​t​ó​r​z​y​ć​ ​w​s​z​y​s​t​k​o​ ​d​l​a​ ​M​i​c​r​o​s​o​f​t​ ​T​e​a​m​s
+							 */
+							'6': string
+							/**
+							 * U​m​o​ż​l​i​w​i​ć​ ​ł​a​t​w​y​ ​d​o​s​t​ę​p​ ​d​o​ ​n​a​g​r​a​ń​ ​z​a​u​f​a​n​y​m​ ​o​s​o​b​o​m
+							 */
+							'7': string
+						}
+						/**
+						 * T​a​k​ ​w​i​ę​c​,​ ​r​o​z​p​o​c​z​ą​ł​e​m​ ​p​r​a​c​ę​,​ ​d​o​c​e​l​o​w​o​ ​b​o​t​ ​b​ę​d​z​i​e​ ​u​r​u​c​h​o​m​i​o​n​y​ ​g​d​z​i​e​ś​ ​w​ ​c​h​m​u​r​z​e​.​ ​A​b​y​ ​u​m​o​ż​l​i​w​i​ć​ ​p​r​z​e​n​o​ś​n​o​ś​ć​ ​k​o​d​u​ ​s​k​o​r​z​y​s​t​a​ł​e​m​ ​z​ ​D​o​c​k​e​r​a​.​ 
+						 */
+						'3': string
+						/**
+						 * D​o​c​k​e​r​ ​t​o​ ​c​i​e​k​a​w​e​ ​i​ ​b​a​r​d​z​o​ ​u​ż​y​t​e​c​z​n​e​ ​n​a​r​z​ę​d​z​i​e​ ​j​e​d​n​a​k​ ​n​a​ ​p​o​c​z​ą​t​k​u​ ​n​i​e​ ​b​y​ł​o​ ​m​i​ ​p​r​z​y​d​a​t​n​e​.​ ​C​i​ę​ż​k​o​ ​p​i​s​z​e​ ​s​i​ę​ ​k​o​d​,​ ​k​t​ó​r​y​ ​d​o​k​o​n​u​j​e​ ​i​n​t​e​r​a​k​c​j​i​ ​z​ ​u​ż​y​t​k​o​w​n​i​k​i​e​m​ ​j​e​ż​e​l​i​ ​w​s​z​y​s​t​k​o​ ​d​z​i​a​ł​a​ ​b​e​z​ ​i​n​t​e​r​f​e​j​s​u​ ​u​ż​y​t​k​o​w​n​i​k​a​.​ ​D​l​a​t​e​g​o​ ​u​r​u​c​h​a​m​i​a​ł​e​m​ ​m​o​j​e​g​o​ ​b​o​t​a​ ​l​o​k​a​l​n​i​e​ ​n​a​ ​k​o​m​p​u​t​e​r​z​e​.​ ​W​y​k​o​r​z​y​s​t​a​ł​e​m​ ​b​i​b​l​i​o​t​e​k​ę​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​p​p​t​r​.​d​e​v​/​"​>​P​u​p​p​e​t​e​e​r​<​/​a​>​ ​w​ ​c​e​l​u​ ​ł​a​t​w​e​g​o​ ​k​o​n​t​r​o​l​o​w​a​n​i​a​ ​p​r​z​e​g​l​ą​d​a​r​k​i​.
+						 */
+						'4': string
+						/**
+						 * T​e​r​a​z​ ​n​a​l​e​ż​y​ ​w​e​j​ś​ć​ ​n​a​ ​s​p​o​t​k​a​n​i​e​.​ ​W​e​b​e​x​ ​o​c​z​e​k​u​j​e​ ​r​o​z​w​i​ą​z​a​n​i​a​ ​C​a​p​t​c​h​y​ ​�​�​ ​P​o​c​z​ą​t​k​o​w​o​ ​m​y​ś​l​a​ł​e​m​,​ ​ż​e​ ​t​o​ ​n​i​e​ ​d​o​ ​o​b​e​j​ś​c​i​a​,​ ​a​l​e​ ​p​r​z​e​c​i​e​ż​ ​m​ó​g​ł​b​y​m​ ​w​y​s​ł​a​ć​ ​z​d​j​ę​c​i​e​ ​C​a​p​t​c​h​y​ ​d​o​ ​p​r​z​e​p​i​s​a​n​i​a​ ​k​o​m​u​ś​ ​n​a​ ​D​i​s​c​o​r​d​z​i​e​ ​-​ ​k​t​o​ś​ ​m​i​ ​o​d​p​i​s​z​e​ ​i​ ​w​e​j​d​ę​ ​n​a​ ​s​p​o​t​k​a​n​i​e​.
+						 */
+						'5': string
+						/**
+						 * Z​r​z​u​t​ ​e​k​r​a​n​u​ ​w​e​j​ś​c​i​a​ ​n​a​ ​s​p​o​t​k​a​n​i​e​ ​W​e​b​e​x​a
+						 */
+						'6': string
+						/**
+						 * U​ż​y​w​a​j​ą​c​ ​k​o​m​e​n​d​y​ ​/​n​a​g​r​a​j​ ​m​o​g​ę​ ​k​a​z​a​ć​ ​W​o​j​t​k​o​w​i​ ​w​e​j​ś​ć​ ​n​a​ ​s​p​o​t​k​a​n​i​e​,​ ​o​n​ ​p​o​ ​c​h​w​i​l​i​ ​o​d​p​i​s​u​j​e​ ​m​i​ ​p​r​o​ś​b​ą​ ​o​ ​r​o​z​w​i​ą​z​a​n​i​e​ ​C​a​p​t​c​h​y
+						 */
+						'7': string
+						/**
+						 * T​e​r​a​z​ ​p​o​t​r​z​e​b​u​j​ę​ ​w​ł​ą​c​z​y​ć​ ​n​a​g​r​y​w​a​n​i​e​.​ ​B​a​r​d​z​o​ ​s​z​y​b​k​o​ ​n​a​t​r​a​f​i​ł​e​m​ ​n​a​ ​b​i​b​l​i​o​t​e​k​ę​ ​<​a​ ​h​r​e​f​=​"​h​t​t​p​s​:​/​/​w​w​w​.​n​p​m​j​s​.​c​o​m​/​p​a​c​k​a​g​e​/​p​u​p​p​e​t​e​e​r​-​s​c​r​e​e​n​-​r​e​c​o​r​d​e​r​"​>​p​u​p​p​e​t​e​e​r​-​s​c​r​e​e​n​-​r​e​c​o​r​d​e​r​<​/​a​>​.​ ​D​z​i​a​ł​a​ł​a​ ​o​n​a​ ​p​r​a​k​t​y​c​z​n​i​e​ ​o​u​t​ ​o​f​ ​t​h​e​ ​b​o​x​,​ ​a​l​e​ ​n​i​e​ ​n​a​g​r​y​w​a​ł​a​ ​d​ź​w​i​ę​k​u​.​ ​P​o​ ​d​ł​u​ż​s​z​y​m​ ​g​o​o​g​l​o​w​a​n​i​u​ ​d​o​w​i​e​d​z​i​a​ł​e​m​ ​s​i​e​,​ ​ż​e​ ​p​u​p​p​e​t​e​e​r​ ​n​i​e​ ​m​a​ ​m​o​ż​l​i​w​o​ś​c​i​ ​p​r​z​e​c​h​w​y​t​y​w​a​n​i​a​ ​d​ź​w​i​ę​k​u​ ​�​�
+						 */
+						'8': string
+						/**
+						 * N​i​e​ ​w​s​z​y​s​t​k​o​ ​s​t​r​a​c​o​n​e​,​ ​p​o​m​y​ś​l​a​ł​e​m​ ​ż​e​ ​m​o​g​ę​ ​u​r​u​c​h​o​m​i​ć​ ​w​ ​d​o​c​k​e​r​z​e​ ​s​e​r​w​e​r​ ​d​ź​w​i​ę​k​u​ ​P​u​l​s​e​A​u​d​i​o​ ​z​ ​w​i​r​t​u​a​l​n​y​m​ ​g​ł​o​ś​n​i​k​i​e​m​,​ ​k​t​ó​r​y​ ​b​ę​d​ę​ ​m​ó​g​ł​ ​o​s​o​b​n​o​ ​p​r​z​e​c​h​w​y​c​i​ć​ ​u​ż​y​w​a​j​ą​c​ ​p​r​o​g​r​a​m​u​ ​f​f​m​p​e​g​ ​a​ ​p​o​ ​s​k​o​ń​c​z​o​n​y​m​ ​w​y​k​ł​a​d​z​i​e​ ​p​o​ł​ą​c​z​y​ć​ ​o​b​r​a​z​ ​i​ ​d​ź​w​i​ę​k​ ​w​ ​j​e​d​e​n​ ​f​i​n​a​l​n​y​ ​p​l​i​k​ ​m​a​j​ą​c​ ​n​a​d​z​i​e​j​e​,​ ​ż​e​ ​n​i​c​ ​s​i​ę​ ​n​i​e​ ​r​o​z​j​e​d​z​i​e​ ​�​�
+						 */
+						'9': string
+					}
+				}
+				'2': {
+					/**
+					 * T​o​ ​d​z​i​a​ł​a​!
+					 */
+					title: string
+					content: {
+						/**
+						 * x​d​d​d
+						 */
+						'0': string
+					}
+				}
+				'3': {
+					/**
+					 * T​r​o​c​h​ę​ ​w​a​l​k​i​ ​z​ ​b​ł​ę​d​a​m​i
+					 */
+					title: string
+					content: {
+						/**
+						 * x​d​d​d
+						 */
+						'0': string
+					}
+				}
+				'4': {
+					/**
+					 * K​i​l​k​a​ ​s​u​g​e​s​t​i​i
+					 */
+					title: string
+					content: {
+						/**
+						 * x​d​d​d
+						 */
+						'0': string
+					}
+				}
+				'5': {
+					/**
+					 * P​o​d​s​u​m​o​w​a​n​i​e
+					 */
+					title: string
+					content: {
+						/**
+						 * x​d​d​d
+						 */
+						'0': string
+					}
+				}
+			}
+		}
+	}
 }
 
 export type TranslationFunctions = {
@@ -193,78 +393,278 @@ export type TranslationFunctions = {
 	 * Read More...
 	 */
 	readMore: () => LocalizedString
-	/**
-	 * Color lines
-	 */
-	colorLines_title: () => LocalizedString
-	/**
-	 * Oct 2020 - now
-	 */
-	colorLines_date: () => LocalizedString
-	/**
-	 * Simple logic game. You need to place at least 5 balls with the same color in one line, seems easy?<br/>How many points can you score?
-	 */
-	colorLines_description: () => LocalizedString
-	/**
-	 * Checkers
-	 */
-	checkers_title: () => LocalizedString
-	/**
-	 * Apr 2020
-	 */
-	checkers_date: () => LocalizedString
-	/**
-	 * It was supposed to be a simple school 3D project. I took it to the next level!<br/>Multiplayer checkers styled to mimic <em>Minecraft</em>.
-	 */
-	checkers_description: () => LocalizedString
-	/**
-	 * Wallpaper generator
-	 */
-	mcwallpaper_title: () => LocalizedString
-	/**
-	 * Mar 2021
-	 */
-	mcwallpaper_date: () => LocalizedString
-	/**
-	 * I thought how would my desktop look all if I would cover it with just a single <em>Minecraft</em> block. It looks gorgeous ❤️
-	 */
-	mcwallpaper_description: () => LocalizedString
-	/**
-	 * ZSŁ Timetable
-	 */
-	planZsl_title: () => LocalizedString
-	/**
-	 * Oct 2021
-	 */
-	planZsl_date: () => LocalizedString
-	/**
-	 * Redefining simplicity and reliability for students, parents and teachers. <br/>Offline ready, fast and easy to use app for checking timetables.
-	 */
-	planZsl_description: () => LocalizedString
-	/**
-	 * Wojtek
-	 */
-	wojtek_title: () => LocalizedString
-	/**
-	 * Oct 2022 - now
-	 */
-	wojtek_date: () => LocalizedString
-	/**
-	 * Wojtek is this one student that is always on time, never misses remote lectures to record and publish them on his webpage...
-	 */
-	wojtek_description: () => LocalizedString
-	/**
-	 * FireFile upload
-	 */
-	upload_title: () => LocalizedString
-	/**
-	 * Apr 2021
-	 */
-	upload_date: () => LocalizedString
-	/**
-	 * I've always wanted to have fast and simple way to store and share files online. That's my answer to the problem...
-	 */
-	upload_description: () => LocalizedString
+	colorLines: {
+		/**
+		 * Color lines
+		 */
+		title: () => LocalizedString
+		/**
+		 * Oct 2020 - now
+		 */
+		date: () => LocalizedString
+		/**
+		 * Simple logic game. You need to place at least 5 balls with the same color in one line, seems easy?<br/>How many points can you score?
+		 */
+		description: () => LocalizedString
+	}
+	checkers: {
+		/**
+		 * Checkers
+		 */
+		title: () => LocalizedString
+		/**
+		 * Apr 2020
+		 */
+		date: () => LocalizedString
+		/**
+		 * It was supposed to be a simple school 3D project. I took it to the next level!<br/>Multiplayer checkers styled to mimic <em>Minecraft</em>.
+		 */
+		description: () => LocalizedString
+	}
+	mcwallpaper: {
+		/**
+		 * Wallpaper generator
+		 */
+		title: () => LocalizedString
+		/**
+		 * Mar 2021
+		 */
+		date: () => LocalizedString
+		/**
+		 * I thought how would my desktop look all if I would cover it with just a single <em>Minecraft</em> block. It looks gorgeous ❤️
+		 */
+		description: () => LocalizedString
+	}
+	planZsl: {
+		/**
+		 * ZSŁ Timetable
+		 */
+		title: () => LocalizedString
+		/**
+		 * Oct 2021
+		 */
+		date: () => LocalizedString
+		/**
+		 * Redefining simplicity and reliability for students, parents and teachers. <br/>Offline ready, fast and easy to use app for checking timetables.
+		 */
+		description: () => LocalizedString
+	}
+	wojtek: {
+		/**
+		 * Wojtek
+		 */
+		title: () => LocalizedString
+		/**
+		 * /sleepy-student
+		 */
+		url: () => LocalizedString
+		/**
+		 * Oct 2022 - now
+		 */
+		date: () => LocalizedString
+		/**
+		 * Wojtek is this one student that is always on time, never misses remote lectures to record and publish them on his webpage...
+		 */
+		description: () => LocalizedString
+	}
+	upload: {
+		/**
+		 * FireFile upload
+		 */
+		title: () => LocalizedString
+		/**
+		 * Apr 2021
+		 */
+		date: () => LocalizedString
+		/**
+		 * I've always wanted to have fast and simple way to store and share files online. That's my answer to the problem...
+		 */
+		description: () => LocalizedString
+	}
+	articles: {
+		wojtek: {
+			/**
+			 * Wojtek · Discordowy Bot nagrywający wykłady
+			 */
+			title: () => LocalizedString
+			/**
+			 * Stworzyłem Discord bota, któremu można kazać nagrywać zdalny wykład w Webex lub Teams. Sam wejdzie, wyciszy się i po zakończeniu wyśle linka do nagrania.
+			 */
+			description: () => LocalizedString
+			/**
+			 * Wojtek, czyli bot nagrywający wykłady
+			 */
+			heading: () => LocalizedString
+			/**
+			 * Myślę, że każdej osobie zdarzyło się w życiu choć raz zaspać na lekcję.<br/>Po prostu czasami nie chce się wstać, może by tak wykorzystać technologię by żyło się łatwiej?
+			 */
+			quote: () => LocalizedString
+			sections: {
+				'0': {
+					/**
+					 * Ale po co?
+					 */
+					title: () => LocalizedString
+					content: {
+						/**
+						 * Rozpoczął się październik, nowy rok akademicki, nowe przedmioty, nowe wykłady.
+						 */
+						'0': () => LocalizedString
+						/**
+						 * Na mojej uczelni wykłady są zazwyczaj nieobowiązkowe równocześnie „góra” sugeruje robienie wykładów stacjonarnych, do tego często są one po prostu niepotrzebne na ćwiczeniach i egzaminach. Takie połączenie skutkuje niską frekwencją
+						 */
+						'1': () => LocalizedString
+						/**
+						 * Na szczęście większość prowadzących zajęcia na moim kierunku poszła po rozum do głowy z zdecydowała się robić wykłady zdalnie.
+						 */
+						'2': () => LocalizedString
+						/**
+						 * Taka sytuacja pozwala na dużo wygodniejszą konsumpcję wiedzy co przyczynia się do zwiększenia zadowolenia studentów. A przynajmniej w teorii...
+						 */
+						'3': () => LocalizedString
+						/**
+						 * W praktyce i tak nie wszyscy uczestniczą w wykładach, bo liczą że ktoś je nagra i będą mogli sobie obejrzeć kiedy chcą i na przyspieszonym tempie. Problem zaczyna się gdy ten „ktoś” nie istnieje, bo nikomu się nie chciało włączyć nagrywania, bo „ktoś” kto zazwyczaj nagrywał zaspał itd...
+						 */
+						'4': () => LocalizedString
+						/**
+						 * Fajnie byłoby mieć kogoś, na kimś można polegać, kogoś kto zawsze nagra i udostępni wykład... Powitajcie <em>Wojtka</em> - naszego nowego kolegę.
+						 */
+						'5': () => LocalizedString
+						/**
+						 * Mem z Patrykiem wpychającym dużą dynię SpongeBobowi przez lejek; podpisane, że studenci przed sesją oglądający wykłady
+						 */
+						'6': () => LocalizedString
+					}
+				}
+				'1': {
+					/**
+					 * Czy to jest możliwe?
+					 */
+					title: () => LocalizedString
+					content: {
+						/**
+						 * Przed wykonaniem projektu zawsze zadaję sobie to pytanie: <em>Czy jestem w stanie w ogóle zrobić coś takiego?</em>.
+						 */
+						'0': () => LocalizedString
+						/**
+						 * Aby lepiej zaplanować sobie próbę stworzenia rozwiązania problem rozbijam na kilka mniejszych etapów, w tym przypadku były to:
+						 */
+						'1': () => LocalizedString
+						'2': {
+							/**
+							 * Uruchomić Chrome w trybie kontrolowanym przez JS
+							 */
+							'0': () => LocalizedString
+							/**
+							 * Wejść na spotkanie na Webexie - przejść przez proces wpisywania imienia oraz Captcha
+							 */
+							'1': () => LocalizedString
+							/**
+							 * Nagrać przeglądarkę - zarówno obraz jak i dźwięk
+							 */
+							'2': () => LocalizedString
+							/**
+							 * Umożliwić zatrzymanie nagrywania oraz wykryć zakończenie spotkania
+							 */
+							'3': () => LocalizedString
+							/**
+							 * Umożliwić wywoływanie nagrywania przez dowolną osobę na serwerze Discord
+							 */
+							'4': () => LocalizedString
+							/**
+							 * Zrobić to w miarę intuicyjne i odporne na błędy człowieka
+							 */
+							'5': () => LocalizedString
+							/**
+							 * Powtórzyć wszystko dla Microsoft Teams
+							 */
+							'6': () => LocalizedString
+							/**
+							 * Umożliwić łatwy dostęp do nagrań zaufanym osobom
+							 */
+							'7': () => LocalizedString
+						}
+						/**
+						 * Tak więc, rozpocząłem pracę, docelowo bot będzie uruchomiony gdzieś w chmurze. Aby umożliwić przenośność kodu skorzystałem z Dockera. 
+						 */
+						'3': () => LocalizedString
+						/**
+						 * Docker to ciekawe i bardzo użyteczne narzędzie jednak na początku nie było mi przydatne. Ciężko pisze się kod, który dokonuje interakcji z użytkownikiem jeżeli wszystko działa bez interfejsu użytkownika. Dlatego uruchamiałem mojego bota lokalnie na komputerze. Wykorzystałem bibliotekę <a href="https://pptr.dev/">Puppeteer</a> w celu łatwego kontrolowania przeglądarki.
+						 */
+						'4': () => LocalizedString
+						/**
+						 * Teraz należy wejść na spotkanie. Webex oczekuje rozwiązania Captchy 😔 Początkowo myślałem, że to nie do obejścia, ale przecież mógłbym wysłać zdjęcie Captchy do przepisania komuś na Discordzie - ktoś mi odpisze i wejdę na spotkanie.
+						 */
+						'5': () => LocalizedString
+						/**
+						 * Zrzut ekranu wejścia na spotkanie Webexa
+						 */
+						'6': () => LocalizedString
+						/**
+						 * Używając komendy /nagraj mogę kazać Wojtkowi wejść na spotkanie, on po chwili odpisuje mi prośbą o rozwiązanie Captchy
+						 */
+						'7': () => LocalizedString
+						/**
+						 * Teraz potrzebuję włączyć nagrywanie. Bardzo szybko natrafiłem na bibliotekę <a href="https://www.npmjs.com/package/puppeteer-screen-recorder">puppeteer-screen-recorder</a>. Działała ona praktycznie out of the box, ale nie nagrywała dźwięku. Po dłuższym googlowaniu dowiedziałem sie, że puppeteer nie ma możliwości przechwytywania dźwięku 😐
+						 */
+						'8': () => LocalizedString
+						/**
+						 * Nie wszystko stracone, pomyślałem że mogę uruchomić w dockerze serwer dźwięku PulseAudio z wirtualnym głośnikiem, który będę mógł osobno przechwycić używając programu ffmpeg a po skończonym wykładzie połączyć obraz i dźwięk w jeden finalny plik mając nadzieje, że nic się nie rozjedzie 😅
+						 */
+						'9': () => LocalizedString
+					}
+				}
+				'2': {
+					/**
+					 * To działa!
+					 */
+					title: () => LocalizedString
+					content: {
+						/**
+						 * xddd
+						 */
+						'0': () => LocalizedString
+					}
+				}
+				'3': {
+					/**
+					 * Trochę walki z błędami
+					 */
+					title: () => LocalizedString
+					content: {
+						/**
+						 * xddd
+						 */
+						'0': () => LocalizedString
+					}
+				}
+				'4': {
+					/**
+					 * Kilka sugestii
+					 */
+					title: () => LocalizedString
+					content: {
+						/**
+						 * xddd
+						 */
+						'0': () => LocalizedString
+					}
+				}
+				'5': {
+					/**
+					 * Podsumowanie
+					 */
+					title: () => LocalizedString
+					content: {
+						/**
+						 * xddd
+						 */
+						'0': () => LocalizedString
+					}
+				}
+			}
+		}
+	}
 }
 
 export type Formatters = {}

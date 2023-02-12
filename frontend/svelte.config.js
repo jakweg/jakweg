@@ -14,7 +14,12 @@ const config = {
 				'script-src': ['self'],
 			},
 		},
-		inlineStyleThreshold: 10240,
+		inlineStyleThreshold: Infinity,
+		alias: {
+			'@LL': 'src/i18n/i18n-svelte',
+			'@routes': 'src/routes',
+			'@components': 'src/components',
+		},
 	},
 }
 

@@ -37,4 +37,35 @@ const handleProjectHighlights = async () => {
 	)
 }
 
-await Promise.all([handleProjectHighlights()])
+const handleAuto = async () => {
+	const letters = ['s', 'm', 'w']
+
+	const sourceRoot = 'src/lib/src/auto'
+	const destinationRoot = 'src/lib/g'
+	const entries = await fs.readdir(sourceRoot, { withFileTypes: true })
+
+	await Promise.all(
+		entries.flatMap(async entry => {
+			if (!entry.isDirectory()) throw new Error(`Invalid entry ${sourceRoot}/${entry.name}`)
+			const values = entry.name.split(',').map(value => parseFloat(value))
+			if (values.some(e => isNaN(e)))
+				throw new Error(`Invalid entry values inside ${sourceRoot}/${entry.name}`)
+			if (values.length >= letters.length)
+				throw new Error(`Too many resizes inside ${sourceRoot}/${entry.name}`)
+
+			const files = await fs.readdir(`${sourceRoot}/${entry.name}`)
+			return files.flatMap(name =>
+				values.map((value, index) =>
+					convertAsPromise(
+						`${sourceRoot}/${entry.name}/${name}`,
+						'-resize',
+						`${value * 100}%`,
+						`${destinationRoot}/${name.replace('.', `.${letters[index]}.`)}`,
+					),
+				),
+			)
+		}),
+	)
+}
+
+await Promise.all([handleProjectHighlights(), handleAuto()])

@@ -19,6 +19,7 @@ export async function GET() {
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
     http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
       ${url('')}
+      ${url('sleepy-student', 'wojtek')}
 </urlset>`.trim(),
         {
             headers: {

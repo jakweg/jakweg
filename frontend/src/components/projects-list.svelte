@@ -27,9 +27,9 @@ import upload1 from '$lib/g/upload.s.webp'
 <div>
 	<ProjectHighlight
 		href="https://kulki.wegrzyn.dev"
-		title="{$LL.colorLines_title()}"
-		date="{$LL.colorLines_date()}"
-		description="{$LL.colorLines_description()}"
+		title="{$LL.colorLines.title()}"
+		date="{$LL.colorLines.date()}"
+		description="{$LL.colorLines.description()}"
 		type="{$LL.webGame()}"
 		imgSrc="{kulki1}"
 		imgSrc2x="{kulki2}"
@@ -37,9 +37,9 @@ import upload1 from '$lib/g/upload.s.webp'
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/warcaby"
-		title="{$LL.checkers_title()}"
-		date="{$LL.checkers_date()}"
-		description="{$LL.checkers_description()}"
+		title="{$LL.checkers.title()}"
+		date="{$LL.checkers.date()}"
+		description="{$LL.checkers.description()}"
 		type="{$LL.webGame()}"
 		imgSrc="{warcaby1}"
 		imgSrc2x="{warcaby2}"
@@ -47,9 +47,9 @@ import upload1 from '$lib/g/upload.s.webp'
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/mc-wallpaper-generator"
-		title="{$LL.mcwallpaper_title()}"
-		date="{$LL.mcwallpaper_date()}"
-		description="{$LL.mcwallpaper_description()}"
+		title="{$LL.mcwallpaper.title()}"
+		date="{$LL.mcwallpaper.date()}"
+		description="{$LL.mcwallpaper.description()}"
 		type="{$LL.nativeApp()}"
 		imgSrc="{wallpaperGenerator1}"
 		imgSrc2x="{wallpaperGenerator2}"
@@ -57,19 +57,19 @@ import upload1 from '$lib/g/upload.s.webp'
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/plan-zsl"
-		title="{$LL.planZsl_title()}"
-		date="{$LL.planZsl_date()}"
-		description="{$LL.planZsl_description()}"
+		title="{$LL.planZsl.title()}"
+		date="{$LL.planZsl.date()}"
+		description="{$LL.planZsl.description()}"
 		type="{$LL.pwa()}"
 		imgSrc="{zslPlan1}"
 		imgSrc2x="{zslPlan2}"
 		color="#ebebeb"
 	/>
 	<ProjectHighlight
-		href="https://github.com/jakweg/sleepy-student"
-		title="{$LL.wojtek_title()}"
-		date="{$LL.wojtek_date()}"
-		description="{$LL.wojtek_description()}"
+		href="{$LL.wojtek.url()}"
+		title="{$LL.wojtek.title()}"
+		date="{$LL.wojtek.date()}"
+		description="{$LL.wojtek.description()}"
 		type="{$LL.discordBot()}"
 		imgSrc="{$locale === 'pl' ? wojtekPl1 : wojtekEn1}"
 		imgSrc2x="{$locale === 'pl' ? wojtekPl2 : wojtekEn2}"
@@ -77,9 +77,9 @@ import upload1 from '$lib/g/upload.s.webp'
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/file-upload"
-		title="{$LL.upload_title()}"
-		date="{$LL.upload_date()}"
-		description="{$LL.upload_description()}"
+		title="{$LL.upload.title()}"
+		date="{$LL.upload.date()}"
+		description="{$LL.upload.description()}"
 		type="{$LL.pwa()}"
 		imgSrc="{upload1}"
 		imgSrc2x="{upload2}"
