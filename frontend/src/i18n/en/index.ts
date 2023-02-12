@@ -17,7 +17,7 @@ const en = {
 
 	colorLines_title: 'Color lines',
 	colorLines_date: 'Oct 2020 - now',
-	colorLines_description: "Simple logic game as a PWA. <br/>You need to place at least 5 balls with the same color in one line, seems easy?<br/>How many points can you score?",
+	colorLines_description: "Simple logic game. You need to place at least 5 balls with the same color in one line, seems easy?<br/>How many points can you score?",
 
 	checkers_title: 'Checkers',
 	checkers_date: 'Apr 2020',
@@ -25,7 +25,7 @@ const en = {
 
 	mcwallpaper_title: 'Wallpaper generator',
 	mcwallpaper_date: 'Mar 2021',
-	mcwallpaper_description: "I thought how would my desktop look all if you would cover it with just a single block <em>Minecraft</em> block, spoiler: It looks gorgeous ❤️",
+	mcwallpaper_description: "I thought how would my desktop look all if I would cover it with just a single <em>Minecraft</em> block. It looks gorgeous ❤️",
 
 	planZsl_title: 'ZSŁ Timetable',
 	planZsl_date: 'Oct 2021',
@@ -33,7 +33,7 @@ const en = {
 
 	wojtek_title: 'Wojtek',
 	wojtek_date: 'Oct 2022 - now',
-	wojtek_description: "Wojtek is this one student that never misses remote lectures always on time, records remote lectures and publishes them on his webpage...",
+	wojtek_description: "Wojtek is this one student that is always on time, never misses remote lectures to record and publish them on his webpage...",
 
 	upload_title: 'FireFile upload',
 	upload_date: 'Apr 2021',

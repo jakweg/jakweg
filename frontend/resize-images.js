@@ -14,24 +14,27 @@ const convertAsPromise = (...args) => {
 	})
 }
 
-const root = 'src/lib'
-const files = await fs.readdir(root)
-await Promise.all(
-	files
-		.filter(name => name.includes('.w.webp'))
-		.flatMap(name => [
+const handleProjectHighlights = async () => {
+	const sourceRoot = 'src/lib/src/project-highlights'
+	const destinationRoot = 'src/lib/g'
+	const files = await fs.readdir(sourceRoot)
+	await fs.mkdir(destinationRoot, { recursive: true })
+	await Promise.all(
+		files.flatMap(name => [
 			convertAsPromise(
-				`${root}/${name}`,
+				`${sourceRoot}/${name}`,
 				'-resize',
 				'33.3333%',
-				`${root}/${name.replace('.w.', '.s.')}`,
+				`${destinationRoot}/${name.replace('.webp', '.s.webp')}`,
 			),
 			convertAsPromise(
-				`${root}/${name}`,
+				`${sourceRoot}/${name}`,
 				'-resize',
-				// '66.6666%',
 				'50%',
-				`${root}/${name.replace('.w.', '.m.')}`,
+				`${destinationRoot}/${name.replace('.webp', '.m.webp')}`,
 			),
 		]),
-)
+	)
+}
+
+await Promise.all([handleProjectHighlights()])
