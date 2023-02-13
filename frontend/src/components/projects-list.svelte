@@ -36,14 +36,14 @@ import upload1 from '$lib/g/upload.s.webp'
 		color="#ffa501"
 	/>
 	<ProjectHighlight
-		href="https://github.com/jakweg/warcaby"
-		title="{$LL.checkers.title()}"
-		date="{$LL.checkers.date()}"
-		description="{$LL.checkers.description()}"
-		type="{$LL.webGame()}"
-		imgSrc="{warcaby1}"
-		imgSrc2x="{warcaby2}"
-		color="#492f18"
+		href="{$LL.wojtek.url()}"
+		title="{$LL.wojtek.title()}"
+		date="{$LL.wojtek.date()}"
+		description="{$LL.wojtek.description()}"
+		type="{$LL.discordBot()}"
+		imgSrc="{$locale === 'pl' ? wojtekPl1 : wojtekEn1}"
+		imgSrc2x="{$locale === 'pl' ? wojtekPl2 : wojtekEn2}"
+		color="#28713e"
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/mc-wallpaper-generator"
@@ -56,6 +56,16 @@ import upload1 from '$lib/g/upload.s.webp'
 		color="#2389c7"
 	/>
 	<ProjectHighlight
+		href="https://github.com/jakweg/warcaby"
+		title="{$LL.checkers.title()}"
+		date="{$LL.checkers.date()}"
+		description="{$LL.checkers.description()}"
+		type="{$LL.webGame()}"
+		imgSrc="{warcaby1}"
+		imgSrc2x="{warcaby2}"
+		color="#492f18"
+	/>
+	<ProjectHighlight
 		href="https://github.com/jakweg/plan-zsl"
 		title="{$LL.planZsl.title()}"
 		date="{$LL.planZsl.date()}"
@@ -64,16 +74,6 @@ import upload1 from '$lib/g/upload.s.webp'
 		imgSrc="{zslPlan1}"
 		imgSrc2x="{zslPlan2}"
 		color="#ebebeb"
-	/>
-	<ProjectHighlight
-		href="{$LL.wojtek.url()}"
-		title="{$LL.wojtek.title()}"
-		date="{$LL.wojtek.date()}"
-		description="{$LL.wojtek.description()}"
-		type="{$LL.discordBot()}"
-		imgSrc="{$locale === 'pl' ? wojtekPl1 : wojtekEn1}"
-		imgSrc2x="{$locale === 'pl' ? wojtekPl2 : wojtekEn2}"
-		color="#28713e"
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/file-upload"

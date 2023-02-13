@@ -20,7 +20,7 @@ onMount(() => {
 	font-family: 'Fira Sans', Verdana, Geneva, Tahoma, sans-serif;
 	color: white;
 	background-color: black;
-	/* scroll-behavior: smooth; */
+	scroll-behavior: smooth;
 }
 :global(body) {
 	-webkit-tap-highlight-color: transparent;

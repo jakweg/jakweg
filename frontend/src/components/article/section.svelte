@@ -15,7 +15,7 @@ const length = Array.from(content ?? []).length
 	</HashAnchor>
 	<slot>
 		{#each Array(length) as _, i}
-			<p>{@html content?.[i]?.()}</p>
+			<p>{@html content[i]()}</p>
 		{/each}
 	</slot>
 </section>

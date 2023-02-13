@@ -38,7 +38,7 @@ const en = {
 	},
 	wojtek: {
 		title: 'Wojtek',
-		url: '/sleepy-student',
+		url: '/sleepy-student/',
 		date: 'Oct 2022 - now',
 		description: "Wojtek is this one student that is always on time, never misses remote lectures to record and publish them on his webpage…",
 	},
