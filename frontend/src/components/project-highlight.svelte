@@ -68,6 +68,7 @@ img {
 main {
 	line-height: 150%;
 	opacity: 0.9;
+	padding-right: 1ch;
 }
 h2 {
 	font-size: 2em;
