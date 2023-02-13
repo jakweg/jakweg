@@ -14,6 +14,7 @@ const pl = {
 	discordBot: 'Bot Discordowy',
 	pwa: 'Aplikacja internetowa',
 	readMore: 'Zobacz więcej…',
+	contents: 'Spis treści',
 
 
 	colorLines: {

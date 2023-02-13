@@ -14,6 +14,7 @@ const en = {
 	discordBot: 'Discord Bot',
 	pwa: 'PWA',
 	readMore: 'Read More…',
+	contents: 'Contents',
 
 	colorLines: {
 		title: 'Color lines',

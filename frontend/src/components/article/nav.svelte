@@ -1,4 +1,5 @@
 <script lang="ts">
+import LL from '@LL'
 import HashAnchor from '../hash-anchor.svelte'
 
 export let article: any
@@ -6,7 +7,7 @@ const length = Array.from(article.sections).length
 </script>
 
 <aside>
-	<h5>Contents</h5>
+	<h2>{$LL.contents()}</h2>
 	<nav>
 		<ul>
 			{#each Array(length) as _, i}
@@ -35,7 +36,7 @@ ul {
 	padding: 0;
 	list-style-type: none;
 }
-h5 {
+h2 {
 	font-size: 1em;
 	padding-left: 1.1ch;
 	margin-bottom: 0.2em;

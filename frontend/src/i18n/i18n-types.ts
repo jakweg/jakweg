@@ -66,6 +66,10 @@ type RootTranslation = {
 	 * R​e​a​d​ ​M​o​r​e​…
 	 */
 	readMore: string
+	/**
+	 * C​o​n​t​e​n​t​s
+	 */
+	contents: string
 	colorLines: {
 		/**
 		 * C​o​l​o​r​ ​l​i​n​e​s
@@ -128,7 +132,7 @@ type RootTranslation = {
 		 */
 		title: string
 		/**
-		 * /​s​l​e​e​p​y​-​s​t​u​d​e​n​t
+		 * /​s​l​e​e​p​y​-​s​t​u​d​e​n​t​/
 		 */
 		url: string
 		/**
@@ -468,6 +472,10 @@ export type TranslationFunctions = {
 	 * Read More…
 	 */
 	readMore: () => LocalizedString
+	/**
+	 * Contents
+	 */
+	contents: () => LocalizedString
 	colorLines: {
 		/**
 		 * Color lines
@@ -530,7 +538,7 @@ export type TranslationFunctions = {
 		 */
 		title: () => LocalizedString
 		/**
-		 * /sleepy-student
+		 * /sleepy-student/
 		 */
 		url: () => LocalizedString
 		/**
