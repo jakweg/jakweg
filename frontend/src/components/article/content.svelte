@@ -23,7 +23,12 @@ const sections = [...new Array(length)].map((_, i) => (article.sections as any)[
 <style>
 .content {
 	grid-area: content;
-	padding: 0 4ch;
+	padding: 0 2ch;
+}
+@media (min-width: 500px) {
+	.content {
+		padding: 0 4ch;
+	}
 }
 main {
 	display: grid;

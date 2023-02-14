@@ -163,4 +163,14 @@ code small {
 	font-weight: bold;
 	color: #aaa;
 }
+@media (max-width: 600px) {
+	figure {
+		margin: 0;
+		text-align: center;
+	}
+	figure > img {
+		width: min(calc(100vw - 6ch), 400px);
+		height: auto;
+	}
+}
 </style>

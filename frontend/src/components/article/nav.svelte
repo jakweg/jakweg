@@ -23,12 +23,18 @@ const length = Array.from(article.sections).length
 
 <style>
 aside {
+	display: none;
 	max-width: 40ch;
 	grid-area: nav;
 	position: sticky;
 	align-self: flex-start;
 	top: 0;
 	color: #aaa;
+}
+@media (min-width: 800px) {
+	aside {
+		display: block;
+	}
 }
 ul {
 	margin: 0;
