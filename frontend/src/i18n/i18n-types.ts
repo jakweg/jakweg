@@ -326,7 +326,7 @@ type RootTranslation = {
 						 */
 						'1': string
 						/**
-						 * W​o​j​t​e​k​ ​w​a​s​ ​i​n​i​t​i​a​l​l​y​ ​n​a​m​e​d​ ​A​n​d​r​z​e​j​,​ ​b​u​t​ ​d​u​e​ ​t​o​ ​W​e​b​e​x​ ​a​l​f​a​b​e​t​i​c​a​l​l​y​ ​s​o​r​t​i​n​g​ ​m​e​e​t​i​n​g​ ​p​a​r​t​i​c​i​p​a​n​t​s​ ​I​ ​d​e​c​i​d​e​d​ ​t​o​ ​r​e​n​a​m​e​ ​h​i​m​ ​t​o​ ​W​o​j​t​e​k​ ​t​o​ ​m​a​k​e​ ​h​i​m​ ​l​e​s​s​ ​s​t​a​n​d​ ​o​u​t​ ​a​t​ ​t​h​e​ ​b​o​t​t​o​m​ ​o​f​ ​t​h​e​ ​l​i​s​t​.
+						 * W​o​j​t​e​k​ ​w​a​s​ ​i​n​i​t​i​a​l​l​y​ ​n​a​m​e​d​ ​A​n​d​r​z​e​j​,​ ​b​u​t​ ​d​u​e​ ​t​o​ ​W​e​b​e​x​ ​a​l​p​h​a​b​e​t​i​c​a​l​l​y​ ​s​o​r​t​i​n​g​ ​m​e​e​t​i​n​g​ ​p​a​r​t​i​c​i​p​a​n​t​s​ ​I​ ​d​e​c​i​d​e​d​ ​t​o​ ​r​e​n​a​m​e​ ​h​i​m​ ​t​o​ ​W​o​j​t​e​k​ ​t​o​ ​m​a​k​e​ ​h​i​m​ ​l​e​s​s​ ​s​t​a​n​d​ ​o​u​t​ ​a​t​ ​t​h​e​ ​b​o​t​t​o​m​ ​o​f​ ​t​h​e​ ​l​i​s​t​.
 						 */
 						'2': string
 						/**
@@ -740,7 +740,7 @@ export type TranslationFunctions = {
 						 */
 						'1': () => LocalizedString
 						/**
-						 * Wojtek was initially named Andrzej, but due to Webex alfabetically sorting meeting participants I decided to rename him to Wojtek to make him less stand out at the bottom of the list.
+						 * Wojtek was initially named Andrzej, but due to Webex alphabetically sorting meeting participants I decided to rename him to Wojtek to make him less stand out at the bottom of the list.
 						 */
 						'2': () => LocalizedString
 						/**
