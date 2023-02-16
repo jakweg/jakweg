@@ -1,7 +1,6 @@
 <script lang="ts">
 import ArticleContent from '@components/article/content.svelte'
 import ArticleNav from '@components/article/nav.svelte'
-import ArticleSection from '@components/article/section.svelte'
 import ArticleTitle from '@components/article/title.svelte'
 import TopNavigation from '@components/top-navigation.svelte'
 import LL, { locale } from '@LL'
@@ -48,12 +47,12 @@ const which = $LL.articles.wojtek
 <style>
 .content {
 	display: grid;
-	grid-template-areas: 'header' 'content' 'nav';
+	grid-template-areas: 'header' 'blockquote' 'content' 'nav';
 }
 @media (min-width: 800px) {
 	.content {
 		grid-template-columns: 1fr auto;
-		grid-template-areas: 'header header' 'content nav';
+		grid-template-areas: 'header header' 'blockquote blockquote' 'content nav';
 	}
 }
 </style>

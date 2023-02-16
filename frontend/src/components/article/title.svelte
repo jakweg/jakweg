@@ -16,7 +16,7 @@ export let title: string //
 header {
 	display: grid;
 	place-items: center;
-	min-height: 50vh;
+	min-height: 30vh;
 }
 h1 {
 	font-weight: lighter;

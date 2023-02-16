@@ -1,6 +1,8 @@
 import type { BaseTranslation } from '../i18n-types'
 
 const en = {
+	rootUrl: '/',
+	mainPage: 'Main page',
 	hiThere: 'Hi There!',
 	iam: 'I\'m',
 	cracow: 'Cracow',

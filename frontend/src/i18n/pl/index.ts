@@ -1,6 +1,8 @@
 import type { Translation } from '../i18n-types'
 
 const pl = {
+	rootUrl: '/pl/',
+	mainPage: 'Strona główna',
 	hiThere: 'Witaj!',
 	iam: 'Jestem',
 	cracow: 'Kraków',

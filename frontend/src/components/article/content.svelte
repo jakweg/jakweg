@@ -7,9 +7,9 @@ const length = Array.from(article.sections).length
 const sections = [...new Array(length)].map((_, i) => (article.sections as any)[i])
 </script>
 
+<blockquote>{@html article.quote()}</blockquote>
 <div class="content">
 	<main>
-		<blockquote>{@html article.quote()}</blockquote>
 		<article>
 			<slot>
 				{#each sections as s (s.title())}
@@ -35,13 +35,14 @@ main {
 	line-height: 1.8em;
 }
 blockquote {
+	grid-area: blockquote;
 	font-style: italic;
 	place-self: center;
 	width: auto;
 	border-radius: 1ch;
 	color: #ddd;
-	background-color: #8e8ef655;
-	border: 2px solid #8e8ef6dd;
+	background-color: #8e8ef633;
+	border: 2px solid #8e8ef6bb;
 	padding: 1ch 2ch;
 }
 </style>

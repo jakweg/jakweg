@@ -1,10 +1,13 @@
 <script>
 import LL from '../i18n/i18n-svelte'
-import GithubIcon from './github-icon.svelte'
-import TelegramIcon from './telegram-icon.svelte'
+import GithubIcon from './icon/github.svelte'
+import HomeIcon from './icon/home.svelte'
+import TelegramIcon from './icon/telegram.svelte'
 </script>
 
 <nav>
+	<a class="start" href="{$LL.rootUrl()}" aria-label="{$LL.mainPage()}"><HomeIcon /></a>
+
 	<!-- <a href="/portfolio">Portfolio</a> -->
 	<!-- <a href="/about">About</a> -->
 	<a
@@ -28,16 +31,19 @@ nav {
 	display: flex;
 	flex-flow: row;
 	justify-content: end;
-	align-items: center;
 	gap: 1ch;
 	padding: 4px;
 }
-
 a {
 	padding: 1ch;
 	color: var(--color);
 	text-decoration: none;
 	transition: color 0.3s;
+	justify-self: flex-end;
+}
+.start {
+	flex: 1;
+	justify-self: flex-start;
 }
 a:hover {
 	--color: var(--color-hover);
