@@ -70,6 +70,10 @@ type RootTranslation = {
 	 * C​o​n​t​e​n​t​s
 	 */
 	contents: string
+	/**
+	 * F​u​n​ ​f​a​c​t
+	 */
+	funFact: string
 	colorLines: {
 		/**
 		 * C​o​l​o​r​ ​l​i​n​e​s
@@ -322,21 +326,25 @@ type RootTranslation = {
 						 */
 						'1': string
 						/**
-						 * S​o​ ​I​ ​m​o​d​i​f​i​e​d​ ​W​o​j​t​e​k​ ​t​o​ ​l​a​u​n​c​h​ ​C​h​r​o​m​e​ ​i​n​ ​f​u​l​l​s​c​r​e​e​n​ ​m​o​d​e​ ​r​a​t​h​e​r​ ​t​h​e​n​ ​h​e​a​d​l​e​s​s​ ​o​n​e​ ​a​n​d​ ​t​o​ ​u​s​e​ ​v​i​r​t​u​a​l​ ​s​p​e​a​k​e​r​.​ ​N​o​w​ ​I​ ​c​a​n​ ​r​e​c​o​r​d​ ​t​h​e​ ​s​c​r​e​e​n​ ​u​s​i​n​g​ ​f​f​m​p​e​g​.​ ​T​h​e​r​e​ ​w​e​r​e​ ​n​u​m​e​r​u​s​ ​i​s​s​u​e​s​ ​w​h​e​n​ ​i​t​ ​c​o​m​e​s​ ​t​o​ ​s​t​a​r​t​i​n​g​ ​p​u​l​s​e​a​u​d​i​o​ ​a​n​d​ ​X​1​1​ ​a​s​ ​r​o​o​t​ ​i​n​s​i​d​e​ ​d​o​c​k​e​r​.​ ​T​h​e​ ​e​a​s​i​e​s​t​ ​s​o​l​u​t​i​o​n​ ​t​o​ ​m​a​k​e​ ​i​t​ ​r​u​n​n​i​n​g​ ​w​a​s​ ​t​o​ ​k​i​l​l​ ​t​h​e​i​r​ ​p​r​o​c​e​s​s​e​s​,​ ​d​e​l​e​t​e​ ​<​c​o​d​e​>​/​r​u​n​/​p​u​l​s​e​*​<​/​c​o​d​e​>​ ​a​n​d​ ​<​c​o​d​e​>​/​t​m​p​/​.​X​1​-​l​o​c​k​<​/​c​o​d​e​>​ ​f​i​l​e​s​ ​a​n​d​ ​t​h​e​n​ ​l​a​u​n​c​h​ ​t​h​e​ ​d​e​m​o​n​s​.
+						 * W​o​j​t​e​k​ ​w​a​s​ ​i​n​i​t​i​a​l​l​y​ ​n​a​m​e​d​ ​A​n​d​r​z​e​j​,​ ​b​u​t​ ​d​u​e​ ​t​o​ ​W​e​b​e​x​ ​a​l​f​a​b​e​t​i​c​a​l​l​y​ ​s​o​r​t​i​n​g​ ​m​e​e​t​i​n​g​ ​p​a​r​t​i​c​i​p​a​n​t​s​ ​I​ ​d​e​c​i​d​e​d​ ​t​o​ ​r​e​n​a​m​e​ ​h​i​m​ ​t​o​ ​W​o​j​t​e​k​ ​t​o​ ​m​a​k​e​ ​h​i​m​ ​l​e​s​s​ ​s​t​a​n​d​ ​o​u​t​ ​a​t​ ​t​h​e​ ​b​o​t​t​o​m​ ​o​f​ ​t​h​e​ ​l​i​s​t​.
 						 */
 						'2': string
 						/**
-						 * A​f​t​e​r​ ​a​ ​w​h​i​l​e​ ​e​v​e​r​y​t​h​i​n​g​ ​s​e​e​m​e​d​ ​t​o​ ​w​o​r​k​ ​f​i​n​e​ ​a​ ​r​e​l​i​a​b​l​e​.​ ​T​h​e​n​ ​o​u​t​ ​o​f​ ​n​o​w​h​e​r​e​ ​M​i​c​r​o​s​o​f​t​ ​d​e​c​i​d​e​d​ ​t​o​ ​r​e​l​e​a​s​e​ ​T​e​a​m​s​ ​u​p​d​a​t​e​ ​w​h​i​c​h​ ​s​i​g​n​i​f​i​c​a​n​t​l​y​ ​c​h​a​n​g​e​d​ ​t​h​e​ ​U​I​.​ ​I​t​ ​o​b​v​i​o​u​s​l​y​ ​b​r​o​k​e​ ​W​o​j​t​e​k​ ​�​�
+						 * S​o​ ​I​ ​m​o​d​i​f​i​e​d​ ​W​o​j​t​e​k​ ​t​o​ ​l​a​u​n​c​h​ ​C​h​r​o​m​e​ ​i​n​ ​f​u​l​l​s​c​r​e​e​n​ ​m​o​d​e​ ​r​a​t​h​e​r​ ​t​h​e​n​ ​h​e​a​d​l​e​s​s​ ​o​n​e​ ​a​n​d​ ​t​o​ ​u​s​e​ ​v​i​r​t​u​a​l​ ​s​p​e​a​k​e​r​.​ ​N​o​w​ ​I​ ​c​a​n​ ​r​e​c​o​r​d​ ​t​h​e​ ​s​c​r​e​e​n​ ​u​s​i​n​g​ ​f​f​m​p​e​g​.​ ​T​h​e​r​e​ ​w​e​r​e​ ​n​u​m​e​r​u​s​ ​i​s​s​u​e​s​ ​w​h​e​n​ ​i​t​ ​c​o​m​e​s​ ​t​o​ ​s​t​a​r​t​i​n​g​ ​p​u​l​s​e​a​u​d​i​o​ ​a​n​d​ ​X​1​1​ ​a​s​ ​r​o​o​t​ ​i​n​s​i​d​e​ ​d​o​c​k​e​r​.​ ​T​h​e​ ​e​a​s​i​e​s​t​ ​s​o​l​u​t​i​o​n​ ​t​o​ ​m​a​k​e​ ​i​t​ ​r​u​n​n​i​n​g​ ​w​a​s​ ​t​o​ ​k​i​l​l​ ​t​h​e​i​r​ ​p​r​o​c​e​s​s​e​s​,​ ​d​e​l​e​t​e​ ​<​c​o​d​e​>​/​r​u​n​/​p​u​l​s​e​*​<​/​c​o​d​e​>​ ​a​n​d​ ​<​c​o​d​e​>​/​t​m​p​/​.​X​1​-​l​o​c​k​<​/​c​o​d​e​>​ ​f​i​l​e​s​ ​a​n​d​ ​t​h​e​n​ ​l​a​u​n​c​h​ ​t​h​e​ ​d​e​m​o​n​s​.
 						 */
 						'3': string
 						/**
-						 * T​h​e​r​e​ ​w​a​s​ ​o​n​e​ ​t​i​m​e​ ​w​h​e​n​ ​r​e​c​o​r​d​i​n​g​ ​a​u​d​i​o​ ​f​a​i​l​e​d​,​ ​b​u​t​ ​v​i​s​u​a​l​s​ ​g​o​t​ ​r​e​c​o​r​d​e​d​.​ ​W​h​a​t​ ​s​u​r​p​r​i​s​e​d​ ​m​e​ ​t​h​e​ ​m​o​s​t​ ​w​a​s​ ​v​e​r​y​ ​s​m​a​l​l​ ​v​i​d​e​o​ ​s​i​z​e​.​ ​A​f​t​e​r​ ​i​n​v​e​s​t​i​g​a​t​i​n​g​ ​I​ ​n​o​t​i​c​e​d​ ​t​h​a​t​ ​w​h​e​n​ ​I​ ​r​e​c​o​r​d​ ​a​u​d​i​o​ ​I​ ​d​o​ ​i​n​ ​s​t​e​r​e​o​ ​e​f​f​e​c​t​i​v​e​l​y​ ​d​o​u​b​l​i​n​g​ ​a​u​d​i​o​ ​s​i​z​e​ ​f​o​r​ ​n​o​t​h​i​n​g​.​ ​T​h​a​n​k​s​ ​t​o​ ​t​h​i​s​ ​o​n​e​ ​b​u​g​ ​I​'​v​e​ ​f​o​u​n​d​ ​a​n​o​t​h​e​r​ ​o​n​e​ ​�​�
+						 * A​f​t​e​r​ ​a​ ​w​h​i​l​e​ ​e​v​e​r​y​t​h​i​n​g​ ​s​e​e​m​e​d​ ​t​o​ ​w​o​r​k​ ​f​i​n​e​ ​a​ ​r​e​l​i​a​b​l​e​.​ ​T​h​e​n​ ​o​u​t​ ​o​f​ ​n​o​w​h​e​r​e​ ​M​i​c​r​o​s​o​f​t​ ​d​e​c​i​d​e​d​ ​t​o​ ​r​e​l​e​a​s​e​ ​T​e​a​m​s​ ​u​p​d​a​t​e​ ​w​h​i​c​h​ ​s​i​g​n​i​f​i​c​a​n​t​l​y​ ​c​h​a​n​g​e​d​ ​t​h​e​ ​U​I​.​ ​I​t​ ​o​b​v​i​o​u​s​l​y​ ​b​r​o​k​e​ ​W​o​j​t​e​k​ ​�​�
 						 */
 						'4': string
 						/**
-						 * T​h​e​r​e​ ​w​a​s​ ​a​l​s​o​ ​a​ ​p​r​o​b​l​e​m​ ​I​ ​c​o​u​l​d​n​'​t​ ​d​e​t​e​c​t​ ​d​u​r​i​n​g​ ​t​e​s​t​i​n​g​,​ ​b​e​c​a​u​s​e​ ​i​t​ ​a​p​p​e​a​r​e​d​ ​a​f​t​e​r​ ​a​b​o​u​t​ ​4​ ​m​i​n​u​t​e​s​ ​o​f​ ​r​e​c​o​r​d​i​n​g​.​ ​I​n​ ​s​h​o​r​t​ ​t​h​e​ ​r​e​c​o​r​d​i​n​g​ ​g​o​t​ ​p​a​u​s​e​d​ ​f​o​r​ ​s​o​m​e​ ​r​e​a​s​o​n​.​ ​A​f​t​e​r​ ​i​n​v​e​s​t​i​g​a​t​i​o​n​ ​I​ ​f​o​u​n​d​ ​t​h​e​ ​c​a​u​s​e​:​ ​f​f​m​p​e​g​,​ ​w​h​i​c​h​ ​I​ ​u​s​e​ ​t​o​ ​r​e​c​o​r​d​,​ ​c​o​n​s​t​a​n​t​l​y​ ​p​r​i​n​t​s​ ​s​o​m​e​ ​s​t​a​t​s​ ​s​u​c​h​ ​a​s​ ​t​i​m​e​ ​t​o​ ​t​h​e​ ​c​o​n​s​o​l​e​.​ ​T​h​e​s​e​ ​s​t​a​t​s​ ​a​r​e​ ​a​p​p​e​n​d​e​d​ ​t​o​ ​t​h​e​ ​s​t​d​o​u​t​ ​b​u​f​f​e​r​ ​a​v​a​i​l​a​b​l​e​ ​t​o​ ​p​a​r​e​n​t​ ​p​r​o​c​e​s​s​ ​-​ ​W​o​j​t​e​k​.​ ​H​o​w​e​v​e​r​ ​W​o​j​t​e​k​ ​d​o​e​s​n​'​t​ ​c​a​r​e​ ​a​b​o​u​t​ ​t​h​i​s​ ​d​a​t​a​ ​t​h​e​r​e​f​o​r​e​ ​h​e​ ​n​e​v​e​r​ ​r​e​a​d​s​ ​i​t​.​ ​A​f​t​e​r​ ​a​b​o​u​t​ ​4​ ​m​i​n​u​t​e​s​ ​t​h​e​ ​b​u​f​f​e​r​ ​i​s​ ​f​u​l​l​ ​a​n​d​ ​t​h​e​ ​o​p​e​r​a​t​i​n​g​ ​s​y​s​t​e​m​ ​s​u​s​p​e​n​d​s​ ​e​x​e​c​u​t​i​n​g​ ​o​f​ ​f​f​m​p​e​g​ ​u​n​t​i​l​ ​a​n​y​t​h​i​n​g​ ​f​r​o​m​ ​t​h​e​ ​b​u​f​f​e​r​ ​i​s​ ​c​o​n​s​u​m​e​d​.​ ​F​i​x​i​n​g​ ​i​t​ ​w​a​s​ ​s​i​m​p​l​e​:​ ​j​u​s​t​ ​a​d​d​i​n​g​ ​<​c​o​d​e​>​ ​s​t​d​i​o​:​ ​"​i​g​n​o​r​e​"​ ​<​/​c​o​d​e​>​ ​t​o​ ​o​p​t​i​o​n​s​ ​o​b​j​e​c​t​ ​w​h​e​n​ ​l​a​u​n​c​h​i​n​g​ ​t​h​e​ ​p​r​o​c​e​s​s​ ​�​�​‍​♂​️
+						 * T​h​e​r​e​ ​w​a​s​ ​o​n​e​ ​t​i​m​e​ ​w​h​e​n​ ​r​e​c​o​r​d​i​n​g​ ​a​u​d​i​o​ ​f​a​i​l​e​d​,​ ​b​u​t​ ​v​i​s​u​a​l​s​ ​g​o​t​ ​r​e​c​o​r​d​e​d​.​ ​W​h​a​t​ ​s​u​r​p​r​i​s​e​d​ ​m​e​ ​t​h​e​ ​m​o​s​t​ ​w​a​s​ ​v​e​r​y​ ​s​m​a​l​l​ ​v​i​d​e​o​ ​s​i​z​e​.​ ​A​f​t​e​r​ ​i​n​v​e​s​t​i​g​a​t​i​n​g​ ​I​ ​n​o​t​i​c​e​d​ ​t​h​a​t​ ​w​h​e​n​ ​I​ ​r​e​c​o​r​d​ ​a​u​d​i​o​ ​I​ ​d​o​ ​i​n​ ​s​t​e​r​e​o​ ​e​f​f​e​c​t​i​v​e​l​y​ ​d​o​u​b​l​i​n​g​ ​a​u​d​i​o​ ​s​i​z​e​ ​f​o​r​ ​n​o​t​h​i​n​g​.​ ​T​h​a​n​k​s​ ​t​o​ ​t​h​i​s​ ​o​n​e​ ​b​u​g​ ​I​'​v​e​ ​f​o​u​n​d​ ​a​n​o​t​h​e​r​ ​o​n​e​ ​�​�
 						 */
 						'5': string
+						/**
+						 * T​h​e​r​e​ ​w​a​s​ ​a​l​s​o​ ​a​ ​p​r​o​b​l​e​m​ ​I​ ​c​o​u​l​d​n​'​t​ ​d​e​t​e​c​t​ ​d​u​r​i​n​g​ ​t​e​s​t​i​n​g​,​ ​b​e​c​a​u​s​e​ ​i​t​ ​a​p​p​e​a​r​e​d​ ​a​f​t​e​r​ ​a​b​o​u​t​ ​4​ ​m​i​n​u​t​e​s​ ​o​f​ ​r​e​c​o​r​d​i​n​g​.​ ​I​n​ ​s​h​o​r​t​ ​t​h​e​ ​r​e​c​o​r​d​i​n​g​ ​g​o​t​ ​p​a​u​s​e​d​ ​f​o​r​ ​s​o​m​e​ ​r​e​a​s​o​n​.​ ​A​f​t​e​r​ ​i​n​v​e​s​t​i​g​a​t​i​o​n​ ​I​ ​f​o​u​n​d​ ​t​h​e​ ​c​a​u​s​e​:​ ​f​f​m​p​e​g​,​ ​w​h​i​c​h​ ​I​ ​u​s​e​ ​t​o​ ​r​e​c​o​r​d​,​ ​c​o​n​s​t​a​n​t​l​y​ ​p​r​i​n​t​s​ ​s​o​m​e​ ​s​t​a​t​s​ ​s​u​c​h​ ​a​s​ ​t​i​m​e​ ​t​o​ ​t​h​e​ ​c​o​n​s​o​l​e​.​ ​T​h​e​s​e​ ​s​t​a​t​s​ ​a​r​e​ ​a​p​p​e​n​d​e​d​ ​t​o​ ​t​h​e​ ​s​t​d​o​u​t​ ​b​u​f​f​e​r​ ​a​v​a​i​l​a​b​l​e​ ​t​o​ ​p​a​r​e​n​t​ ​p​r​o​c​e​s​s​ ​-​ ​W​o​j​t​e​k​.​ ​H​o​w​e​v​e​r​ ​W​o​j​t​e​k​ ​d​o​e​s​n​'​t​ ​c​a​r​e​ ​a​b​o​u​t​ ​t​h​i​s​ ​d​a​t​a​ ​t​h​e​r​e​f​o​r​e​ ​h​e​ ​n​e​v​e​r​ ​r​e​a​d​s​ ​i​t​.​ ​A​f​t​e​r​ ​a​b​o​u​t​ ​4​ ​m​i​n​u​t​e​s​ ​t​h​e​ ​b​u​f​f​e​r​ ​i​s​ ​f​u​l​l​ ​a​n​d​ ​t​h​e​ ​o​p​e​r​a​t​i​n​g​ ​s​y​s​t​e​m​ ​s​u​s​p​e​n​d​s​ ​e​x​e​c​u​t​i​n​g​ ​o​f​ ​f​f​m​p​e​g​ ​u​n​t​i​l​ ​a​n​y​t​h​i​n​g​ ​f​r​o​m​ ​t​h​e​ ​b​u​f​f​e​r​ ​i​s​ ​c​o​n​s​u​m​e​d​.​ ​F​i​x​i​n​g​ ​i​t​ ​w​a​s​ ​s​i​m​p​l​e​:​ ​j​u​s​t​ ​a​d​d​i​n​g​ ​<​c​o​d​e​>​ ​s​t​d​i​o​:​ ​"​i​g​n​o​r​e​"​ ​<​/​c​o​d​e​>​ ​t​o​ ​o​p​t​i​o​n​s​ ​o​b​j​e​c​t​ ​w​h​e​n​ ​l​a​u​n​c​h​i​n​g​ ​t​h​e​ ​p​r​o​c​e​s​s​ ​�​�​‍​♂​️
+						 */
+						'6': string
 					}
 				}
 				'4': {
@@ -476,6 +484,10 @@ export type TranslationFunctions = {
 	 * Contents
 	 */
 	contents: () => LocalizedString
+	/**
+	 * Fun fact
+	 */
+	funFact: () => LocalizedString
 	colorLines: {
 		/**
 		 * Color lines
@@ -728,21 +740,25 @@ export type TranslationFunctions = {
 						 */
 						'1': () => LocalizedString
 						/**
-						 * So I modified Wojtek to launch Chrome in fullscreen mode rather then headless one and to use virtual speaker. Now I can record the screen using ffmpeg. There were numerus issues when it comes to starting pulseaudio and X11 as root inside docker. The easiest solution to make it running was to kill their processes, delete <code>/run/pulse*</code> and <code>/tmp/.X1-lock</code> files and then launch the demons.
+						 * Wojtek was initially named Andrzej, but due to Webex alfabetically sorting meeting participants I decided to rename him to Wojtek to make him less stand out at the bottom of the list.
 						 */
 						'2': () => LocalizedString
 						/**
-						 * After a while everything seemed to work fine a reliable. Then out of nowhere Microsoft decided to release Teams update which significantly changed the UI. It obviously broke Wojtek 🙄
+						 * So I modified Wojtek to launch Chrome in fullscreen mode rather then headless one and to use virtual speaker. Now I can record the screen using ffmpeg. There were numerus issues when it comes to starting pulseaudio and X11 as root inside docker. The easiest solution to make it running was to kill their processes, delete <code>/run/pulse*</code> and <code>/tmp/.X1-lock</code> files and then launch the demons.
 						 */
 						'3': () => LocalizedString
 						/**
-						 * There was one time when recording audio failed, but visuals got recorded. What surprised me the most was very small video size. After investigating I noticed that when I record audio I do in stereo effectively doubling audio size for nothing. Thanks to this one bug I've found another one 🤗
+						 * After a while everything seemed to work fine a reliable. Then out of nowhere Microsoft decided to release Teams update which significantly changed the UI. It obviously broke Wojtek 🙄
 						 */
 						'4': () => LocalizedString
 						/**
-						 * There was also a problem I couldn't detect during testing, because it appeared after about 4 minutes of recording. In short the recording got paused for some reason. After investigation I found the cause: ffmpeg, which I use to record, constantly prints some stats such as time to the console. These stats are appended to the stdout buffer available to parent process - Wojtek. However Wojtek doesn't care about this data therefore he never reads it. After about 4 minutes the buffer is full and the operating system suspends executing of ffmpeg until anything from the buffer is consumed. Fixing it was simple: just adding <code> stdio: "ignore" </code> to options object when launching the process 🤦‍♂️
+						 * There was one time when recording audio failed, but visuals got recorded. What surprised me the most was very small video size. After investigating I noticed that when I record audio I do in stereo effectively doubling audio size for nothing. Thanks to this one bug I've found another one 🤗
 						 */
 						'5': () => LocalizedString
+						/**
+						 * There was also a problem I couldn't detect during testing, because it appeared after about 4 minutes of recording. In short the recording got paused for some reason. After investigation I found the cause: ffmpeg, which I use to record, constantly prints some stats such as time to the console. These stats are appended to the stdout buffer available to parent process - Wojtek. However Wojtek doesn't care about this data therefore he never reads it. After about 4 minutes the buffer is full and the operating system suspends executing of ffmpeg until anything from the buffer is consumed. Fixing it was simple: just adding <code> stdio: "ignore" </code> to options object when launching the process 🤦‍♂️
+						 */
+						'6': () => LocalizedString
 					}
 				}
 				'4': {
