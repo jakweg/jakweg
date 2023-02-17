@@ -6,7 +6,7 @@ volumes:
 
 services:
   webhook:
-    restart: on-failure
+    restart: on-failure:2
     build:
       context: .
       dockerfile: webhook.Dockerfile
