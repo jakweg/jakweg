@@ -65,13 +65,13 @@ const pl = {
 						'Na szczęście większość prowadzących zajęcia na moim kierunku poszła po rozum do głowy i zdecydowała się robić wykłady zdalnie.',
 						'Taka sytuacja pozwala na dużo wygodniejszą konsumpcję wiedzy co przyczynia się do zwiększenia zadowolenia studentów. A przynajmniej w teorii…',
 						'W praktyce i tak nie wszyscy uczestniczą w wykładach, bo liczą że ktoś je nagra i będą mogli sobie obejrzeć kiedy chcą i na przyspieszonym tempie. Problem zaczyna się gdy ten „ktoś” nie istnieje, bo nikomu się nie chciało włączyć nagrywania, bo „ktoś” kto zazwyczaj nagrywał zaspał itp...',
-						'Fajnie byłoby mieć kogoś, na kimś można polegać, kogoś kto zawsze nagra i udostępni wykład… Powitajcie <em>Wojtka</em> - naszego nowego kolegę.',
+						'Fajnie byłoby mieć kogoś, na kim można polegać, kogoś kto zawsze nagra i udostępni wykład… Powitajcie <em>Wojtka</em> - naszego nowego kolegę.',
 						'Mem z Patrykiem wpychającym dużą dynię SpongeBobowi przez lejek; podpisane, że studenci przed sesją oglądający wykłady',
 					]
 				},
 				{
 					title: 'Czy to jest możliwe?', content: [
-						'Przed wykonaniem projektu zawsze zadaję sobie to pytanie: <em>Czy jestem w stanie w ogóle zrobić coś takiego?</em>.',
+						'Przed wykonaniem projektu zawsze zadaję sobie to pytanie: <em>Czy jestem w stanie w ogóle zrobić coś takiego?</em>',
 						'Aby lepiej zaplanować sobie próbę stworzenia rozwiązania, problem rozbijam na kilka mniejszych etapów, w tym przypadku były to:',
 						[
 							'Uruchomić Chrome tak, aby kontrolować go z kodu',
@@ -115,7 +115,7 @@ const pl = {
 						'Priorytetem dla mnie jest łatwy dostęp filmu dlatego hostowane są na serwerze HTTP. To umożliwi oglądanie filmu bez konieczności pobierania całego. Format .mp4 jest szeroko wspierany w przeglądarkach internetowych co sprawia, że każde urządzenie jest w stanie taki film wyświetlić.',
 						'Ale czy na pewno? Format mp4 to jedynie kontener, to jak zapisany jest obraz w nim to sprawa innego kodeku. Naturalnie najpierw spróbowałem możliwie najlepszego kodeku - h255, jednak okazuje się, że nie jest on natywnie wspierany na wszystkich urządzeniach. System Windows nawet każe sobie zapłacić w 2022 roku za możliwość otwarcia takiego pliku 🤯',
 						'Dlatego zdecydowałem sie użyć h254, który oferuje gorszy współczynnik jakości do rozmiaru, ale lepszą kompatybilność.',
-						'A skoro o rozmiarach mowa. 90 minut wykładu waży… około 25 MB, przy czym wszystko na slajdach jest czytelne. Jeżeli wykładowca oprócz slajdów doda kamerkę lub coś co się bardzo rusza to rozmiar wzrasta o kilka MB.',
+						'A skoro o rozmiarach mowa. 90 minut wykładu waży… około 25 MB, przy czym wszystko na slajdach jest czytelne. Jeżeli wykładowca oprócz slajdów pokaże kamerkę lub coś innego co się rusza to rozmiar wzrasta o kilka MB.',
 						'Aby osiągnąć taki wynik używam takiej komendy:',
 						['# Nagrywanie dźwięku:', '# Nagrywanie obrazu:', '# Łączenie obu nagrań:'],
 						'Ja używam parametrów: WIDTH={width}, HEIGHT={height}, FRAMERATE={framerate}, CRF={crf} BITRATE={bitrate}.',
@@ -124,7 +124,7 @@ const pl = {
 				{
 					title: 'Jak się sprawdza po pół roku?', content: [
 						'Minął semestr obecności Wojtka z nami. Czy było warto? Absolutnie!',
-						'Jakieś statystyki? Ponad nagranych 60 wykładów w około 2GB nagrań. Najpilniejszy student kierunku.',
+						'Jakieś statystyki? Ponad 60 wykładów w około 2GB nagrań. Najpilniejszy student kierunku.',
 						'Uważam, że to fajny projekt. Dużo się nauczyłem robiąc go, choć trochę się wkurzałem gdy nie działał jak chciałem. Jednak najważniejsze, że mogłem komuś innemu pomóc umożliwiając oglądnięcie wykładu później.',
 					]
 				},

@@ -16,7 +16,11 @@ const borderOpacity = '99'
 </script>
 
 <article style:--hc="{color + hoverOpacity}" style:--bc="{color + borderOpacity}">
-	<a href="{href}" rel="noreferrer">
+	<a
+		href="{href}"
+		target="{href.startsWith('/') ? undefined : '_blank'}"
+		rel="{href.startsWith('/') ? undefined : 'noreferrer'}"
+	>
 		<img
 			srcset="{imgSrc} 200w, {imgSrc2x} 300w"
 			sizes="(max-width: 900px) 150px,200px"

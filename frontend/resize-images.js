@@ -1,12 +1,13 @@
+import { spawn } from 'child_process'
 import * as fs from 'fs/promises'
-import * as im from 'imagemagick'
 
 const convertAsPromise = (...args) => {
 	return new Promise((resolve, reject) => {
 		try {
-			im.convert(args, function (err) {
-				if (err) reject(err)
-				resolve()
+			const process = spawn('convert', args)
+			process.addListener('exit', exitCode => {
+				if (exitCode === 0) resolve()
+				else reject('convert exit code was ' + exitCode)
 			})
 		} catch (e) {
 			reject(e)
