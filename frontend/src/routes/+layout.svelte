@@ -20,6 +20,7 @@ onMount(() => {
 	color: white;
 	background-color: #13182a;
 	scroll-behavior: smooth;
+	color-scheme: light dark;
 }
 :global(body) {
 	-webkit-tap-highlight-color: transparent;

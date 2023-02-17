@@ -5,11 +5,11 @@
 	0% {
 		opacity: 0;
 	}
-	20% {
+	50% {
 		opacity: 1;
 	}
-	50% {
-		opacity: 0.8;
+	70% {
+		opacity: 0.6;
 	}
 	100% {
 		opacity: 1;
@@ -25,7 +25,7 @@ div::before {
 	box-sizing: border-box;
 	background-image: radial-gradient(#0e87a366 1.5px, #00000000 0px);
 	background-size: 48px 48px;
-	animation: Enter 3s;
+	animation: Enter 4s;
 }
 div::before {
 	content: '';
