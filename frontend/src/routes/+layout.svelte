@@ -1,11 +1,10 @@
 <script lang="ts">
+import DottedBackground from '@components/dotted-background.svelte'
 import { onMount } from 'svelte'
-import DottedBackground from '../components/dotted-background.svelte'
 
 onMount(() => {
-	const { port } = location
-	if (port === '' && 'serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/sw.js')
+	if (location.port === '') {
+		navigator.serviceWorker?.register?.('/sw.js')
 	}
 })
 </script>
@@ -19,7 +18,7 @@ onMount(() => {
 :root {
 	font-family: 'Fira Sans', Verdana, Geneva, Tahoma, sans-serif;
 	color: white;
-	background-color: black;
+	background-color: #13182a;
 	scroll-behavior: smooth;
 }
 :global(body) {

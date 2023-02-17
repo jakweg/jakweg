@@ -30,6 +30,7 @@ header > * {
 	gap: 2ch;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .shifter {
 	display: none;

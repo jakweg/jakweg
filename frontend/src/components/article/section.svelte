@@ -33,7 +33,7 @@ h3 {
 	transition: background-color 0.3s;
 }
 h3:hover {
-	background-color: #20707044;
+	background-color: #669bbc44;
 }
 h3::before {
 	content: '';
@@ -41,7 +41,7 @@ h3::before {
 	width: 1ch;
 	margin-right: 1ch;
 	padding: 1.2em 0;
-	background-color: #207070;
+	background-color: #669bbc;
 }
 p {
 	color: #ddd;
