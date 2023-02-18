@@ -34,7 +34,9 @@ import upload1 from '$lib/g/upload.s.webp'
 		imgSrc="{kulki1}"
 		imgSrc2x="{kulki2}"
 		color="#ffa501"
+		techStack="{['ts', 'pwa']}"
 	/>
+
 	<ProjectHighlight
 		href="{$LL.wojtek.url()}"
 		title="{$LL.wojtek.title()}"
@@ -44,7 +46,9 @@ import upload1 from '$lib/g/upload.s.webp'
 		imgSrc="{$locale === 'pl' ? wojtekPl1 : wojtekEn1}"
 		imgSrc2x="{$locale === 'pl' ? wojtekPl2 : wojtekEn2}"
 		color="#28713e"
+		techStack="{['ts', 'puppeteer', 'node', 'docker', 'discord']}"
 	/>
+
 	<ProjectHighlight
 		href="https://github.com/jakweg/mc-wallpaper-generator"
 		title="{$LL.mcwallpaper.title()}"
@@ -54,7 +58,9 @@ import upload1 from '$lib/g/upload.s.webp'
 		imgSrc="{wallpaperGenerator1}"
 		imgSrc2x="{wallpaperGenerator2}"
 		color="#2389c7"
+		techStack="{['rust', 'linux', 'sfml']}"
 	/>
+
 	<ProjectHighlight
 		href="https://github.com/jakweg/warcaby"
 		title="{$LL.checkers.title()}"
@@ -64,6 +70,7 @@ import upload1 from '$lib/g/upload.s.webp'
 		imgSrc="{warcaby1}"
 		imgSrc2x="{warcaby2}"
 		color="#492f18"
+		techStack="{['ts', '3d', 'node']}"
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/plan-zsl"
@@ -74,6 +81,7 @@ import upload1 from '$lib/g/upload.s.webp'
 		imgSrc="{zslPlan1}"
 		imgSrc2x="{zslPlan2}"
 		color="#ebebeb"
+		techStack="{['ts', 'angular', 'node', 'pwa']}"
 	/>
 	<ProjectHighlight
 		href="https://github.com/jakweg/file-upload"
@@ -84,6 +92,7 @@ import upload1 from '$lib/g/upload.s.webp'
 		imgSrc="{upload1}"
 		imgSrc2x="{upload2}"
 		color="#389a70"
+		techStack="{['vue', 'firebase', 'pwa']}"
 	/>
 </div>
 
@@ -91,12 +100,14 @@ import upload1 from '$lib/g/upload.s.webp'
 div {
 	display: grid;
 	justify-content: space-between;
-	gap: 4ch;
-	padding: 2ch;
+	align-items: flex-start;
+	gap: 3ch;
+	padding: 1ch;
 	grid-template-columns: auto;
 }
 @media (min-width: 750px) {
 	div {
+		padding: 2ch;
 		grid-template-columns: repeat(2, 1fr);
 	}
 }

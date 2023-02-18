@@ -29,7 +29,6 @@ aside {
 	position: sticky;
 	align-self: flex-start;
 	top: 0;
-	color: #aaa;
 }
 @media (min-width: 800px) {
 	aside {
@@ -37,6 +36,7 @@ aside {
 	}
 }
 ul {
+	color: #9f9ff7;
 	margin: 0;
 	font-size: 0.9em;
 	padding: 0;

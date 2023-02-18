@@ -15,7 +15,6 @@ const pl = {
 	nativeApp: 'Natywna aplikacja',
 	discordBot: 'Bot Discordowy',
 	pwa: 'Aplikacja internetowa',
-	readMore: 'Zobacz więcej…',
 	contents: 'Spis treści',
 	funFact: 'Ciekawostka',
 
@@ -33,7 +32,7 @@ const pl = {
 	mcwallpaper: {
 		title: 'Generator tapet',
 		date: 'Mar 2021',
-		description: "Kiedyś zastanawiałem się jakby wyglądał mój pulpit gdyby tak ułożyć całą tapetę z jednego bloku. <br/>Więc napisałem generator tapet i rezultat wygląda świetnie ❤️",
+		description: "Jakby wyglądał mój pulpit gdyby tak ułożyć całą tapetę z jednego bloku? Rezultat wygląda wspaniale ❤️",
 	},
 	planZsl: {
 		title: 'Plan lekcji ZSŁ',
@@ -44,7 +43,7 @@ const pl = {
 		title: 'Wojtek',
 		url: '/pl/wojtek/',
 		date: 'Paź 2022 - teraz',
-		description: "Wojtek to ten jeden pilny student, który jest punktualnie na każdym zdalnym wykładzie, nagra go a potem udostępni całemu kierunkowi za piwo.",
+		description: "Wojtek to ten jeden pilny student, który nagra każdy zdalny wykład i udostępni całemu kierunkowi za piwo.",
 	},
 	upload: {
 		title: 'Dysk FireFile',

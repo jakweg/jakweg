@@ -18,7 +18,7 @@ onMount(() => {
 :root {
 	font-family: 'Fira Sans', Verdana, Geneva, Tahoma, sans-serif;
 	color: white;
-	background-color: #13182a;
+	background-color: #18181c;
 	scroll-behavior: smooth;
 	color-scheme: light dark;
 }
@@ -26,7 +26,7 @@ onMount(() => {
 	-webkit-tap-highlight-color: transparent;
 	margin: 0;
 	position: relative;
-	min-height: 100vh;
+	min-height: 100svh;
 	box-sizing: border-box;
 }
 :global(a) {

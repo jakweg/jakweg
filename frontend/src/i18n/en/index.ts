@@ -15,7 +15,6 @@ const en = {
 	nativeApp: 'Native app',
 	discordBot: 'Discord Bot',
 	pwa: 'PWA',
-	readMore: 'Read More…',
 	contents: 'Contents',
 	funFact: 'Fun fact',
 
@@ -33,7 +32,7 @@ const en = {
 	mcwallpaper: {
 		title: 'Wallpaper generator',
 		date: 'Mar 2021',
-		description: "I thought how would my desktop look all if I would cover it with just a single <em>Minecraft</em> block. It looks gorgeous ❤️",
+		description: "How does a desktop look all covered with just a single <em>Minecraft</em> block. It looks gorgeous ❤️",
 	},
 	planZsl: {
 		title: 'ZSŁ Timetable',

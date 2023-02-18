@@ -16,9 +16,10 @@ export let title: string //
 header {
 	display: grid;
 	place-items: center;
-	min-height: 30vh;
+	min-height: 30svh;
 }
 h1 {
+	color: #df6363;
 	font-weight: lighter;
 	letter-spacing: 1px;
 }
