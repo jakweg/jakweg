@@ -142,7 +142,7 @@ svg {
 
 @keyframes Blink {
 	0%,
-	99% {
+	98% {
 		transform: scaleY(1);
 	}
 	100% {
@@ -151,7 +151,7 @@ svg {
 }
 
 #eye {
-	animation: Blink 9s 3s infinite alternate linear;
+	animation: Blink 6s 3s infinite alternate linear;
 }
 @keyframes Hand {
 	0%,
@@ -159,10 +159,10 @@ svg {
 		transform: rotate(0deg) translate(0, 0);
 	}
 	25% {
-		transform: rotate(1deg) translate(-2px, 4px);
+		transform: rotate(1deg) translate(-2px, 3px);
 	}
 	50% {
-		transform: rotate(0.5deg) translate(6px, -5px);
+		transform: rotate(0.5deg) translate(5px, -4px);
 	}
 	75% {
 		transform: rotate(-1deg) translate(1px, -2px);
@@ -181,10 +181,10 @@ svg {
 		transform: rotate(0);
 	}
 	33% {
-		transform: rotate(2deg);
+		transform: rotate(1.5deg);
 	}
 	66% {
-		transform: rotate(-3deg);
+		transform: rotate(-2deg);
 	}
 }
 
@@ -195,15 +195,17 @@ svg {
 
 @keyframes Body2 {
 	0% {
-		opacity: 0.3;
-		transform: translateY(600px);
+		opacity: 0;
+		transform: translateY(700px);
+	}
+	70% {
+		opacity: 1;
 	}
 	100% {
-		opacity: 1;
 		transform: translateY(0);
 	}
 }
 #body2 {
-	animation: Body2 0.8s cubic-bezier(0.13, 0.78, 0.58, 1);
+	animation: Body2 0.8s 0.2s cubic-bezier(0.28, 1.23, 0.58, 1) backwards;
 }
 </style>

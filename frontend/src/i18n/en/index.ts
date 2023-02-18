@@ -62,18 +62,18 @@ const en = {
 				{
 					title: 'But why?', content: [
 						'Here comes the october and with it the brand new semester - new subjects, classes and lectures.',
-						'University I study on has made lectures optional (most of them). At the same time they don\'t want to make remote lectures. If you add to that the fact that most lectures are just inessential to pass exams you get really low presence.',
+						'University I study on has made lectures optional (most of them). At the same time they don\'t want to make remote lectures. If you add the fact that most lectures are just inessential to pass exams you get really low attendance.',
 						'Fortunately most lectures I have are done remote.',
 						'Such situation allows for much comfortable knowledge consumption which should lead to more people listening to lectures. At least in theory…',
-						'In practice people hope that someone records the meeting so they can watch it later at twice the speed. The problem is when someone is none or because this one person who usually records is absent for some reason.',
+						'In practice people hope that someone records the meeting so they can watch it later at twice the speed. The problem is when there is nobody or because this one person who usually records is absent for some reason.',
 						'It would be great to have a friend you can rely on… Meet <em>Wojtek</em> - our new colleague.',
 						'Meme with Patrick putting huge pumpkin inside SpongeBob\' mouth; With text saying students before session watching lectures',
 					]
 				},
 				{
 					title: 'But is it even possible?', content: [
-						'Before making any project I always ask myself: <em>Can something like this be achieved by me?</em>.',
-						'To better understand an attempt to create solution I break the problem up to form a few steps. In this case they are:',
+						'Before making any project I always ask myself: <em>Can something like this be achieved by me?</em>',
+						'To better understand how to create solution I break up the problem to a few steps. In this case they are:',
 						[
 							'Launch Chrome in a way I can programmatically control it',
 							'Join Webex meeting - pass through process of typing name and Captcha',
@@ -88,13 +88,13 @@ const en = {
 						'While Docker is great it was actually more difficult to use it, because I needed to program a bot to click visual elements which I couldn\'t program without seeing the screen. Therefore initially I run the bot locally on my computer. I used a library called <a href="https://pptr.dev/">Puppeteer</a> to easily control the browser.',
 						'Now I just need to join the meeting. Webex requests me to solve Captcha 😔 At first I thought it\'s game over, project impossible to do. But I can just send the screenshot of Captcha to Discord channel and ask anyone for solution. Once solved I can continue joining the meeting.',
 						'Screenshot of Webex before entering the meeting',
-						'Using the /record command I can tell Wojtek to enter room, he will reply with Captcha to solve after a while.',
+						'Using the /record command I can tell Wojtek to enter room, after a while he replies with Captcha to solve.',
 					]
 				},
 				{
 					title: 'That works!', content: [
-						'Now I just need to recording the browser tab. I used a library named <a href="https://www.npmjs.com/package/puppeteer-screen-recorder">puppeteer-screen-recorder</a>. It works out of the box, however it doesn\'t record audio. After using google for a while it was clear: puppeteer doesn\'t support audio capture in any way 😐',
-						'Not everything lost yet, after all I can launch PulseAudio audio server inside Docker. The I can use external program such as ffmpeg to record the audio.',
+						'Now I just need to record the browser tab. I used a library named <a href="https://www.npmjs.com/package/puppeteer-screen-recorder">puppeteer-screen-recorder</a>. It works out of the box, however it doesn\'t record audio. After using google for a while it was clear: puppeteer doesn\'t support audio capture in any way 😐',
+						'Not everything lost yet, after all I can launch PulseAudio audio server inside Docker. Then use external program such as ffmpeg to record the audio.',
 						'Once the meeting is ended Wojtek can close the Webex tab, merge video with audio into single final file hoping that they are in sync 😅 And then send a message to Discord channel with link to download it.',
 						'That way I managed to finish 5 steps - creating MVP. It was time for real scenario tests',
 					]
@@ -102,29 +102,29 @@ const en = {
 				{
 					title: 'Bug fighting', content: [
 						'Obviously software never works first try, Wojtek was no exception. It crashed many times and needed many enhancements to work well.',
-						'Entering Teams implementation was quite simple to do once Webex was working. However I stumbled upon unexplained bug. After about 5 minutes into the recording the screen turned completely white. After many and many failed attempt to fix that I was forced to change the basics - drop the recorder library and use <code>Xvfb</code> to simulate real display.',
+						'Entering Teams implementation was quite simple to do once Webex was working. However I stumbled upon unexplained bug. After about 5 seconds into the recording the screen turned completely white. After many and many failed attempts to fix it I was forced to change the basics - drop the recorder library and use <code>Xvfb</code> to simulate real display.',
 						'Wojtek was initially named Andrzej, but due to Webex alphabetically sorting meeting participants I decided to rename him to Wojtek to make him less stand out at the bottom of the list.',
-						'So I modified Wojtek to launch Chrome in fullscreen mode rather then headless one and to use virtual speaker. Now I can record the screen using ffmpeg. There were numerus issues when it comes to starting pulseaudio and X11 as root inside docker. The easiest solution to make it running was to kill their processes, delete <code>/run/pulse*</code> and <code>/tmp/.X1-lock</code> files and then launch the demons.',
-						'After a while everything seemed to work fine a reliable. Then out of nowhere Microsoft decided to release Teams update which significantly changed the UI. It obviously broke Wojtek 🙄',
-						'There was one time when recording audio failed, but visuals got recorded. What surprised me the most was very small video size. After investigating I noticed that when I record audio I do in stereo effectively doubling audio size for nothing. Thanks to this one bug I\'ve found another one 🤗',
-						'There was also a problem I couldn\'t detect during testing, because it appeared after about 4 minutes of recording. In short the recording got paused for some reason. After investigation I found the cause: ffmpeg, which I use to record, constantly prints some stats such as time to the console. These stats are appended to the stdout buffer available to parent process - Wojtek. However Wojtek doesn\'t care about this data therefore he never reads it. After about 4 minutes the buffer is full and the operating system suspends executing of ffmpeg until anything from the buffer is consumed. Fixing it was simple: just adding <code> stdio: \"ignore\" </code> to options object when launching the process 🤦‍♂️'
+						'So I modified Wojtek to launch Chrome in fullscreen mode rather then in headless one and to use virtual speaker. Now I can record the screen using ffmpeg. There were numerus issues when it comes to starting pulseaudio and X11 as a root user inside docker. The easiest working solution to make it running was to kill their processes, delete <code>/run/pulse*</code> and <code>/tmp/.X1-lock</code> files and then launch the demons.',
+						'After a few weeks everything seemed to work fine and reliable. Then out of nowhere Microsoft decided to release Teams update which significantly changed the UI. It obviously broke Wojtek 🙄',
+						'There was one time when recording audio failed, but visuals got recorded. What surprised me the most was very small video size. After investigating I noticed that recording audio is done in stereo mode effectively doubling audio size for no benefits at all. Thanks to this one bug I\'ve found another one 🤗',
+						'There was also a problem which I couldn\'t detect during testing, because it appeared after about 4 minutes of recording. In short the recording got paused for some reason. After investigation I found the cause: ffmpeg, which I use to record, constantly prints some stats such as time to the console. These stats are appended to the stdout buffer available to parent process - Wojtek. However Wojtek doesn\'t care about this data therefore he never reads it. After about 4 minutes the buffer is full and the operating system suspends executing of ffmpeg until anything from the buffer is consumed. Fixing it was simple: just adding <code> stdio: \"ignore\" </code> to options object when launching the process 🤦‍♂️'
 					]
 				},
 				{
 					title: 'About compression', content: [
-						'Videos are heavy on disk. Fortunately there are some smart people inventing compression algorithms.',
-						'The number one priority for me is easy of access for people, therefore recordings are hosted on HTTP server. That allows watching video without needing to download entire file. .mp4 format is well supported in web browsers which makes it ideal candidate for this use case.',
+						'Videos are heavy in disk size. Fortunately there are some smart people inventing compression algorithms.',
+						'The number one priority for me is the easy of access for people, therefore recordings are hosted on HTTP server. That allows watching video without needing to download entire file. mp4 format is well supported in web browsers which makes it ideal candidate for this use case.',
 						'But is it really? mp4 is just a container, data inside can be represented using many different codecs. Naturally I tried best codec available out there - h255, however it turns out that it is not yet natively supported on all platforms. Windows operating system even asks you to pay to open such file! In 2022 year 🤯',
 						'That\'s way I decided to go with h254, which offer worse quality to size ratio, but much better compatibility.',
 						'Speaking of sizes. 90 minutes of recording is… about 25 MB, and you can read everything on slides. The size may increase a few MB if cameras are on during lecture, but that is not a big deal.',
-						'To achieve such size I use these commands:',
+						'To achieve such size I use following commands:',
 						['# For audio recording:', '# For video recording:', '# To merge two files:'],
 						'I used parameters: WIDTH={width:number}, HEIGHT={height:number}, FRAMERATE={framerate:number}, CRF={crf:number} BITRATE={bitrate:number}.',
 					]
 				},
 				{
 					title: 'How is it after one semester?', content: [
-						'After almost half one the year of Wojtek existence I can say: It works great. It was worth making for sure.',
+						'After almost half of the year with Wojtek existence I can say: It works great. It was worth making for sure.',
 						'Stats you asking for? More then 60 lectures recorded which is about 2GB in size. Wojtek is also the most attentive student when it comes to listening to lectures.',
 						'I find this project very interesting. I gained a lot while doing it, even though I was starting to lose patient a few times due to bugs. The most important thing however is that I could help others by allowing them to watch lectures later which was the primary goal.',
 					]

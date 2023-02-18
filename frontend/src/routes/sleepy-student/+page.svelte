@@ -40,8 +40,8 @@ const which = $LL.articles.wojtek
 	<title>{which.title()}</title>
 	<meta name="description" content="{which.description()}" />
 
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/pl/wojtek" hreflang="pl" />
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/sleepy-student" hreflang="en" />
+	<link rel="alternate" href="https://jakub.wegrzyn.dev/pl/wojtek/" hreflang="pl" />
+	<link rel="alternate" href="https://jakub.wegrzyn.dev/sleepy-student/" hreflang="en" />
 </svelte:head>
 
 <style>
