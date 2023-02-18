@@ -6,7 +6,7 @@
 		"dev": "npm-run-all --parallel images vite typesafe-i18n",
 		"vite": "vite",
 		"typesafe-i18n": "typesafe-i18n",
-		"build": "npm run images && npm run typesafe-i18n -- --no-watch && vite build && workbox generateSW workbox-config.json",
+		"build": "npm run images && npm run typesafe-i18n -- --no-watch && vite build && node minify-html.js && workbox generateSW workbox-config.json",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -22,6 +22,8 @@
 		"eslint": "latest",
 		"eslint-config-prettier": "latest",
 		"eslint-plugin-svelte3": "latest",
+		"html-minifier": "latest",
+		"npm-run-all": "latest",
 		"prettier": "latest",
 		"prettier-plugin-svelte": "latest",
 		"svelte": "latest",
@@ -30,8 +32,7 @@
 		"typesafe-i18n": "latest",
 		"typescript": "latest",
 		"vite": "latest",
-		"workbox-cli": "latest",
-		"npm-run-all": "latest"
+		"workbox-cli": "latest"
 	},
 	"type": "module"
 }

@@ -9,11 +9,6 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-		csp: {
-			directives: {
-				'script-src': ['self'],
-			},
-		},
 		inlineStyleThreshold: Infinity,
 		alias: {
 			'@LL': 'src/i18n/i18n-svelte',
