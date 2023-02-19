@@ -91,10 +91,10 @@ import upload1 from '$lib/g/upload.s.webp'
 		title="{$LL.mobishit.title()}"
 		date="{$LL.mobishit.date()}"
 		description="{$LL.mobishit.description()}"
-		type={$LL.androidApp()}
+		type="{$LL.androidApp()}"
 		imgSrc="{mobishit1}"
 		imgSrc2x="{mobishit2}"
-		techStack="{['kotlin', 'android', 'firebase']}"
+		techStack="{['kotlin', 'android', 'firebase', 'sql']}"
 	/>
 
 	<ProjectHighlight
@@ -105,7 +105,7 @@ import upload1 from '$lib/g/upload.s.webp'
 		type="{$LL.webGame()}"
 		imgSrc="{wonder1}"
 		imgSrc2x="{wonder2}"
-		techStack="{['ts', 'webgl']}"
+		techStack="{['ts', 'webgl', 'ws']}"
 	/>
 
 	<ProjectHighlight
