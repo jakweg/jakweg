@@ -15,9 +15,9 @@ const pl = {
 	nativeApp: 'Natywna aplikacja',
 	discordBot: 'Bot Discordowy',
 	pwa: 'Aplikacja internetowa',
-	readMore: 'Zobacz więcej…',
 	contents: 'Spis treści',
 	funFact: 'Ciekawostka',
+	androidApp: 'Androidowa aplikacja',
 
 
 	colorLines: {
@@ -33,7 +33,7 @@ const pl = {
 	mcwallpaper: {
 		title: 'Generator tapet',
 		date: 'Mar 2021',
-		description: "Kiedyś zastanawiałem się jakby wyglądał mój pulpit gdyby tak ułożyć całą tapetę z jednego bloku. <br/>Więc napisałem generator tapet i rezultat wygląda świetnie ❤️",
+		description: "Jakby wyglądał mój pulpit gdyby tak ułożyć całą tapetę z jednego bloku? Rezultat wygląda wspaniale ❤️",
 	},
 	planZsl: {
 		title: 'Plan lekcji ZSŁ',
@@ -44,17 +44,27 @@ const pl = {
 		title: 'Wojtek',
 		url: '/pl/wojtek/',
 		date: 'Paź 2022 - teraz',
-		description: "Wojtek to ten jeden pilny student, który jest punktualnie na każdym zdalnym wykładzie, nagra go a potem udostępni całemu kierunkowi za piwo.",
+		description: "Wojtek to ten jeden pilny student, który nagra każdy zdalny wykład i udostępni całemu kierunkowi za piwo.",
 	},
 	upload: {
 		title: 'Dysk FireFile',
 		date: 'Kwi 2021',
 		description: "Od zawsze potrzebowałem wygodnego sposobu udostępniania plików i skracania linków. To moje rozwiązanie tego problemu…",
 	},
+	wonder: {
+		title: 'Wonder RTS',
+		date: 'ciągle rozwijana',
+		description: "Otwartoźródłowa, wieloosobowa strategia czasu rzeczywistego. Cały czas tworzona, więc ciężko na razie coś o niej napisać.",
+	},
+	mobishit: {
+		title: 'Mobishit',
+		date: 'Od 2019',
+		description: "Napędzany społecznością, otwartoźródłowy alternatywny klient to dziennika elektronicznego Mobireg. Aplikacja używana przez setki uczniów w całej Polsce.",
+	},
 	articles: {
 		wojtek: {
 			title: "Wojtek · Discordowy Bot nagrywający wykłady",
-			description: 'Stworzyłem Discord bota, któremu można kazać nagrywać zdalny wykład w Webex lub Teams. Sam wejdzie, wyciszy się i po zakończeniu wyśle linka do nagrania.',
+			description: 'Stworzyłem bota na Discorda, któremu można kazać nagrywać zdalny wykład w Webex lub Teams. Sam wejdzie, wyciszy się i po zakończeniu wyśle linka do nagrania.',
 			heading: "Wojtek, czyli bot nagrywający wykłady",
 			quote: "Myślę, że każdej osobie zdarzyło się w życiu choć raz zaspać na lekcję.<br/>Po prostu czasami nie chce się wstać, może by tak wykorzystać technologię by żyło się łatwiej?",
 			sections: [

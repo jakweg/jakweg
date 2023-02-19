@@ -34,7 +34,7 @@ div::before {
 		circle at 50vw 50vh,
 		#00000000 0,
 		#00000000 20vmax,
-		#00000088 50vmax
+		#18181c99 50vmax
 	);
 	opacity: 1;
 }

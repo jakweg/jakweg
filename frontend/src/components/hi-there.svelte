@@ -24,7 +24,7 @@ import Bullet from './bullet.svelte'
 header {
 	display: grid;
 	place-items: center;
-	min-height: 70vh;
+	min-height: 70svh;
 }
 header > * {
 	gap: 2ch;

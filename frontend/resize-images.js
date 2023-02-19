@@ -1,10 +1,12 @@
 import { spawn } from 'child_process'
 import * as fs from 'fs/promises'
 
+const isImageFileName = name => name.endsWith('.avif') || name.endsWith('.webp')
+
 const convertAsPromise = (...args) => {
 	return new Promise((resolve, reject) => {
 		try {
-			const process = spawn('convert', args)
+			const process = spawn('convert', args, { stdio: 'inherit' })
 			process.addListener('exit', exitCode => {
 				if (exitCode === 0) resolve()
 				else reject('convert exit code was ' + exitCode)
@@ -21,20 +23,22 @@ const handleProjectHighlights = async () => {
 	const files = await fs.readdir(sourceRoot)
 	await fs.mkdir(destinationRoot, { recursive: true })
 	await Promise.all(
-		files.flatMap(name => [
-			convertAsPromise(
-				`${sourceRoot}/${name}`,
-				'-resize',
-				'33.3333%',
-				`${destinationRoot}/${name.replace('.webp', '.s.webp')}`,
-			),
-			convertAsPromise(
-				`${sourceRoot}/${name}`,
-				'-resize',
-				'50%',
-				`${destinationRoot}/${name.replace('.webp', '.m.webp')}`,
-			),
-		]),
+		files
+			.filter(isImageFileName)
+			.flatMap(name => [
+				convertAsPromise(
+					`${sourceRoot}/${name}`,
+					'-resize',
+					'33.3333%',
+					`${destinationRoot}/${name.replace('.webp', '.s.webp')}`,
+				),
+				convertAsPromise(
+					`${sourceRoot}/${name}`,
+					'-resize',
+					'50%',
+					`${destinationRoot}/${name.replace('.webp', '.m.webp')}`,
+				),
+			]),
 	)
 }
 
@@ -55,16 +59,18 @@ const handleAuto = async () => {
 				throw new Error(`Too many resizes inside ${sourceRoot}/${entry.name}`)
 
 			const files = await fs.readdir(`${sourceRoot}/${entry.name}`)
-			return files.flatMap(name =>
-				values.map((value, index) =>
-					convertAsPromise(
-						`${sourceRoot}/${entry.name}/${name}`,
-						'-resize',
-						`${value * 100}%`,
-						`${destinationRoot}/${name.replace('.', `.${letters[index]}.`)}`,
+			return files
+				.filter(isImageFileName)
+				.flatMap(name =>
+					values.map((value, index) =>
+						convertAsPromise(
+							`${sourceRoot}/${entry.name}/${name}`,
+							'-resize',
+							`${value * 100}%`,
+							`${destinationRoot}/${name.replace('.', `.${letters[index]}.`)}`,
+						),
 					),
-				),
-			)
+				)
 		}),
 	)
 }

@@ -15,7 +15,7 @@ const en = {
 	nativeApp: 'Native app',
 	discordBot: 'Discord Bot',
 	pwa: 'PWA',
-	readMore: 'Read More…',
+	androidApp: 'Android app',
 	contents: 'Contents',
 	funFact: 'Fun fact',
 
@@ -33,7 +33,7 @@ const en = {
 	mcwallpaper: {
 		title: 'Wallpaper generator',
 		date: 'Mar 2021',
-		description: "I thought how would my desktop look all if I would cover it with just a single <em>Minecraft</em> block. It looks gorgeous ❤️",
+		description: "How does a desktop look all covered with just a single <em>Minecraft</em> block. It looks gorgeous ❤️",
 	},
 	planZsl: {
 		title: 'ZSŁ Timetable',
@@ -50,6 +50,16 @@ const en = {
 		title: 'FireFile upload',
 		date: 'Apr 2021',
 		description: "I've always wanted to have fast and simple way to store and share files online. That's my answer to the problem…",
+	},
+	wonder: {
+		title: 'My dream RTS',
+		date: 'in progress',
+		description: "Open source multiplayer Real time strategy game. Still in progress, can't tell much about it yet.",
+	},
+	mobishit: {
+		title: 'Mobishit',
+		date: 'Started 2019',
+		description: "Community driven, open source, alternative client app for electronic grade book. Used by hundreds of students.",
 	},
 
 	articles: {
