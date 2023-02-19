@@ -10,14 +10,10 @@ export let type: string
 export let date: string
 export let description: string
 export let imgSrc2x: string
-export let color: string
 export let techStack: TechnologyType[] = []
-
-const hoverOpacity = '18'
-const borderOpacity = '99'
 </script>
 
-<article style:--hc="{color + hoverOpacity}" style:--bc="{color + borderOpacity}">
+<article>
 	<a
 		href="{href}"
 		target="{href.startsWith('/') ? undefined : '_blank'}"
@@ -69,8 +65,7 @@ article {
 	border: 1px solid transparent;
 }
 article:hover {
-	background-color: var(--hc);
-	border-color: var(--bc);
+	background-color: #eeeeee11;
 }
 img {
 	border-radius: 1ch;
@@ -126,7 +121,7 @@ h2 {
 	font-size: 2em;
 	font-weight: lighter;
 	letter-spacing: 1px;
-	margin: 0;
+	margin: 2px 0;
 	color: #fff;
 }
 aside {

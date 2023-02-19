@@ -10,9 +10,12 @@ const types = {
     angular: ['Angular', '#bc032e', '#eee'],
     node: ['node.js', 'blue', '#eee'],
     vue: ['vue.js', '#32465b', '#5dc697'],
-    firebase: ['firebase', '#ffcb35', '#474747'],
+    firebase: ['Firebase', '#ffcb35', '#474747'],
     pwa: ['Progressive Web App', '#550ec0', '#ddd'],
     sfml: ['SFML', '#6ba426', '#222'],
+    webgl: ['Raw WebGL', '#000', '#bbb'],
+    android: ['Android', '#2edf85', '#222'],
+    kotlin: ['Kotlin', '#7a66d8', '#eee']
 } satisfies { [key: string]: [string, string, string] }
 
 export type TechnologyType = keyof typeof types

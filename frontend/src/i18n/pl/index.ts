@@ -17,6 +17,7 @@ const pl = {
 	pwa: 'Aplikacja internetowa',
 	contents: 'Spis treści',
 	funFact: 'Ciekawostka',
+	androidApp: 'Androidowa aplikacja',
 
 
 	colorLines: {
@@ -49,6 +50,16 @@ const pl = {
 		title: 'Dysk FireFile',
 		date: 'Kwi 2021',
 		description: "Od zawsze potrzebowałem wygodnego sposobu udostępniania plików i skracania linków. To moje rozwiązanie tego problemu…",
+	},
+	wonder: {
+		title: 'Wonder RTS',
+		date: 'ciągle rozwijana',
+		description: "Otwartoźródłowa, wieloosobowa strategia czasu rzeczywistego. Cały czas tworzona, więc ciężko na razie coś o niej napisać.",
+	},
+	mobishit: {
+		title: 'Mobishit',
+		date: 'Od 2019',
+		description: "Napędzany społecznością, otwartoźródłowy alternatywny klient to dziennika elektronicznego Mobireg. Aplikacja używana przez setki uczniów w całej Polsce.",
 	},
 	articles: {
 		wojtek: {

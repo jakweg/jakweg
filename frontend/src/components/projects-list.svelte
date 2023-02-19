@@ -14,6 +14,12 @@ import wallpaperGenerator1 from '$lib/g/wallpaperGenerator.s.webp'
 import zslPlan2 from '$lib/g/zslPlan.m.webp'
 import zslPlan1 from '$lib/g/zslPlan.s.webp'
 
+import wonder2 from '$lib/g/wonder.m.webp'
+import wonder1 from '$lib/g/wonder.s.webp'
+
+import mobishit2 from '$lib/g/mobishit.m.webp'
+import mobishit1 from '$lib/g/mobishit.s.webp'
+
 import wojtekEn2 from '$lib/g/wojtek.en.m.webp'
 import wojtekEn1 from '$lib/g/wojtek.en.s.webp'
 
@@ -33,7 +39,6 @@ import upload1 from '$lib/g/upload.s.webp'
 		type="{$LL.webGame()}"
 		imgSrc="{kulki1}"
 		imgSrc2x="{kulki2}"
-		color="#ffa501"
 		techStack="{['ts', 'pwa']}"
 	/>
 
@@ -45,7 +50,6 @@ import upload1 from '$lib/g/upload.s.webp'
 		type="{$LL.discordBot()}"
 		imgSrc="{$locale === 'pl' ? wojtekPl1 : wojtekEn1}"
 		imgSrc2x="{$locale === 'pl' ? wojtekPl2 : wojtekEn2}"
-		color="#28713e"
 		techStack="{['ts', 'puppeteer', 'node', 'docker', 'discord']}"
 	/>
 
@@ -57,8 +61,18 @@ import upload1 from '$lib/g/upload.s.webp'
 		type="{$LL.nativeApp()}"
 		imgSrc="{wallpaperGenerator1}"
 		imgSrc2x="{wallpaperGenerator2}"
-		color="#2389c7"
 		techStack="{['rust', 'linux', 'sfml']}"
+	/>
+
+	<ProjectHighlight
+		href="https://github.com/jakweg/plan-zsl"
+		title="{$LL.planZsl.title()}"
+		date="{$LL.planZsl.date()}"
+		description="{$LL.planZsl.description()}"
+		type="{$LL.pwa()}"
+		imgSrc="{zslPlan1}"
+		imgSrc2x="{zslPlan2}"
+		techStack="{['ts', 'angular', 'node', 'pwa']}"
 	/>
 
 	<ProjectHighlight
@@ -69,20 +83,31 @@ import upload1 from '$lib/g/upload.s.webp'
 		type="{$LL.webGame()}"
 		imgSrc="{warcaby1}"
 		imgSrc2x="{warcaby2}"
-		color="#492f18"
 		techStack="{['ts', '3d', 'node']}"
 	/>
+
 	<ProjectHighlight
-		href="https://github.com/jakweg/plan-zsl"
-		title="{$LL.planZsl.title()}"
-		date="{$LL.planZsl.date()}"
-		description="{$LL.planZsl.description()}"
-		type="{$LL.pwa()}"
-		imgSrc="{zslPlan1}"
-		imgSrc2x="{zslPlan2}"
-		color="#ebebeb"
-		techStack="{['ts', 'angular', 'node', 'pwa']}"
+		href="https://github.com/jakweg/mobishit"
+		title="{$LL.mobishit.title()}"
+		date="{$LL.mobishit.date()}"
+		description="{$LL.mobishit.description()}"
+		type={$LL.androidApp()}
+		imgSrc="{mobishit1}"
+		imgSrc2x="{mobishit2}"
+		techStack="{['kotlin', 'android', 'firebase']}"
 	/>
+
+	<ProjectHighlight
+		href="https://wonder.wegrzyn.dev/"
+		title="{$LL.wonder.title()}"
+		date="{$LL.wonder.date()}"
+		description="{$LL.wonder.description()}"
+		type="{$LL.webGame()}"
+		imgSrc="{wonder1}"
+		imgSrc2x="{wonder2}"
+		techStack="{['ts', 'webgl']}"
+	/>
+
 	<ProjectHighlight
 		href="https://github.com/jakweg/file-upload"
 		title="{$LL.upload.title()}"
@@ -91,7 +116,6 @@ import upload1 from '$lib/g/upload.s.webp'
 		type="{$LL.pwa()}"
 		imgSrc="{upload1}"
 		imgSrc2x="{upload2}"
-		color="#389a70"
 		techStack="{['vue', 'firebase', 'pwa']}"
 	/>
 </div>
