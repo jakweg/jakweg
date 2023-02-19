@@ -181,10 +181,10 @@ svg {
 		transform: rotate(0);
 	}
 	33% {
-		transform: rotate(1.5deg);
+		transform: rotate(2.4deg);
 	}
 	66% {
-		transform: rotate(-2deg);
+		transform: rotate(-2.3deg);
 	}
 }
 

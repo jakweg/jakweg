@@ -84,7 +84,8 @@ p {
 	margin: 8px 0;
 	display: flex;
 	flex-flow: row wrap;
-	gap: 0.5ch;
+	gap: 0.7ch;
+	font-size: 0.9em;
 }
 main {
 	line-height: 150%;
