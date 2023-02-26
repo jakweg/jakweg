@@ -2,13 +2,13 @@
 export let year: string
 </script>
 
-<p>{year}</p>
+<h2>{year}</h2>
 
 <style>
-p {
-	margin-top: 2em;
+h2 {
 	text-align: center;
 	font-weight: bolder;
 	font-variant-numeric: tabular-nums;
+	margin: 0.7em 0;
 }
 </style>

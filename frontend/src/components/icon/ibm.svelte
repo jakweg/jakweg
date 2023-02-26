@@ -59,7 +59,7 @@
 
 <style>
 svg {
-	padding: 1.2ch;
+	padding: 1ch;
 	fill: #ddd;
 }
 </style>

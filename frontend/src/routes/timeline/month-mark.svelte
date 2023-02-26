@@ -9,17 +9,15 @@ export let date: string = ''
 <style>
 span {
 	position: absolute;
-	top: var(--top-margin);
-	left: calc(-1 * var(--left-margin) - var(--line-width) * 0.5);
-	display: flex;
-	justify-content: center;
+	left: -2ch;
+	float: left;
 }
 small {
-	font-size: 0.65em;
+	font-size: 0.75em;
 	display: inline-block;
-	position: absolute;
 	background-color: rgb(41, 122, 80);
-	padding: 2px 4px;
+	padding: 1px 4px;
+	margin-right: 8px;
 	border-radius: 6px;
 }
 </style>

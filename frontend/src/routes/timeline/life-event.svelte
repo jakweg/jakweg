@@ -7,7 +7,7 @@ export let content: string = ''
 export let major: boolean = false //
 </script>
 
-<article class:major="{major}">
+<article class:date="{date}">
 	<MonthMark date="{date}" />
 	{#if title}
 		{#if major}
@@ -17,25 +17,27 @@ export let major: boolean = false //
 		{/if}
 	{/if}
 	{#if content}
-		<p>{content}</p>
+		<p>{@html content}</p>
 	{/if}
 </article>
 
 <style>
 article {
-	--top-margin: 0.2em;
 	position: relative;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
-.major {
-	--top-margin: 0.3em;
+article.date::before {
+	content: 'aa';
+	float: left;
+	visibility: hidden;
 }
 h4 {
 	font-size: 1.1em;
 	letter-spacing: 1px;
 	font-weight: normal;
 	margin: 0.2em 0;
+	padding-top: 2px;
 	color: #eee;
 }
 h5 {
@@ -43,6 +45,7 @@ h5 {
 	letter-spacing: 1px;
 	font-weight: normal;
 	margin: 0.2em 0;
+	padding-top: 2px;
 	color: #eee;
 }
 p {
