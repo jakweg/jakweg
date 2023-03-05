@@ -1,4 +1,5 @@
 <script lang="ts">
+import Line from './line.svelte'
 import MonthMark from './month-mark.svelte'
 
 export let title: string = ''
@@ -7,27 +8,42 @@ export let content: string = ''
 export let major: boolean = false //
 </script>
 
-<article class:date="{date}">
-	<MonthMark date="{date}" />
-	{#if title}
-		{#if major}
-			<h4>{title}</h4>
-		{:else}
-			<h5>{title}</h5>
+<article>
+	<div class="year">
+		<slot name="year" />
+	</div>
+	<Line />
+	<div class="content" class:date="{date}">
+		<MonthMark date="{date}" />
+		{#if title}
+			{#if major}
+				<h4>{title}</h4>
+			{:else}
+				<h5>{title}</h5>
+			{/if}
 		{/if}
-	{/if}
-	{#if content}
-		<p>{@html content}</p>
-	{/if}
+		{#if content}
+			<p>{@html content}</p>
+		{/if}
+	</div>
 </article>
 
 <style>
 article {
-	position: relative;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	display: grid;
+	grid-template-columns: var(--left-width) var(--line-width) 1fr;
+	align-items: center;
+	height: 100%;
 }
-article.date::before {
+.year {
+	padding-left: 2px;
+	padding-right: 4px;
+}
+.content {
+	position: relative;
+	margin: 0.5em 0.5ch 0.5em 1ch;
+}
+.content.date::before {
 	content: 'aa';
 	float: left;
 	visibility: hidden;
@@ -52,5 +68,17 @@ p {
 	font-size: 0.8em;
 	margin: 0;
 	color: #bbb;
+}
+@media (min-width: 600px) {
+	.content {
+		margin: 1em 2ch 1em 1ch;
+	}
+	.content.date::before {
+		display: none;
+	}
+	h4 {
+		font-weight: bold;
+		color: #ddd;
+	}
 }
 </style>

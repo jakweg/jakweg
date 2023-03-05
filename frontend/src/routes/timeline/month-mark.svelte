@@ -10,6 +10,7 @@ export let date: string = ''
 span {
 	position: absolute;
 	left: -2ch;
+	margin-top: 0.15em;
 	float: left;
 }
 small {
@@ -19,5 +20,10 @@ small {
 	padding: 1px 4px;
 	margin-right: 8px;
 	border-radius: 6px;
+}
+@media (min-width: 600px) {
+	span {
+		position: static;
+	}
 }
 </style>
