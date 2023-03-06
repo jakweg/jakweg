@@ -36,6 +36,8 @@ article {
 	height: 100%;
 }
 .year {
+	display: flex;
+	justify-content: end;
 	padding-left: 2px;
 	padding-right: 4px;
 }

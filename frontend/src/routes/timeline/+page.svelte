@@ -1,9 +1,23 @@
 <script lang="ts">
 import Born from '@components/icon/born.svelte'
+import EsSystemLogo from '@components/icon/es-system.svelte'
 import IbmLogo from '@components/icon/ibm.svelte'
+import PascalLogo from '@components/icon/pascal.svelte'
 import SabreLogo from '@components/icon/sabre.svelte'
 import LifeEvent from './life-event.svelte'
 import YearContainer from './year-container.svelte'
+
+import cement2 from '$lib/g/cement.m.avif'
+import cement1 from '$lib/g/cement.s.avif'
+
+import zsl2 from '$lib/g/zsl.m.avif'
+import zsl1 from '$lib/g/zsl.s.avif'
+
+import kulki1 from '$lib/g/kulki.es.webp'
+import kulki2 from '$lib/g/kulki.s.webp'
+
+import vanced2 from '$lib/g/vanced.m.avif'
+import vanced1 from '$lib/g/vanced.s.avif'
 </script>
 
 <main>
@@ -51,13 +65,31 @@ import YearContainer from './year-container.svelte'
 			title="Color lines created"
 			content="I did like a ten versions of them. My is out there for you to play."
 			date="Dec"
-		/>
+		>
+			<svelte:fragment slot="year">
+				<img
+					style="border-radius: 8px"
+					sizes="(min-width:900px)150px,(min-width:600px)100px,75px"
+					srcset="{kulki1} 100w,{kulki2} 200w"
+					alt="Preview of the project"
+				/>
+			</svelte:fragment>
+		</LifeEvent>
 
 		<LifeEvent
 			title="Contributed to Vanced+SponsorBlock Open Source project"
 			content="{'I was a first one who did "too hard to implement" in just three days!'}"
 			date="May"
-		/>
+		>
+			<svelte:fragment slot="year">
+				<img
+					style="border-radius: 8px"
+					sizes="(min-width:900px)150px,(min-width:600px)100px,75px"
+					srcset="{vanced1} 150w,{vanced2} 300w"
+					alt="Preview of the project"
+				/>
+			</svelte:fragment>
+		</LifeEvent>
 	</YearContainer>
 
 	<YearContainer year="2019">
@@ -77,7 +109,11 @@ import YearContainer from './year-container.svelte'
 			title="First IT job: Software Engineer Intern"
 			content="I've become Intern at ES-System in Cracow"
 			date="Apr"
-		/>
+		>
+			<svelte:fragment slot="year">
+				<EsSystemLogo />
+			</svelte:fragment>
+		</LifeEvent>
 	</YearContainer>
 
 	<YearContainer year="2017">
@@ -86,7 +122,16 @@ import YearContainer from './year-container.svelte'
 			title="Started technical school"
 			content="ZSŁ Cracow as profile IT specialist"
 			date="Sep"
-		/>
+		>
+			<svelte:fragment slot="year">
+				<img
+					style="border-radius: 8px"
+					srcset="{zsl1} 150w, {zsl2} 300w"
+					sizes="(min-width:900px)150px,(min-width:600px)100px,75px"
+					alt="Logo of ZSŁ Kraków"
+				/>
+			</svelte:fragment>
+		</LifeEvent>
 		<LifeEvent
 			major
 			title="Released app in Google Play"
@@ -124,14 +169,27 @@ import YearContainer from './year-container.svelte'
 			title="Two friends told me they started learning programming"
 			content="I knew I couldn't be left behind, it was a healthy competition. So I started watching C++ tutorials by Mirosław Cement on YouTube too."
 			date="Dec"
-		/>
+		>
+			<svelte:fragment slot="year">
+				<img
+					width="75"
+					height="75"
+					srcset="{cement1} 1x, {cement2} 2x"
+					alt="Face of Mirosław Zelent"
+				/>
+			</svelte:fragment>
+		</LifeEvent>
 	</YearContainer>
 
 	<YearContainer year="2013">
 		<LifeEvent
 			title="First contact with programming"
 			content="Dad showed me how to write simple console programs in Pascal. However, it didn't spur me into anything more."
-		/>
+		>
+			<svelte:fragment slot="year">
+				<PascalLogo />
+			</svelte:fragment>
+		</LifeEvent>
 	</YearContainer>
 
 	<YearContainer year="2009">
@@ -158,12 +216,17 @@ import YearContainer from './year-container.svelte'
 <style>
 main {
 	--line-width: 0.4ch;
-	--left-width: 10ch;
+	--left-width: 88px;
 	margin: 32px 0;
 	border-top: 16px solid white;
 	border-bottom: 16px solid white;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
+}
+@media (min-width: 600px) {
+	main {
+		--left-width: 160px;
+	}
 }
 </style>
