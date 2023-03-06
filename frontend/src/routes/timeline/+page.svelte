@@ -4,6 +4,7 @@ import EsSystemLogo from '@components/icon/es-system.svelte'
 import IbmLogo from '@components/icon/ibm.svelte'
 import PascalLogo from '@components/icon/pascal.svelte'
 import SabreLogo from '@components/icon/sabre.svelte'
+import EventImage from './event-image.svelte'
 import LifeEvent from './life-event.svelte'
 import YearContainer from './year-container.svelte'
 
@@ -13,11 +14,26 @@ import cement1 from '$lib/g/cement.s.avif'
 import zsl2 from '$lib/g/zsl.m.avif'
 import zsl1 from '$lib/g/zsl.s.avif'
 
+import zslPlan1 from '$lib/g/zslPlan.es.webp'
+import zslPlan2 from '$lib/g/zslPlan.m.webp'
+
 import kulki1 from '$lib/g/kulki.es.webp'
-import kulki2 from '$lib/g/kulki.s.webp'
+import kulki2 from '$lib/g/kulki.m.webp'
 
 import vanced2 from '$lib/g/vanced.m.avif'
 import vanced1 from '$lib/g/vanced.s.avif'
+
+import labirynt2 from '$lib/g/labirynt.m.avif'
+import labirynt1 from '$lib/g/labirynt.s.avif'
+
+import sp2dobczyce2 from '$lib/g/sp2dobczyce.m.avif'
+import sp2dobczyce1 from '$lib/g/sp2dobczyce.s.avif'
+
+import androidStudio2 from '$lib/g/android-studio.m.avif'
+import androidStudio1 from '$lib/g/android-studio.s.avif'
+
+import wojtek2 from '$lib/g/wojtek-profile.m.avif'
+import wojtek1 from '$lib/g/wojtek-profile.s.avif'
 </script>
 
 <main>
@@ -29,7 +45,11 @@ import vanced1 from '$lib/g/vanced.s.avif'
 			title="Wojtek created"
 			content="Created Discord bot for recording lectures "
 			date="Oct"
-		/>
+		>
+			<svelte:fragment slot="year">
+				<EventImage small="{wojtek1}" large="{wojtek2}" alt="Sleeping student stock photo" />
+			</svelte:fragment>
+		</LifeEvent>
 
 		<LifeEvent
 			major
@@ -67,12 +87,7 @@ import vanced1 from '$lib/g/vanced.s.avif'
 			date="Dec"
 		>
 			<svelte:fragment slot="year">
-				<img
-					style="border-radius: 8px"
-					sizes="(min-width:900px)150px,(min-width:600px)100px,75px"
-					srcset="{kulki1} 100w,{kulki2} 200w"
-					alt="Preview of the project"
-				/>
+				<EventImage small="{kulki1}" large="{kulki2}" alt="Preview of the project" />
 			</svelte:fragment>
 		</LifeEvent>
 
@@ -82,12 +97,7 @@ import vanced1 from '$lib/g/vanced.s.avif'
 			date="May"
 		>
 			<svelte:fragment slot="year">
-				<img
-					style="border-radius: 8px"
-					sizes="(min-width:900px)150px,(min-width:600px)100px,75px"
-					srcset="{vanced1} 150w,{vanced2} 300w"
-					alt="Preview of the project"
-				/>
+				<EventImage small="{vanced1}" large="{vanced2}" alt="Preview of the project" />
 			</svelte:fragment>
 		</LifeEvent>
 	</YearContainer>
@@ -98,7 +108,11 @@ import vanced1 from '$lib/g/vanced.s.avif'
 			title="ZSŁ Plan got released"
 			content="I released a new timetable progressive web app for my school."
 			date="Nov"
-		/>
+		>
+			<svelte:fragment slot="year">
+				<EventImage small="{zslPlan1}" large="{zslPlan2}" alt="Preview of the project" />
+			</svelte:fragment>
+		</LifeEvent>
 		<LifeEvent
 			title="Got into web development"
 			content="Started with Angular and Typescript during the internship"
@@ -124,20 +138,23 @@ import vanced1 from '$lib/g/vanced.s.avif'
 			date="Sep"
 		>
 			<svelte:fragment slot="year">
-				<img
-					style="border-radius: 8px"
-					srcset="{zsl1} 150w, {zsl2} 300w"
-					sizes="(min-width:900px)150px,(min-width:600px)100px,75px"
-					alt="Logo of ZSŁ Kraków"
-				/>
+				<EventImage small="{zsl1}" large="{zsl2}" alt="Logo of ZSŁ Kraków" />
 			</svelte:fragment>
 		</LifeEvent>
 		<LifeEvent
 			major
 			title="Released app in Google Play"
-			content="It gathered over two hundreds downloads, was a garbage from development perspective, but it worked. "
+			content="It gathered over two hundreds downloads in first month, was a garbage from development perspective, but it worked. "
 			date="Mar"
-		/>
+		>
+			<svelte:fragment slot="year">
+				<EventImage
+					small="{sp2dobczyce1}"
+					large="{sp2dobczyce2}"
+					alt="Icon of My first Google Play App"
+				/>
+			</svelte:fragment>
+		</LifeEvent>
 	</YearContainer>
 
 	<YearContainer year="2016">
@@ -145,7 +162,15 @@ import vanced1 from '$lib/g/vanced.s.avif'
 			title="Started Java with Android"
 			content="Failed attempt doesn't mean I should stop. I migrated project to Java and started working in Android Studio"
 			date="Nov"
-		/>
+		>
+			<svelte:fragment slot="year">
+				<EventImage
+					small="{androidStudio1}"
+					large="{androidStudio2}"
+					alt="Icon of Android Studio"
+				/>
+			</svelte:fragment>
+		</LifeEvent>
 		<LifeEvent
 			content="Tried porting C# to Android using Xamarin, but failed to make it any good."
 			date="Oct"
@@ -160,7 +185,11 @@ import vanced1 from '$lib/g/vanced.s.avif'
 			title="Released a game"
 			content="It was called labyrinth, written in C++ in SFML. It had level editor made in Borland C++ Builder and graphics drawn by my friend David."
 			date="May"
-		/>
+		>
+			<svelte:fragment slot="year">
+				<EventImage small="{labirynt1}" large="{labirynt2}" alt="Preview of the project" />
+			</svelte:fragment>
+		</LifeEvent>
 	</YearContainer>
 
 	<YearContainer year="2015">

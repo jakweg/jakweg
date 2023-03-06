@@ -1,6 +1,8 @@
 import { spawn } from 'child_process'
 import * as fs from 'fs/promises'
 
+const usedDestinationPaths = new Set()
+
 const isImageFileName = name => name.endsWith('.avif') || name.endsWith('.webp')
 
 const convertAsPromise = (...args) => {
@@ -36,20 +38,31 @@ const handleAuto = async () => {
 				throw new Error(`Invalid entry values inside ${sourceRoot}/${entry.name}`)
 
 			const files = await fs.readdir(`${sourceRoot}/${entry.name}`)
-			return files
-				.filter(isImageFileName)
-				.flatMap(name =>
-					values.map(([value, letter]) =>
-						convertAsPromise(
-							`${sourceRoot}/${entry.name}/${name}`,
-							'-resize',
-							`${value * 100}%`,
-							`${destinationRoot}/${name.replace(/\.([a-z]+)$/, `.${letter}.$1`)}`,
-						),
-					),
-				)
+			return files.filter(isImageFileName).flatMap(name =>
+				values.map(([value, letter]) => {
+					const newName = name.replace(/\.([a-z]+)$/, `.${letter}.$1`)
+					const destinationPath = `${destinationRoot}/${newName}`
+
+					if (usedDestinationPaths.has(destinationPath))
+						throw new Error(`Name conflict detected, file with name "${newName}" already exists`)
+
+					usedDestinationPaths.add(destinationPath)
+
+					return convertAsPromise(
+						`${sourceRoot}/${entry.name}/${name}`,
+						'-resize',
+						`${value * 100}%`,
+						destinationPath,
+					)
+				}),
+			)
 		}),
 	)
 }
 
-await Promise.all([handleAuto()])
+try {
+	await Promise.all([handleAuto()])
+} catch (e) {
+	console.error('ERROR', e.message)
+	process.exit(1)
+}
