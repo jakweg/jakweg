@@ -4,7 +4,7 @@ import { onMount } from 'svelte'
 
 onMount(() => {
 	if (location.port === '') {
-		navigator.serviceWorker?.register?.('/sw.js').catch(() => void 0)
+		navigator.serviceWorker?.register('/sw.js').catch(() => void 0)
 	}
 })
 </script>

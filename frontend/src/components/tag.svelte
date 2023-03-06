@@ -12,6 +12,7 @@ span {
 	font-family: monospace;
 	display: inline-block;
 	padding: 4px 6px;
+	font-size: 0.9em;
 	border-radius: 8px;
 	background: var(--b);
 	color: var(--c);

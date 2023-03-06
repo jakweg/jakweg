@@ -64,7 +64,7 @@ const pl = {
 	articles: {
 		wojtek: {
 			title: "Wojtek · Discordowy Bot nagrywający wykłady",
-			description: 'Stworzyłem Discord bota, któremu można kazać nagrywać zdalny wykład w Webex lub Teams. Sam wejdzie, wyciszy się i po zakończeniu wyśle linka do nagrania.',
+			description: 'Stworzyłem bota na Discorda, któremu można kazać nagrywać zdalny wykład w Webex lub Teams. Sam wejdzie, wyciszy się i po zakończeniu wyśle linka do nagrania.',
 			heading: "Wojtek, czyli bot nagrywający wykłady",
 			quote: "Myślę, że każdej osobie zdarzyło się w życiu choć raz zaspać na lekcję.<br/>Po prostu czasami nie chce się wstać, może by tak wykorzystać technologię by żyło się łatwiej?",
 			sections: [
