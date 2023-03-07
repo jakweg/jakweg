@@ -83,4 +83,9 @@ p {
 		color: #ddd;
 	}
 }
+@media (min-width: 1200px) {
+	.year {
+		padding: 1ch;
+	}
+}
 </style>

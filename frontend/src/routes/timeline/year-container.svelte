@@ -50,6 +50,7 @@ section {
 	h2 {
 		font-size: 2.5em;
 		opacity: 0.4;
+		transform: scaleY(1.2);
 	}
 	div {
 		font-size: 1.1em;
@@ -58,9 +59,19 @@ section {
 @media screen and (min-width: 1200px) {
 	h2 {
 		font-size: 4em;
+		transform: scaleY(1.3);
 	}
 	div {
 		font-size: 1.15em;
+	}
+}
+@media screen and (min-width: 1500px) {
+	h2 {
+		font-size: 4.7em;
+		transform: scaleY(1.5);
+	}
+	div {
+		font-size: 1.2em;
 	}
 }
 /* div {

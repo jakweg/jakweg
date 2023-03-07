@@ -1,10 +1,10 @@
 <script lang="ts">
 import ArticleSection from '@components/article/section.svelte'
 
-import meme2en from '$lib/g/wojtek-meme.m.en.avif'
-import meme2pl from '$lib/g/wojtek-meme.m.pl.avif'
-import meme1en from '$lib/g/wojtek-meme.s.en.avif'
-import meme1pl from '$lib/g/wojtek-meme.s.pl.avif'
+import meme2en from '$lib/g/wojtek-meme.en.m.avif'
+import meme1en from '$lib/g/wojtek-meme.en.s.avif'
+import meme2pl from '$lib/g/wojtek-meme.pl.m.avif'
+import meme1pl from '$lib/g/wojtek-meme.pl.s.avif'
 import LL from '@LL'
 
 export let isPolish: boolean

@@ -4,10 +4,10 @@ import ArticleSection from '@components/article/section.svelte'
 import webex2 from '$lib/g/webex-captcha.m.avif'
 import webex1 from '$lib/g/webex-captcha.s.avif'
 
-import joining2en from '$lib/g/wojtek-joining.m.en.avif'
-import joining2pl from '$lib/g/wojtek-joining.m.pl.avif'
-import joining1en from '$lib/g/wojtek-joining.s.en.avif'
-import joining1pl from '$lib/g/wojtek-joining.s.pl.avif'
+import joining2en from '$lib/g/wojtek-joining.en.m.avif'
+import joining1en from '$lib/g/wojtek-joining.en.s.avif'
+import joining2pl from '$lib/g/wojtek-joining.pl.m.avif'
+import joining1pl from '$lib/g/wojtek-joining.pl.s.avif'
 import LL from '@LL'
 
 export let isPolish: boolean
