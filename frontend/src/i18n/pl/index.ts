@@ -18,6 +18,10 @@ const pl = {
 	contents: 'Spis treści',
 	funFact: 'Ciekawostka',
 	androidApp: 'Androidowa aplikacja',
+	404: {
+		title: "Ta strona nie istnieje",
+		link: 'Powrót na stronę główną',
+	},
 
 
 	colorLines: {
@@ -112,7 +116,7 @@ const pl = {
 					title: 'Trochę walki z błędami', content: [
 						'Oczywiście nigdy nie jest tak, że program działa bezbłędnie po napisaniu. Wojtek tak samo miał swoje problemy, nie raz potrafił się wywalić i potrzebował licznych poprawek.',
 						'Sama implementacja wchodzenia na spotkanie na Teamsach nie była problematyczna. Jednak pojawił się zupełnie niewyjaśniony błąd. Po około 5 sekundach nagrywania ekranu z Microsoft Teams ekran był kompletnie biały. Wiele nieudanych prób naprawy zmusiły mnie do porzucenia biblioteki nagrywającej na rzecz postawienia serwera X11. W tym celu wykorzystałem program <code>Xvfb</code>.',
-						'Wojtek na początku miał na imię Andrzej, ale ponieważ Webex sortuje alfabetycznie uczestników spotkania postanowiłem zmienić mu imię na Wojtek, żeby mnie rzucał się w oczy będąc na dole listy.',
+						'Wojtek na początku miał na imię Andrzej, ale ponieważ Webex sortuje alfabetycznie uczestników spotkania postanowiłem zmienić mu imię na Wojtek, żeby mniej rzucał się w oczy będąc na dole listy.',
 						'Tak więc obecnie Wojtek uruchamia Chrome w pełnoekranowym trybie w wirtualnym pulpicie z wirtualnym głośnikiem i nagrywa jak normalny ekran. Nie obyło się bez problemów podczas włączania PulseAudio i X11, dlatego profilaktycznie przed uruchomieniem muszę usuwać tymczasowe pliki jak <code>/run/pulse*</code> czy <code>/tmp/.X1-lock</code>, oraz killować procesy X11 i pulseaudio.',
 						'Jak już wszystko działało w miarę stabilnie, to Microsoft wypuścił aktualizację Teamsów znacznie zmieniającą interfejs co oczywiście wywróciło Wojtka 🙄',
 						'Jednym razem spadło z rowerka nagrywanie dźwięku, jednak obraz się nagrał, co zwróciło moją uwagę to bardzo mały rozmiar finalnego pliku. Okazało się, że niepoprawnie kompresuję audio i niepotrzebnie są w nim dwa kanały (stereo). Dzięki jednemu bugowi znalazłem kolejny🤗',

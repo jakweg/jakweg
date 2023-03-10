@@ -18,6 +18,10 @@ const en = {
 	androidApp: 'Android app',
 	contents: 'Contents',
 	funFact: 'Fun fact',
+	404: {
+		title: "This page doesn't exist",
+		link: 'Back to home page',
+	},
 
 	colorLines: {
 		title: 'Color lines',
