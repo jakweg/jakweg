@@ -16,12 +16,12 @@ p {
 	margin: 4px;
 }
 :nth-child(1) {
-	color: green;
+	color: #00cf00;
 }
 :nth-child(2) {
 	color: orange;
 }
 :nth-child(3) {
-	color: red;
+	color: #ff4242;
 }
 </style>

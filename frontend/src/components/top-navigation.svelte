@@ -1,12 +1,18 @@
 <script>
+import { page } from '$app/stores'
 import LL from '../i18n/i18n-svelte'
 import GithubIcon from './icon/github.svelte'
 import HomeIcon from './icon/home.svelte'
 import TelegramIcon from './icon/telegram.svelte'
+
+const { id } = $page.route
+const isHomePage = id === '/' || id === '/pl/'
 </script>
 
 <nav>
-	<a class="start" href="{$LL.rootUrl()}" aria-label="{$LL.mainPage()}"><HomeIcon /></a>
+	{#if !isHomePage}
+		<a class="start" href="{$LL.rootUrl()}" aria-label="{$LL.mainPage()}"><HomeIcon /></a>
+	{/if}
 
 	<!-- <a href="/portfolio">Portfolio</a> -->
 	<!-- <a href="/about">About</a> -->

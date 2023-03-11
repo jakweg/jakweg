@@ -26,7 +26,7 @@ h2 {
 	place-items: center;
 }
 section {
-	min-height: 8em;
+	min-height: 7em;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;

@@ -23,24 +23,60 @@ import kulki2 from '$lib/g/kulki.m.webp'
 import vanced2 from '$lib/g/vanced.m.avif'
 import vanced1 from '$lib/g/vanced.s.avif'
 
+import mobishit2 from '$lib/g/mobishit.m.avif'
+import mobishit1 from '$lib/g/mobishit.s.avif'
+
 import labirynt2 from '$lib/g/labirynt.m.avif'
 import labirynt1 from '$lib/g/labirynt.s.avif'
 
 import sp2dobczyce2 from '$lib/g/sp2dobczyce.m.avif'
 import sp2dobczyce1 from '$lib/g/sp2dobczyce.s.avif'
 
+import mfi2 from '$lib/g/mfi.m.avif'
+import mfi1 from '$lib/g/mfi.s.avif'
+
 import androidStudio2 from '$lib/g/android-studio.m.avif'
 import androidStudio1 from '$lib/g/android-studio.s.avif'
 
 import wojtek2 from '$lib/g/wojtek-profile.m.avif'
 import wojtek1 from '$lib/g/wojtek-profile.s.avif'
+
+import endomondo2 from '$lib/g/endomondo.m.avif'
+import endomondo1 from '$lib/g/endomondo.s.avif'
+
+import halfmarathon2 from '$lib/g/halfmarathon.m.avif'
+import halfmarathon1 from '$lib/g/halfmarathon.s.avif'
 </script>
 
+<svelte:head>
+	<title>Timeline of my advancements</title>
+	<meta
+		name="description"
+		content="Here is the timeline of my major life advancements. Theses include my career choices, developed projects and running achievements."
+	/>
+</svelte:head>
+<header>
+	<h1>My advancements</h1>
+</header>
 <main>
 	<YearContainer year="2023">
 		<LifeEvent title="Life still continues" />
 	</YearContainer>
 	<YearContainer year="2022">
+		<LifeEvent
+			title="My first official half marathon"
+			content="Took part in 9th Cracovia Royal Half Marathon, did it in 01:43:51"
+			date="Apr"
+		>
+			<svelte:fragment slot="year">
+				<EventImage
+					small="{halfmarathon1}"
+					large="{halfmarathon2}"
+					alt="Sleeping student stock photo"
+				/>
+			</svelte:fragment>
+		</LifeEvent>
+
 		<LifeEvent
 			title="Wojtek created"
 			content="Created Discord bot for recording lectures "
@@ -100,6 +136,16 @@ import wojtek1 from '$lib/g/wojtek-profile.s.avif'
 				<EventImage small="{vanced1}" large="{vanced2}" alt="Preview of the project" />
 			</svelte:fragment>
 		</LifeEvent>
+
+		<LifeEvent
+			title="My first 10km run"
+			content="I run 10km for the first time in 55 minutes, pretty good I guess"
+			date="Apr"
+		>
+			<svelte:fragment slot="year">
+				<EventImage small="{endomondo1}" large="{endomondo2}" alt="Screenshot of my stats" />
+			</svelte:fragment>
+		</LifeEvent>
 	</YearContainer>
 
 	<YearContainer year="2019">
@@ -126,6 +172,28 @@ import wojtek1 from '$lib/g/wojtek-profile.s.avif'
 		>
 			<svelte:fragment slot="year">
 				<EsSystemLogo />
+			</svelte:fragment>
+		</LifeEvent>
+		<LifeEvent
+			title="3rd place at MFI competition"
+			content="I scored the third place on the Małopolski Festiwal Informatyczny - lokal competition for doing project. I did a system for real time vehicle tracking. Designed to track buses and providing real time information to travelers."
+			date="Apr"
+		>
+			<svelte:fragment slot="year">
+				<EventImage large="{mfi2}" small="{mfi1}" alt="Me presenting my project" />
+			</svelte:fragment>
+		</LifeEvent>
+	</YearContainer>
+
+	<YearContainer year="2018">
+		<LifeEvent
+			major
+			title="Mobishit project released"
+			content="Alternative Android app to access electronic grade book created by me was released to the public getting few hundreds downloads. "
+			date="Oct"
+		>
+			<svelte:fragment slot="year">
+				<EventImage small="{mobishit1}" large="{mobishit2}" alt="Preview of the project" />
 			</svelte:fragment>
 		</LifeEvent>
 	</YearContainer>
@@ -247,15 +315,13 @@ main {
 	--line-width: 0.4ch;
 	--left-width: 88px;
 	margin: 32px 0;
-	border-top: 16px solid white;
-	border-bottom: 16px solid white;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
 }
 @media (min-width: 600px) {
 	main {
-		--left-width: 160px;
+		--left-width: 140px;
 	}
 }
 </style>

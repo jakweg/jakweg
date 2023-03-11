@@ -5,13 +5,27 @@ export let alt: string //
 </script>
 
 <img
+	width="75"
+	height="75"
+	sizes="(min-width:900px)120px,(min-width:600px)100px,75px"
 	srcset="{small} 150w,{large} 300w"
-	sizes="(min-width:900px)150px,(min-width:600px)100px,75px"
 	alt="{alt}"
 />
 
 <style>
 img {
 	border-radius: 8px;
+	width: 75px;
+	height: auto;
+}
+@media (min-width: 600px) {
+	img {
+		width: 100px;
+	}
+}
+@media (min-width: 900px) {
+	img {
+		width: 120px;
+	}
 }
 </style>
