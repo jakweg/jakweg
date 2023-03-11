@@ -66,14 +66,10 @@ import halfmarathon1 from '$lib/g/halfmarathon.s.avif'
 		<LifeEvent
 			title="My first official half marathon"
 			content="Took part in 9th Cracovia Royal Half Marathon, did it in 01:43:51"
-			date="Apr"
+			date="Oct"
 		>
 			<svelte:fragment slot="year">
-				<EventImage
-					small="{halfmarathon1}"
-					large="{halfmarathon2}"
-					alt="Sleeping student stock photo"
-				/>
+				<EventImage small="{halfmarathon1}" large="{halfmarathon2}" alt="Photo of my medal" />
 			</svelte:fragment>
 		</LifeEvent>
 
@@ -268,12 +264,7 @@ import halfmarathon1 from '$lib/g/halfmarathon.s.avif'
 			date="Dec"
 		>
 			<svelte:fragment slot="year">
-				<img
-					width="75"
-					height="75"
-					srcset="{cement1} 1x, {cement2} 2x"
-					alt="Face of Mirosław Zelent"
-				/>
+				<EventImage small="{cement1}" large="{cement2}" alt="Face of Mirosław Zelent" />
 			</svelte:fragment>
 		</LifeEvent>
 	</YearContainer>

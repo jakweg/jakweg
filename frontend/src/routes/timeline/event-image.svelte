@@ -17,6 +17,7 @@ img {
 	border-radius: 8px;
 	width: 75px;
 	height: auto;
+	margin: 1ch 0 1ch 0;
 }
 @media (min-width: 600px) {
 	img {
