@@ -1,10 +1,30 @@
 <script lang="ts">
+import { beforeNavigate } from '$app/navigation'
 import DottedBackground from '@components/dotted-background.svelte'
+import { setLocale } from '@LL'
 import { onMount } from 'svelte'
+import type { LayoutData } from './$types'
 
+export let data: LayoutData
+let currentLocale: string = ''
 onMount(() => {
 	if (location.port === '') {
 		navigator.serviceWorker?.register('/sw.js').catch(() => void 0)
+	}
+})
+
+$: {
+	setLocale(data.locale)
+	currentLocale = data.locale
+}
+beforeNavigate(nav => {
+	const id = nav.to?.route.id
+	if (!id) return
+	const newLocale = id?.startsWith('/pl/') ? 'pl' : 'en'
+
+	if (newLocale !== currentLocale) {
+		setLocale(newLocale)
+		currentLocale = newLocale
 	}
 })
 </script>

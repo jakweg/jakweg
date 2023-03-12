@@ -7,7 +7,7 @@ import LL from '@LL'
 </script>
 
 <div class="content">
-	<TopNavigation />
+	<TopNavigation alternativeUrl="{$LL.altRootUrl()}" />
 
 	<HiThere />
 

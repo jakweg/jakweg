@@ -17,7 +17,7 @@ const isPolish = $locale === 'pl'
 const which = $LL.articles.wojtek
 </script>
 
-<TopNavigation />
+<TopNavigation alternativeUrl="{which.altUrl()}" />
 
 <div class="content">
 	<ArticleTitle title="{which.heading()}" />

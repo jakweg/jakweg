@@ -18,10 +18,10 @@ const section = $LL.articles.wojtek.sections[0]
 	<p>{@html section.content[3]()}</p>
 	<p>{@html section.content[4]()}</p>
 	<img
-		srcset="{isPolish ? meme1pl : meme1en} 1x,{isPolish ? meme2pl : meme2en} 2x"
 		width="290"
 		height="240"
 		alt="{section.content[6]()}"
+		srcset="{isPolish ? meme1pl : meme1en} 1x,{isPolish ? meme2pl : meme2en} 2x"
 	/>
 	<p>{@html section.content[5]()}</p>
 </ArticleSection>

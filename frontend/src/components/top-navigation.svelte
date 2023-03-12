@@ -1,12 +1,15 @@
-<script>
+<script lang="ts">
 import { page } from '$app/stores'
 import LL from '../i18n/i18n-svelte'
 import GithubIcon from './icon/github.svelte'
 import HomeIcon from './icon/home.svelte'
 import TelegramIcon from './icon/telegram.svelte'
 
-const { id } = $page.route
-const isHomePage = id === '/' || id === '/pl/'
+export let alternativeUrl: string = ''
+
+const id = $page.route.id + '/'
+const isHomePage = id === '//' || id === '/pl/'
+const isPortfolio = id === $LL.timeline.url()
 </script>
 
 <nav>
@@ -14,18 +17,24 @@ const isHomePage = id === '/' || id === '/pl/'
 		<a class="start" href="{$LL.rootUrl()}" aria-label="{$LL.mainPage()}"><HomeIcon /></a>
 	{/if}
 
-	<!-- <a href="/portfolio">Portfolio</a> -->
-	<!-- <a href="/about">About</a> -->
+	{#if !isPortfolio}
+		<a href="{$LL.timeline.url()}">Portfolio</a>
+	{/if}
+	{#if alternativeUrl}
+		<a href="{alternativeUrl}">{$LL.alternativeLang()}</a>
+	{/if}
 	<a
 		href="https://github.com/jakweg"
 		target="_blank"
 		rel="noreferrer"
+		title="{$LL.checkoutGithub()}"
 		aria-label="{$LL.checkoutGithub()}"><GithubIcon /></a
 	>
 	<a
 		href="https://t.me/jakweg"
 		target="_blank"
 		rel="noreferrer"
+		title="{$LL.messageTelegram()}"
 		aria-label="{$LL.messageTelegram()}"><TelegramIcon /></a
 	>
 </nav>

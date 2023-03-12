@@ -27,7 +27,7 @@ const steps: any = section.content[2] //
 	<p>{@html section.content[4]()}</p>
 
 	<figure>
-		<img srcset="{webex1} 1x,{webex2} 2x" width="400" height="400" alt="{section.content[6]()}" />
+		<img width="400" height="400" alt="{section.content[6]()}" srcset="{webex1} 1x,{webex2} 2x" />
 		<figcaption>{section.content[6]()}</figcaption>
 	</figure>
 
@@ -35,10 +35,10 @@ const steps: any = section.content[2] //
 
 	<figure>
 		<img
-			srcset="{isPolish ? joining1pl : joining1en} 1x,{isPolish ? joining2pl : joining2en} 2x"
 			width="400"
 			height="350"
 			alt="{section.content[7]()}"
+			srcset="{isPolish ? joining1pl : joining1en} 1x,{isPolish ? joining2pl : joining2en} 2x"
 		/>
 		<figcaption>{section.content[7]()}</figcaption>
 	</figure>

@@ -20,9 +20,9 @@ export let techStack: TechnologyType[] = []
 		rel="{href.startsWith('/') ? undefined : 'noreferrer'}"
 	>
 		<img
-			srcset="{imgSrc} 200w, {imgSrc2x} 300w"
-			sizes="(max-width: 900px) 150px,200px"
 			alt="{title}"
+			sizes="(max-width: 900px) 150px,200px"
+			srcset="{imgSrc} 200w, {imgSrc2x} 300w"
 		/>
 		<div class="title">
 			<h2>{title}</h2>

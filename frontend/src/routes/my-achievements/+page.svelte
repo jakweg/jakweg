@@ -18,7 +18,7 @@ import Year2022 from './years/Year2022.svelte'
 import Year2023 from './years/Year2023.svelte'
 </script>
 
-<TopNavigation />
+<TopNavigation alternativeUrl="{$LL.timeline.altUrl()}" />
 <Title />
 <main>
 	<Year2023 />

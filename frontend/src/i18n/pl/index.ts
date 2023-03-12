@@ -2,6 +2,8 @@ import type { Translation } from '../i18n-types'
 
 const pl = {
 	rootUrl: '/pl/',
+	altRootUrl: '/',
+	alternativeLang: 'EN',
 	mainPage: 'Strona główna',
 	hiThere: 'Witaj!',
 	iam: 'Jestem',
@@ -75,6 +77,7 @@ const pl = {
 	},
 	articles: {
 		wojtek: {
+			altUrl: '/sleepy-student/',
 			title: 'Wojtek · Discordowy Bot nagrywający wykłady',
 			description:
 				'Stworzyłem bota na Discorda, któremu można kazać nagrywać zdalny wykład w Webex lub Teams. Sam wejdzie, wyciszy się i po zakończeniu wyśle linka do nagrania.',
@@ -162,6 +165,8 @@ const pl = {
 		},
 	},
 	timeline: {
+		url: '/pl/moje-dokonania/',
+		altUrl: '/my-achievements/',
 		months: [
 			'',
 			'Sty',

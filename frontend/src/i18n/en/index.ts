@@ -2,6 +2,8 @@ import type { BaseTranslation } from '../i18n-types'
 
 const en = {
 	rootUrl: '/',
+	altRootUrl: '/pl/',
+	alternativeLang: 'PL',
 	mainPage: 'Main page',
 	hiThere: 'Hi There!',
 	iam: "I'm",
@@ -77,6 +79,7 @@ const en = {
 
 	articles: {
 		wojtek: {
+			altUrl: '/pl/wojtek/',
 			title: 'Wojtek · Discord bot for recording lectures',
 			description:
 				"I've created Discord bot for recording a remote meeting on Webex or Teams. He joins, mutes self and sends a link to recording after the meeting is done.",
@@ -165,6 +168,8 @@ const en = {
 	},
 
 	timeline: {
+		url: '/my-achievements/',
+		altUrl: '/pl/moje-dokonania/',
 		months: [
 			'',
 			'Jan',
