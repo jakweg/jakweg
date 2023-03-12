@@ -21,7 +21,11 @@ const isPortfolio = id === $LL.timeline.url()
 		<a href="{$LL.timeline.url()}">Portfolio</a>
 	{/if}
 	{#if alternativeUrl}
-		<a href="{alternativeUrl}">{$LL.alternativeLang()}</a>
+		<a
+			href="{alternativeUrl}"
+			rel="alternate"
+			hreflang="{$LL.alternativeLang().toLocaleLowerCase()}">{$LL.alternativeLang()}</a
+		>
 	{/if}
 	<a
 		href="https://github.com/jakweg"
