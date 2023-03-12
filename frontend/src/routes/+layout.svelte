@@ -24,6 +24,7 @@ beforeNavigate(nav => {
 
 	if (newLocale !== currentLocale) {
 		setLocale(newLocale)
+		document?.querySelector('html')?.setAttribute('lang', newLocale)
 		currentLocale = newLocale
 	}
 })
