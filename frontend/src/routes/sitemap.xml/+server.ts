@@ -1,16 +1,22 @@
+const endLinkWithSlash = (str: string) =>
+	'https://jakub.wegrzyn.dev/' + (str.endsWith('/') || !str ? str : str + '/')
+
 const url = (path: string, polishPath: string | undefined = undefined): string => {
-    return `
+	return `
 <url>
-    <loc>https://jakub.wegrzyn.dev/${path}</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jakub.wegrzyn.dev/${path}"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://jakub.wegrzyn.dev/pl/${polishPath || path}"/>
+    <loc>${endLinkWithSlash(path)}</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="${endLinkWithSlash(path)}"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="${endLinkWithSlash(
+			'pl/' + (polishPath || path),
+		)}"/>
 </url>
 `
 }
 export const prerender = true
 
 export async function GET() {
-    return new Response(`
+	return new Response(
+		`
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -19,12 +25,13 @@ export async function GET() {
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
     http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
       ${url('')}
-      ${url('sleepy-student/', 'wojtek/')}
+      ${url('sleepy-student', 'wojtek')}
+      ${url('my-achievements', 'moje-dokonania')}
 </urlset>`.trim(),
-        {
-            headers: {
-                'Content-Type': 'application/xml'
-            }
-        }
-    );
+		{
+			headers: {
+				'Content-Type': 'application/xml',
+			},
+		},
+	)
 }

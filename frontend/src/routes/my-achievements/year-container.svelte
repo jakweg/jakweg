@@ -43,7 +43,7 @@ section {
 		padding: 0.6ch;
 	}
 	div {
-		font-size: 1.05em;
+		font-size: 1.07em;
 	}
 }
 @media screen and (min-width: 900px) {
@@ -53,7 +53,7 @@ section {
 		transform: scaleY(1.2);
 	}
 	div {
-		font-size: 1.1em;
+		font-size: 1.11em;
 	}
 }
 @media screen and (min-width: 1200px) {
@@ -62,7 +62,7 @@ section {
 		transform: scaleY(1.3);
 	}
 	div {
-		font-size: 1.15em;
+		font-size: 1.17em;
 	}
 }
 @media screen and (min-width: 1500px) {
@@ -71,7 +71,7 @@ section {
 		transform: scaleY(1.5);
 	}
 	div {
-		font-size: 1.2em;
+		font-size: 1.22em;
 	}
 }
 /* div {

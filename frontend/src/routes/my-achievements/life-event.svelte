@@ -1,11 +1,16 @@
 <script lang="ts">
+import LL from '@LL'
 import Line from './line.svelte'
 import MonthMark from './month-mark.svelte'
 
 export let title: string = ''
-export let date: string = ''
+export let month: number = 0
 export let content: string = ''
 export let major: boolean = false //
+
+const months = $LL.timeline.months
+
+const monthFormatted = (months as any)[month]()
 </script>
 
 <article>
@@ -13,8 +18,8 @@ export let major: boolean = false //
 		<slot name="year" />
 	</div>
 	<Line />
-	<div class="content" class:date="{date}">
-		<MonthMark date="{date}" />
+	<div class="content" class:date="{monthFormatted}">
+		<MonthMark date="{monthFormatted}" />
 		{#if title}
 			{#if major}
 				<h3>{title}</h3>

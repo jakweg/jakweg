@@ -1,9 +1,13 @@
+<script lang="ts">
+import LL from '@LL'
+</script>
+
 <header>
 	<span></span>
-	<h1>My personal <span>achievements</span></h1>
+	<h1>{$LL.timeline.title[0]()}<span>{$LL.timeline.title[1]()}</span></h1>
 	<h2>
-		I did quite a lot of interesting projects in my life. Here is a list of some of them. <br />
-		<small>I like to come back and remember some of them when I'm feeling down</small>
+		{$LL.timeline.title[2]()}<br />
+		<small>{$LL.timeline.title[3]()}</small>
 	</h2>
 </header>
 
