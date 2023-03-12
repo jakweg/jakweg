@@ -2,7 +2,7 @@
 
 <style>
 div {
-	background-color: red;
+	background-color: #df6363;
 	width: 100%;
 	height: 100%;
 }

@@ -17,9 +17,9 @@ export let major: boolean = false //
 		<MonthMark date="{date}" />
 		{#if title}
 			{#if major}
-				<h2>{title}</h2>
-			{:else}
 				<h3>{title}</h3>
+			{:else}
+				<h4>{title}</h4>
 			{/if}
 		{/if}
 		{#if content}
@@ -50,7 +50,7 @@ article {
 	float: left;
 	visibility: hidden;
 }
-h2 {
+h3 {
 	font-size: 1.1em;
 	letter-spacing: 1px;
 	font-weight: bold;
@@ -58,7 +58,7 @@ h2 {
 	padding-top: 2px;
 	color: #eee;
 }
-h3 {
+h4 {
 	font-size: 0.9em;
 	letter-spacing: 1px;
 	font-weight: normal;
@@ -78,7 +78,7 @@ p {
 	.content.date::before {
 		display: none;
 	}
-	h3 {
+	h4 {
 		font-weight: bold;
 		color: #ddd;
 	}

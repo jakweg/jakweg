@@ -46,6 +46,8 @@ import endomondo1 from '$lib/g/endomondo.s.avif'
 
 import halfmarathon2 from '$lib/g/halfmarathon.m.avif'
 import halfmarathon1 from '$lib/g/halfmarathon.s.avif'
+import TopNavigation from '@components/top-navigation.svelte'
+import Title from './title.svelte'
 </script>
 
 <svelte:head>
@@ -55,9 +57,8 @@ import halfmarathon1 from '$lib/g/halfmarathon.s.avif'
 		content="Here is the timeline of my major life advancements. Theses include my career choices, developed projects and running achievements."
 	/>
 </svelte:head>
-<header>
-	<h1>My advancements</h1>
-</header>
+<TopNavigation />
+<Title />
 <main>
 	<YearContainer year="2023">
 		<LifeEvent title="Life still continues" />
@@ -312,7 +313,13 @@ main {
 }
 @media (min-width: 600px) {
 	main {
+		--line-width: 0.5ch;
 		--left-width: 140px;
+	}
+}
+@media (min-width: 900px) {
+	main {
+		--line-width: 0.6ch;
 	}
 }
 </style>
