@@ -24,9 +24,16 @@ img {
 		width: 100px;
 	}
 }
+
 @media (min-width: 900px) {
 	img {
 		width: 120px;
+	}
+}
+
+@media (min-width: 1200px) {
+	img {
+		width: 130px;
 	}
 }
 </style>

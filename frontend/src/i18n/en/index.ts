@@ -21,6 +21,7 @@ const en = {
 	androidApp: 'Android app',
 	contents: 'Contents',
 	funFact: 'Fun fact',
+	showMore: 'Show more',
 	404: {
 		title: "This page doesn't exist",
 		link: 'Back to home page',
@@ -291,7 +292,7 @@ const en = {
 			],
 			[
 				'Wojtek created',
-				'Created Discord bot for recording lectures',
+				'Created Discord bot for recording lectures. He serves us very well to this day and has received many thanks from my colleagues.',
 				'Sleeping student stock photo',
 			],
 			[

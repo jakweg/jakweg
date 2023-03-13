@@ -6,8 +6,8 @@ import LL from '../i18n/i18n-svelte'
 	<small></small>
 	<span>{$LL.featuredProjects()}</span>
 	<small></small>
-	<!-- <a href="/portfolio">Show more</a>
-	<small /> -->
+	<a href="{$LL.timeline.url()}">{$LL.showMore()}</a>
+	<small></small>
 </div>
 
 <style>

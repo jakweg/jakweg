@@ -33,7 +33,7 @@ section {
 }
 @media screen and (min-width: 600px) {
 	div {
-		grid-template-columns: auto 1fr;
+		grid-template-columns: 12ch 1fr;
 	}
 	h2 {
 		opacity: 0.7;
@@ -47,6 +47,9 @@ section {
 	}
 }
 @media screen and (min-width: 900px) {
+	div {
+		grid-template-columns: 15ch 1fr;
+	}
 	h2 {
 		font-size: 2.5em;
 		opacity: 0.4;
@@ -57,6 +60,9 @@ section {
 	}
 }
 @media screen and (min-width: 1200px) {
+	div {
+		grid-template-columns: 22ch 1fr;
+	}
 	h2 {
 		font-size: 4em;
 		transform: scaleY(1.3);
@@ -66,6 +72,9 @@ section {
 	}
 }
 @media screen and (min-width: 1500px) {
+	div {
+		grid-template-columns: 26ch 1fr;
+	}
 	h2 {
 		font-size: 4.7em;
 		transform: scaleY(1.5);

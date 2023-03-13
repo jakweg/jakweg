@@ -9,7 +9,6 @@ export let alternativeUrl: string = ''
 
 const id = $page.route.id + '/'
 const isHomePage = id === '//' || id === '/pl/'
-const isPortfolio = id === $LL.timeline.url()
 </script>
 
 <nav>
@@ -17,7 +16,7 @@ const isPortfolio = id === $LL.timeline.url()
 		<a class="start" href="{$LL.rootUrl()}" aria-label="{$LL.mainPage()}"><HomeIcon /></a>
 	{/if}
 
-	{#if !isPortfolio}
+	{#if isHomePage}
 		<a href="{$LL.timeline.url()}">Portfolio</a>
 	{/if}
 	{#if alternativeUrl}

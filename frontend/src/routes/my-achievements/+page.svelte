@@ -63,4 +63,9 @@ main {
 		--line-width: 0.6ch;
 	}
 }
+@media (min-width: 1200px) {
+	main {
+		--left-width: 150px;
+	}
+}
 </style>

@@ -21,6 +21,7 @@ const pl = {
 	contents: 'Spis treści',
 	funFact: 'Ciekawostka',
 	androidApp: 'Androidowa aplikacja',
+	showMore: 'Pokaż więcej',
 	404: {
 		title: 'Ta strona nie istnieje',
 		link: 'Powrót na stronę główną',
@@ -268,7 +269,7 @@ const pl = {
 				'Zrzut z gry',
 			],
 			[
-				'Zaangażowałem się w otwarty projekt Youtube Vanced, wykorzystywany przez miliony, dodając SponsorBlocka',
+				'Zaangażowałem się w wykorzystywany przez miliony projekt Youtube Vanced: Dodałem SponsorBlocka',
 				'Byłem pierwszy który to uczynił. Mówili „to jest za trudne do zrobienia”, a ja przyszedłem z zewnątrz i zrobiłem to „za trudne” w 3 dni!',
 				'Ikona projektu Youtube Vanced',
 			],
@@ -291,7 +292,7 @@ const pl = {
 			],
 			[
 				'Powstał Wojtka',
-				'Stworzyłem bardzo użytecznego Discordowego bota do nagrywania zdalnych wykładów',
+				'Stworzyłem bardzo użytecznego Discordowego bota do nagrywania zdalnych wykładów. Od tego czasu stale służy całemu kierunkowi.',
 				'Stokowe zdjęcie zaspanej osoby',
 			],
 			[

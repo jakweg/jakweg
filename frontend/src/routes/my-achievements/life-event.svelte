@@ -84,8 +84,12 @@ p {
 		display: none;
 	}
 	h4 {
+		font-size: 1.1em;
 		font-weight: bold;
 		color: #ddd;
+	}
+	h3 {
+		font-size: 1.2em;
 	}
 }
 @media (min-width: 1200px) {
