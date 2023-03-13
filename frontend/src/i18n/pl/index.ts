@@ -291,7 +291,7 @@ const pl = {
 				'Zdjęcie medalu',
 			],
 			[
-				'Powstał Wojtka',
+				'Powstał Wojtek',
 				'Stworzyłem bardzo użytecznego Discordowego bota do nagrywania zdalnych wykładów. Od tego czasu stale służy całemu kierunkowi.',
 				'Stokowe zdjęcie zaspanej osoby',
 			],

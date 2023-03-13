@@ -6,7 +6,6 @@ import kulki1 from '$lib/g/kulki.es.webp'
 import kulki2 from '$lib/g/kulki.m.webp'
 
 import vanced2 from '$lib/g/vanced.m.avif'
-import vanced1 from '$lib/g/vanced.s.avif'
 
 import endomondo2 from '$lib/g/endomondo.m.avif'
 import endomondo1 from '$lib/g/endomondo.s.avif'
@@ -25,7 +24,7 @@ const str = $LL.timeline[2020]
 
 	<LifeEvent title="{str[1][0]()}" content="{str[1][1]()}" month="{5}">
 		<svelte:fragment slot="year">
-			<EventImage small="{vanced1}" large="{vanced2}" alt="{str[1][2]()}" />
+			<EventImage large="{vanced2}" alt="{str[1][2]()}" />
 		</svelte:fragment>
 	</LifeEvent>
 

@@ -9,7 +9,6 @@ import zslPlan1 from '$lib/g/zslPlan.es.webp'
 import zslPlan2 from '$lib/g/zslPlan.m.webp'
 
 import mfi2 from '$lib/g/mfi.m.avif'
-import mfi1 from '$lib/g/mfi.s.avif'
 
 import LL from '@LL'
 const str = $LL.timeline[2019]
@@ -29,7 +28,7 @@ const str = $LL.timeline[2019]
 	</LifeEvent>
 	<LifeEvent title="{str[3][0]()}" content="{str[3][1]()}" month="{4}">
 		<svelte:fragment slot="year">
-			<EventImage large="{mfi2}" small="{mfi1}" alt="{str[3][2]()}" />
+			<EventImage large="{mfi2}" alt="{str[3][2]()}" />
 		</svelte:fragment>
 	</LifeEvent>
 </YearContainer>

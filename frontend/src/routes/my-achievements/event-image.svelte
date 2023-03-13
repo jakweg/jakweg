@@ -1,6 +1,6 @@
 <script lang="ts">
-export let small: string
 export let large: string
+export let small: string | null = null
 export let alt: string //
 </script>
 
@@ -8,7 +8,7 @@ export let alt: string //
 	width="75"
 	height="75"
 	sizes="(min-width:900px)120px,(min-width:600px)100px,75px"
-	srcset="{small} 150w,{large} 300w"
+	srcset="{small ? `${small} 150w,${large} 300w` : `${large} 300w`}"
 	alt="{alt}"
 />
 

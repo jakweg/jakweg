@@ -84,8 +84,7 @@ p {
 		display: none;
 	}
 	h4 {
-		font-size: 1.1em;
-		font-weight: bold;
+		font-size: 0.95em;
 		color: #ddd;
 	}
 	h3 {
