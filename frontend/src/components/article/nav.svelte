@@ -33,6 +33,7 @@ aside {
 @media (min-width: 800px) {
 	aside {
 		display: block;
+		justify-self: end;
 	}
 }
 ul {

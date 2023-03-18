@@ -27,6 +27,7 @@ export async function GET() {
       ${url('')}
       ${url('sleepy-student', 'wojtek')}
       ${url('my-achievements', 'moje-dokonania')}
+      ${url('mobireg-app', 'mobishit')}
 </urlset>`.trim(),
 		{
 			headers: {

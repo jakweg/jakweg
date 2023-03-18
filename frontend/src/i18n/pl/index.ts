@@ -72,6 +72,7 @@ const pl = {
 	},
 	mobishit: {
 		title: 'Mobishit',
+		url: '/pl/mobishit/',
 		date: 'Od 2019',
 		description:
 			'Napędzany społecznością, otwartoźródłowy alternatywny klient to dziennika elektronicznego Mobireg. Aplikacja używana przez setki uczniów w całej Polsce.',
@@ -163,6 +164,10 @@ const pl = {
 					],
 				},
 			],
+		},
+		mobishit: {
+			altUrl: '/mobireg-app/',
+			title: 'Mobishit · Aplikacja do dziennika elektronicznego',
 		},
 	},
 	timeline: {

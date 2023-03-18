@@ -72,7 +72,8 @@ const en = {
 			"Open source multiplayer Real time strategy game. Still in progress, can't tell much about it yet.",
 	},
 	mobishit: {
-		title: 'Mobishit',
+		title: 'Mobireg client',
+		url: '/mobireg-app/',
 		date: 'Started 2019',
 		description:
 			'Community driven, open source, alternative client app for electronic grade book. Used by hundreds of students.',
@@ -163,6 +164,52 @@ const en = {
 						'Stats you asking for? More then 60 lectures recorded which is about 2GB in size. Wojtek is also the most attentive student when it comes to listening to lectures.',
 						'I find this project very interesting. I gained a lot while doing it, even though I was starting to lose patient a few times due to bugs. The most important thing however is that I could help others by allowing them to watch lectures later which was the primary goal.',
 					],
+				},
+			],
+		},
+		mobishit: {
+			altUrl: '/pl/mobishit/',
+			title: 'Mobireg App · Android client for students and parents',
+			description:
+				'Stworzyłem aplikację na Androida dla uczniów i rodziców do obsługi dziennika elektronicznego Mobireg, która była lepsza niż oficjalna, bo miała wszystkie funkcje których użytkownicy pragnęli.',
+			heading: 'Mobireg App, Android client for students and parents',
+			quote:
+				'Na tym projekcie nauczyłem się chyba najwięcej konceptów i zwyczajów związanych z rozwojem oprogramowania. Od fajnych funkcji gita, języka Kotlin i SQL, konieczności testowania oprogramowania, stawiania swojego API, aż po kontakt z użytkownikami.',
+			sections: [
+				{
+					title: 'Trochę tła, czyli czemu?',
+					content: [
+						'W 2017 roku zacząłem uczęszczać do Technikum łączności w Krakowie. Szkoła ta korzystała z dziennika elektronicznego Mobireg. Pomimo że jest to dużo wygodniejsze rozwiązanie niż klasyczny dziennik papierowy to akurat Mobireg to bardzo staro wyglądający system informatyczny.',
+						'Zrzut ekranu strony głównej, nie wygląda źle, choć trochę przestarzale',
+						'Strona internetowa może i była nowoczesna we wczesnych latach 2000, ale czasy się zmieniły. Większość osób korzysta z urządzeń mobilnych, a mobilnej wersji ta witryna nie ma.',
+						'No to może jest aplikacja mobilna? No niby jest, to trzeba przyznać, ale to jedyna dobra cecha o niej.',
+						'Na pierwszy rzut oka nie wygląda jakoś bardzo źle',
+						'Korzystając szybko natrafimy na brak wielu funkcji, których moglibyśmy się spodziewać po takowej aplikacji. Takich funkcji jak:',
+						[
+							'Powiadomienia',
+							'Pokazywanie średnich z ocen',
+							'Wysyłanie wiadomości do nauczycieli',
+							'Widżet planu lekcji',
+							'Podgląd sprawdzianów',
+						],
+						'Mając trochę doświadczenia w rozwijaniu Androidowych aplikacji postanowiłem spróbować swoich sił w stworzeniu takiej, która byłaby super przydatna i miała wszystko co użytkownicy mogliby zapragnąć.',
+					],
+				},
+				{
+					title: 'Otrzymanie dostępu do danych',
+					content: [
+						'Najwygodniej byłoby mieć dostęp do danych poprzez oficjalne API z dokumentacją. Niestety o takich rzeczach możemy zapomnieć przy obecnej sytuacji rynkowej. Firmy oferujące usługi dzienników elektronicznych prześcigają się w tym która będzie najbardziej zamkniętą i najmniej wygodną platformą dla programistów z zewnątrz.',
+						'Pozostają dwie opcje: scraping oraz inżynieria wsteczna istniejącej już aplikacji.',
+						'Na początku próbowałem tej pierwszej - utworzyłem Androidowe WebView, symulowałem kliknięcia w poszczególne elementy i odczytywałem HTMLa po zmianie. Dobrze że poznałem regexy, bo byłoby bardzo ciężko bez nich. Generalnie udało mi się odczytać oceny oraz ich pewny opis, ale działało to bardzo wolno, niepewnie i miało sporo limitacji - nie wszystkie informacje o ocenie były w HTML domyślnie, po niektóre trzeba było wysyłać dodatkowe zapytania a wysyłanie zapytania dla każdej oceny było jeszcze wolniejsze. Potrzebowałem lepszego rozwiązania...',
+						'Lepszym rozwiązaniem będzie poznanie jak oficjalna aplikacja bierze te dane. W tym celu użyłem aplikacji <a href="https://play.google.com/store/apps/details?id=app.greyshirts.sslcapture">Packet Capture</a> i bardzo szybko byłem w stanie określić endpoint API oraz jak się z nim komunikować.',
+						'Zrzut ekranu aplikacji Packet Capture pokazujący, że oficjalna aplikacja zbiera niepotrzebnie do działania dane o urządzeniu bez zgody użytkownika',
+						'Wygląda na to, że jest tylko jeden endpoint zwracający plik JSON będący pewnym zrzutem bazy danych. Wysyła się do niego login oraz hasło zahaszowane MD5 oraz pewne dodatkowe parametry takie jak <em>lmt</em>, dzięki któremu możemy określić kiedy ostatni raz synchronizowaliśmy się a serwer poda nam różnice od tego czasu. Obiekty zwracane przez API są pogrupowane oraz mają pole "action", które może mieć wartość "D" jeżeli ten element został usunięty np. ocena została usunięta.',
+						'Muszę przyznać, że sposób w jaki zostało to zaprojektowane jest całkiem sprytny i wygodny do korzystania, gdyż umożliwia wysoką użyteczność aplikacji offline.',
+					],
+				},
+				{
+					title: 'Pierwsza publiczna wersja',
+					content: ['', '', '', '', '', ''],
 				},
 			],
 		},

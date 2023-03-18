@@ -87,7 +87,7 @@ import upload1 from '$lib/g/upload.s.webp'
 	/>
 
 	<ProjectHighlight
-		href="https://github.com/jakweg/mobishit"
+		href="{$LL.mobishit.url()}"
 		title="{$LL.mobishit.title()}"
 		date="{$LL.mobishit.date()}"
 		description="{$LL.mobishit.description()}"
