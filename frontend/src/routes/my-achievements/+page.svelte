@@ -39,8 +39,8 @@ import Year2023 from './years/Year2023.svelte'
 	<title>{$LL.timeline.meta[0]()}</title>
 	<meta name="description" content="{$LL.timeline.meta[1]()}" />
 
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/pl/moje-dokonania" hreflang="pl" />
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/my-achievements" hreflang="en" />
+	<link rel="alternate" href="https://jakub.wegrzyn.dev/pl/moje-dokonania/" hreflang="pl" />
+	<link rel="alternate" href="https://jakub.wegrzyn.dev/my-achievements/" hreflang="en" />
 </svelte:head>
 
 <style>
