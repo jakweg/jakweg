@@ -32,14 +32,14 @@ import upload1 from '$lib/g/upload.s.webp'
 
 <div>
 	<ProjectHighlight
-		href="https://kulki.wegrzyn.dev"
-		title="{$LL.colorLines.title()}"
-		date="{$LL.colorLines.date()}"
-		description="{$LL.colorLines.description()}"
-		type="{$LL.webGame()}"
-		imgSrc="{kulki1}"
-		imgSrc2x="{kulki2}"
-		techStack="{['ts', 'pwa']}"
+		href="{$LL.mobishit.url()}"
+		title="{$LL.mobishit.title()}"
+		date="{$LL.mobishit.date()}"
+		description="{$LL.mobishit.description()}"
+		type="{$LL.androidApp()}"
+		imgSrc="{mobishit1}"
+		imgSrc2x="{mobishit2}"
+		techStack="{['kotlin', 'android', 'firebase', 'sql']}"
 	/>
 
 	<ProjectHighlight
@@ -51,6 +51,17 @@ import upload1 from '$lib/g/upload.s.webp'
 		imgSrc="{$locale === 'pl' ? wojtekPl1 : wojtekEn1}"
 		imgSrc2x="{$locale === 'pl' ? wojtekPl2 : wojtekEn2}"
 		techStack="{['ts', 'puppeteer', 'node', 'docker', 'discord']}"
+	/>
+
+	<ProjectHighlight
+		href="https://kulki.wegrzyn.dev"
+		title="{$LL.colorLines.title()}"
+		date="{$LL.colorLines.date()}"
+		description="{$LL.colorLines.description()}"
+		type="{$LL.webGame()}"
+		imgSrc="{kulki1}"
+		imgSrc2x="{kulki2}"
+		techStack="{['ts', 'pwa']}"
 	/>
 
 	<ProjectHighlight
@@ -84,17 +95,6 @@ import upload1 from '$lib/g/upload.s.webp'
 		imgSrc="{warcaby1}"
 		imgSrc2x="{warcaby2}"
 		techStack="{['ts', '3d', 'node']}"
-	/>
-
-	<ProjectHighlight
-		href="{$LL.mobishit.url()}"
-		title="{$LL.mobishit.title()}"
-		date="{$LL.mobishit.date()}"
-		description="{$LL.mobishit.description()}"
-		type="{$LL.androidApp()}"
-		imgSrc="{mobishit1}"
-		imgSrc2x="{mobishit2}"
-		techStack="{['kotlin', 'android', 'firebase', 'sql']}"
 	/>
 
 	<ProjectHighlight

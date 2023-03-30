@@ -11,7 +11,7 @@ export let figcaption: string
 <!-- <a href="{href}"> -->
 <figure>
 	<img width="{width}" height="{height}" alt="{alt}" srcset="{srcset}" />
-	<figcaption>{figcaption}</figcaption>
+	<figcaption>{@html figcaption}</figcaption>
 </figure>
 
 <!-- </a> -->

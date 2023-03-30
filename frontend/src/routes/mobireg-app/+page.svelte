@@ -8,6 +8,9 @@ import LL from '@LL'
 import Section0 from './section0.svelte'
 import Section1 from './section1.svelte'
 import Section2 from './section2.svelte'
+import Section3 from './section3.svelte'
+import Section4 from './section4.svelte'
+import Section5 from './section5.svelte'
 
 const which = $LL.articles.mobishit
 </script>
@@ -21,6 +24,9 @@ const which = $LL.articles.mobishit
 		<Section0 />
 		<Section1 />
 		<Section2 />
+		<Section3 />
+		<Section4 />
+		<Section5 />
 	</ArticleContent>
 </div>
 <svelte:head>
