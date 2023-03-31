@@ -170,11 +170,9 @@ const en = {
 		mobishit: {
 			altUrl: '/pl/mobishit/',
 			title: 'Mobireg App · Android client for students and parents',
-			description:
-				'Stworzyłem aplikację na Androida dla uczniów i rodziców do obsługi dziennika elektronicznego Mobireg, która była lepsza niż oficjalna, bo miała wszystkie funkcje których użytkownicy pragnęli.',
+			description: `I created an Android app for students and parents to use electronic grade book Mobireg. It's better then the official one as it has all the features people want.`,
 			heading: 'Mobireg App, Android client for students and parents',
-			quote:
-				'Na tym projekcie nauczyłem się chyba najwięcej konceptów i zwyczajów związanych z rozwojem oprogramowania. Od fajnych funkcji gita, języka Kotlin i SQL, konieczności testowania oprogramowania, stawiania swojego API, aż po kontakt z użytkownikami.',
+			quote: 'Probably the project I learn the most in the shortest time span.',
 			sections: [
 				{
 					title: 'A little bit of background - why?',

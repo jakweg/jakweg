@@ -39,7 +39,7 @@ import upload1 from '$lib/g/upload.s.webp'
 		type="{$LL.androidApp()}"
 		imgSrc="{mobishit1}"
 		imgSrc2x="{mobishit2}"
-		techStack="{['kotlin', 'android', 'firebase', 'sql']}"
+		techStack="{['kotlin', 'android', 'firebase', 'sql', 'linux', 'py']}"
 	/>
 
 	<ProjectHighlight

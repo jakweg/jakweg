@@ -169,10 +169,9 @@ const pl = {
 			altUrl: '/mobireg-app/',
 			title: 'Mobishit · Aplikacja do edziennika Mobireg dla uczniów i rodziców',
 			description:
-				'Stworzyłem aplikację na Androida dla uczniów i rodziców do obsługi dziennika elektronicznego Mobireg, która była lepsza niż oficjalna, bo miała wszystkie funkcje których użytkownicy pragnęli.',
+				'Stworzyłem aplikację na Androida dla uczniów i rodziców do dziennika elektronicznego Mobireg a do tego jest dużo lepsza niż oficjalna.',
 			heading: 'Mobishit, klient do edziennika Mobireg',
-			quote:
-				'Na tym projekcie nauczyłem się chyba najwięcej konceptów i zwyczajów związanych z rozwojem oprogramowania. Od fajnych funkcji gita, języka Kotlin i SQL, konieczności testowania oprogramowania, stawiania swojego API, aż po kontakt z użytkownikami.',
+			quote: 'Prawdopodobnie mój najbardziej rozwijający projekt w życiu.',
 			sections: [
 				{
 					title: 'Trochę tła, czyli czemu?',
