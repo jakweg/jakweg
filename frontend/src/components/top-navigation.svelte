@@ -44,6 +44,12 @@ const isHomePage = id === '//' || id === '/pl/'
 
 <style>
 nav {
+	position: absolute;
+	margin-top: 4px;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1000;
 	--color: #aaa;
 	--color-hover: #d1e2f8;
 	display: flex;

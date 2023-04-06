@@ -30,7 +30,7 @@ aside {
 	align-self: flex-start;
 	top: 0;
 }
-@media (min-width: 800px) {
+@media (min-width: 750px) {
 	aside {
 		display: block;
 		justify-self: end;

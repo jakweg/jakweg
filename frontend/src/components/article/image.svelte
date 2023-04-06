@@ -5,22 +5,23 @@ export let alt: string
 export let srcset: string
 export let figcaption: string
 
-// const href = srcset?.match(/(([\/\w\.-]+)\.(avif|webp))/g)?.pop()
+const href = srcset?.match(/(([\/\w\.-]+)\.(avif|webp))/g)?.pop()
 </script>
 
-<!-- <a href="{href}"> -->
-<figure>
-	<img width="{width}" height="{height}" alt="{alt}" srcset="{srcset}" />
-	<figcaption>{@html figcaption}</figcaption>
-</figure>
+<a href="{href}">
+	<figure>
+		<img width="{width}" height="{height}" alt="{alt}" srcset="{srcset}" />
+		<figcaption>{@html figcaption}</figcaption>
+	</figure>
+</a>
 
-<!-- </a> -->
 <style>
-/* a {
+a {
 	display: contents;
-} */
+}
 figure {
-	margin: 1.4em 0;
+	margin: 0;
+	text-align: center;
 }
 figcaption {
 	color: #aaa;
@@ -29,15 +30,19 @@ figcaption {
 }
 img {
 	height: auto;
+	max-width: calc(100vw - 12ch);
 }
-
-@media (max-width: 800px) {
+@media (min-width: 750px) {
+	img {
+		max-width: min(calc(100vw - 6ch), 400px);
+	}
+}
+@media (min-width: 900px) {
 	figure {
-		margin: 0;
-		text-align: center;
+		margin: 1.4em 0;
 	}
 	img {
-		width: min(calc(100vw - 6ch), 400px);
+		max-width: min(calc(100vw - 6ch), 600px);
 	}
 }
 </style>

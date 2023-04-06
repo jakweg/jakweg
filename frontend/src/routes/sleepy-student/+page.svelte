@@ -1,9 +1,10 @@
 <script lang="ts">
+import LL, { locale } from '@LL'
+
 import ArticleContent from '@components/article/content.svelte'
 import ArticleNav from '@components/article/nav.svelte'
+import ArticleStructure from '@components/article/structure.svelte'
 import ArticleTitle from '@components/article/title.svelte'
-import TopNavigation from '@components/top-navigation.svelte'
-import LL, { locale } from '@LL'
 
 import Section0 from './section0.svelte'
 import Section1 from './section1.svelte'
@@ -17,9 +18,13 @@ const isPolish = $locale === 'pl'
 const which = $LL.articles.wojtek
 </script>
 
-<TopNavigation alternativeUrl="{which.altUrl()}" />
-
-<div class="content">
+<ArticleStructure
+	alternativeUrl="{which.altUrl()}"
+	title="{which.title()}"
+	description="{which.description()}"
+	enUrl="sleepy-student"
+	plUrl="pl/wojtek"
+>
 	<ArticleTitle title="{which.heading()}" />
 	<ArticleNav article="{which}" />
 	<ArticleContent article="{which}">
@@ -35,24 +40,4 @@ const which = $LL.articles.wojtek
 
 		<Section5 />
 	</ArticleContent>
-</div>
-<svelte:head>
-	<title>{which.title()}</title>
-	<meta name="description" content="{which.description()}" />
-
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/pl/wojtek/" hreflang="pl" />
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/sleepy-student/" hreflang="en" />
-</svelte:head>
-
-<style>
-.content {
-	display: grid;
-	grid-template-areas: 'header' 'blockquote' 'content' 'nav';
-}
-@media (min-width: 800px) {
-	.content {
-		grid-template-columns: 1fr auto;
-		grid-template-areas: 'header header' 'blockquote blockquote' 'content nav';
-	}
-}
-</style>
+</ArticleStructure>

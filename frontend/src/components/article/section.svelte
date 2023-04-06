@@ -13,11 +13,13 @@ const length = Array.from(content ?? []).length
 			<span>{title}</span>
 		</h3>
 	</HashAnchor>
-	<slot>
-		{#each Array(length) as _, i}
-			<p>{@html content[i]()}</p>
-		{/each}
-	</slot>
+	<main>
+		<slot>
+			{#each Array(length) as _, i}
+				<p>{@html content[i]()}</p>
+			{/each}
+		</slot>
+	</main>
 </section>
 
 <style>
@@ -42,8 +44,17 @@ h3::before {
 	margin-right: 1ch;
 	padding: 1.2em 0;
 	background-color: #669bbc;
+	border-radius: 0 8px 8px 0;
+}
+@media (min-width: 1000px) {
+	h3::before {
+		border-radius: unset;
+	}
 }
 p {
 	color: #ddd;
+}
+main {
+	padding: 0 2ch;
 }
 </style>
