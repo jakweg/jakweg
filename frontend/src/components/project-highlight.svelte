@@ -32,13 +32,13 @@ export let techStack: TechnologyType[] = []
 			<Bullet />
 			{date}
 		</aside>
-		<p class="tech">
+		<div class="tech">
 			<slot name="tech">
 				{#each techStack as tech (tech)}
 					<TechnologyTag type="{tech}" />
 				{/each}
 			</slot>
-		</p>
+		</div>
 		<main>
 			<p>{@html description} </p>
 		</main>
@@ -76,7 +76,8 @@ img {
 .title {
 	grid-area: title;
 }
-p {
+p,
+.tech {
 	margin: 0;
 }
 .tech {

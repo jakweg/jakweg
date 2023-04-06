@@ -31,12 +31,12 @@ header {
 }
 h1 {
 	color: #ff7171;
-	font-weight: lighter;
 	letter-spacing: 1px;
 	font-size: 2.5em;
 }
 @media (min-width: 800px) {
 	h1 {
+		font-weight: lighter;
 		font-size: 2.9em;
 	}
 }
