@@ -3,12 +3,12 @@ export let background: string = 'transparent'
 export let color: string | undefined = undefined
 </script>
 
-<span style:--c="{color}" style:--b="{background}">
+<div style:--c="{color}" style:--b="{background}">
 	<slot />
-</span>
+</div>
 
 <style>
-span {
+div {
 	font-family: monospace;
 	display: inline-block;
 	padding: 4px 6px;
