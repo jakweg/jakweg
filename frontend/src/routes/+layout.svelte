@@ -31,13 +31,13 @@ beforeNavigate(nav => {
 	const themeTag = document.querySelector('meta[name="theme-color"]')
 	if (themeTag) {
 		const cloned = themeTag.cloneNode() as HTMLMetaElement
-		cloned.setAttribute('default', '')
-		themeTag.parentElement?.appendChild(cloned)
+		cloned.setAttribute('data-default', '')
+		document.head?.appendChild(cloned)
 	}
 })
-afterNavigate(n => {
+afterNavigate(() => {
 	setTimeout(() => {
-		document.querySelector('meta[name="theme-color"][default]')?.remove()
+		document.querySelector('meta[name="theme-color"][data-default]')?.remove()
 	}, 200)
 })
 </script>
