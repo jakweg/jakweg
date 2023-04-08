@@ -32,13 +32,13 @@ export let techStack: TechnologyType[] = []
 			<Bullet />
 			{date}
 		</aside>
-		<div class="tech">
+		<aside class="tech">
 			<slot name="tech">
 				{#each techStack as tech (tech)}
 					<TechnologyTag type="{tech}" />
 				{/each}
 			</slot>
-		</div>
+		</aside>
 		<main>
 			<p>{@html description} </p>
 		</main>
@@ -121,12 +121,12 @@ main {
 }
 h2 {
 	font-size: 2em;
-	font-weight: lighter;
+	font-weight: normal;
 	letter-spacing: 1px;
 	margin: 2px 0;
 	color: #fff;
 }
-aside {
+aside:not(.tech) {
 	margin: 0.5em 0;
 	font-size: 0.8em;
 	color: #9eafc3;

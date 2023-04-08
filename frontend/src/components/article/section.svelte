@@ -9,9 +9,9 @@ const length = Array.from(content ?? []).length
 
 <section>
 	<HashAnchor setHere input="{title}">
-		<h3>
+		<h2>
 			<span>{title}</span>
-		</h3>
+		</h2>
 	</HashAnchor>
 	<main>
 		<slot>
@@ -23,9 +23,10 @@ const length = Array.from(content ?? []).length
 </section>
 
 <style>
-h3 {
+h2 {
 	margin: 0;
-	font-weight: lighter;
+	font-weight: normal;
+	padding-right: 8px;
 	letter-spacing: 1.5px;
 	font-size: 1.7em;
 	vertical-align: middle;
@@ -34,10 +35,10 @@ h3 {
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
-h3:hover {
+h2:hover {
 	background-color: #669bbc44;
 }
-h3::before {
+h2::before {
 	content: '';
 	display: inline-block;
 	width: 1ch;
@@ -47,7 +48,7 @@ h3::before {
 	border-radius: 0 8px 8px 0;
 }
 @media (min-width: 1000px) {
-	h3::before {
+	h2::before {
 		border-radius: unset;
 	}
 }

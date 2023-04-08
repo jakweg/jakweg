@@ -22,6 +22,7 @@ import Bullet from './bullet.svelte'
 
 <style>
 header {
+	padding-top: 32px;
 	display: grid;
 	place-items: center;
 	min-height: 70svh;

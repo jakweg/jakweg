@@ -23,8 +23,7 @@ const which = $LL.articles.wojtek
 	title="{which.title()}"
 	description="{which.description()}"
 	enUrl="sleepy-student"
-	plUrl="pl/wojtek"
->
+	plUrl="pl/wojtek">
 	<ArticleTitle title="{which.heading()}" />
 	<ArticleNav article="{which}" />
 	<ArticleContent article="{which}">

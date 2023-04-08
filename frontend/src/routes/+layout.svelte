@@ -1,7 +1,7 @@
 <script lang="ts">
-import { beforeNavigate } from '$app/navigation'
-import DottedBackground from '@components/dotted-background.svelte'
+import { afterNavigate, beforeNavigate } from '$app/navigation'
 import { setLocale } from '@LL'
+import DottedBackground from '@components/dotted-background.svelte'
 import { onMount } from 'svelte'
 import type { LayoutData } from './$types'
 
@@ -17,6 +17,7 @@ $: {
 	setLocale(data.locale)
 	currentLocale = data.locale
 }
+
 beforeNavigate(nav => {
 	const id = nav.to?.route.id
 	if (!id) return
@@ -27,6 +28,17 @@ beforeNavigate(nav => {
 		document?.querySelector('html')?.setAttribute('lang', newLocale)
 		currentLocale = newLocale
 	}
+	const themeTag = document.querySelector('meta[name="theme-color"]')
+	if (themeTag) {
+		const cloned = themeTag.cloneNode() as HTMLMetaElement
+		cloned.setAttribute('default', '')
+		themeTag.parentElement?.appendChild(cloned)
+	}
+})
+afterNavigate(n => {
+	setTimeout(() => {
+		document.querySelector('meta[name="theme-color"][default]')?.remove()
+	}, 200)
 })
 </script>
 

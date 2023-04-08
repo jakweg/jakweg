@@ -1,4 +1,5 @@
 <script lang="ts">
+import Head from '@components/head.svelte'
 import TopNavigation from '@components/top-navigation.svelte'
 
 export let title: string
@@ -10,33 +11,33 @@ export let plUrl: string
 
 <TopNavigation alternativeUrl="{alternativeUrl}" />
 
-<div class="content">
+<div>
 	<slot />
 </div>
-<svelte:head>
-	<title>{title}</title>
-	<meta name="description" content="{description}" />
-
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/{plUrl}/" hreflang="pl" />
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/{enUrl}/" hreflang="en" />
-</svelte:head>
+<Head
+	isArticle
+	title="{title}"
+	description="{description}"
+	polishLink="{plUrl}"
+	englishLink="{enUrl}"
+/>
 
 <style>
-.content {
+div {
 	display: grid;
 	grid-template-areas: 'header' 'content' 'nav';
 	--margin-left: 0;
 }
 @media (min-width: 1100px) {
-	.content {
+	div {
 		--margin-left: 128px;
 	}
 }
 @media (min-width: 750px) {
-	.content {
+	div {
 		justify-content: center;
 		grid-template-areas: 'header header header' 'content  . nav';
-		grid-template-columns: 1fr 1fr auto;
+		grid-template-columns: 1fr auto 1fr;
 	}
 }
 </style>

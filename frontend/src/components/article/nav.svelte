@@ -63,4 +63,18 @@ li:hover {
 li:active {
 	background-color: #389a70dd;
 }
+@media (min-width: 1400px) {
+	aside {
+		margin-left: var(--margin-left);
+		justify-self: unset;
+	}
+	ul {
+		display: flex;
+		flex-flow: column nowrap;
+		width: max-content;
+	}
+	li {
+		border-radius: 4px;
+	}
+}
 </style>

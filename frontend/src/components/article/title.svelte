@@ -36,7 +36,7 @@ h1 {
 }
 @media (min-width: 800px) {
 	h1 {
-		font-weight: lighter;
+		font-weight: normal;
 		font-size: 2.9em;
 	}
 }

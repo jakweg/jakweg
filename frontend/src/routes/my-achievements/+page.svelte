@@ -4,6 +4,7 @@ import Title from './title.svelte'
 
 import LL from '@LL'
 
+import Head from '@components/head.svelte'
 import Year2001 from './years/Year2001.svelte'
 import Year2009 from './years/Year2009.svelte'
 import Year2013 from './years/Year2013.svelte'
@@ -35,13 +36,12 @@ import Year2023 from './years/Year2023.svelte'
 	<Year2001 />
 </main>
 
-<svelte:head>
-	<title>{$LL.timeline.meta[0]()}</title>
-	<meta name="description" content="{$LL.timeline.meta[1]()}" />
-
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/pl/moje-dokonania/" hreflang="pl" />
-	<link rel="alternate" href="https://jakub.wegrzyn.dev/my-achievements/" hreflang="en" />
-</svelte:head>
+<Head
+	title="{$LL.timeline.meta[0]()}"
+	description="{$LL.timeline.meta[1]()}"
+	polishLink="{'moje-dokonania'}"
+	englishLink="{'my-achievements'}"
+/>
 
 <style>
 main {

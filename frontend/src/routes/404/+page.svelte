@@ -1,5 +1,6 @@
 <script lang="ts">
 import LL from '@LL'
+import Head from '@components/head.svelte'
 </script>
 
 <main>
@@ -9,9 +10,7 @@ import LL from '@LL'
 		<h3><a href="{$LL.rootUrl()}">{$LL[404].link()}</a></h3>
 	</div>
 </main>
-<svelte:head>
-	<title>{$LL[404].title()}</title>
-</svelte:head>
+<Head title="{$LL[404].title()}" description="🤷‍♂️" englishLink="{null}" polishLink="{null}" />
 
 <style>
 h1 {

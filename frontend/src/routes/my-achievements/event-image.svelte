@@ -9,8 +9,7 @@ export let alt: string //
 	height="75"
 	sizes="(min-width:900px)120px,(min-width:600px)100px,75px"
 	srcset="{small ? `${small} 150w,${large} 300w` : `${large} 300w`}"
-	alt="{alt}"
-/>
+	alt="{alt}" />
 
 <style>
 img {

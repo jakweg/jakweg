@@ -415,6 +415,10 @@ const parts = $LL.articles.mobishit.sections[4].content[4]
 </svg>
 
 <style>
+svg {
+	max-width: 96%;
+	height: auto;
+}
 @media (max-width: 800px) {
 	svg {
 		width: calc(100vw - 12ch);
