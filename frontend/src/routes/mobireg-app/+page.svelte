@@ -21,7 +21,7 @@ const which = $LL.articles.mobishit
 	description="{which.description()}"
 	alternativeUrl="{which.altUrl()}"
 	enUrl="mobireg-app"
-	plUrl="pl/mobishit"
+	plUrl="mobishit"
 >
 	<ArticleTitle title="{which.heading()}" />
 	<ArticleNav article="{which}" />
