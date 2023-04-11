@@ -31,6 +31,7 @@ figcaption {
 img {
 	height: auto;
 	max-width: calc(100vw - 12ch);
+	border-radius: 8px;
 }
 @media (min-width: 750px) {
 	img {

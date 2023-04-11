@@ -54,11 +54,14 @@ nav {
 	--color-hover: #d1e2f8;
 	display: flex;
 	flex-flow: row;
+	align-items: center;
 	justify-content: end;
 	gap: 1ch;
 	padding: 4px;
 }
 a {
+	display: flex;
+	align-items: center;
 	padding: 1ch;
 	color: var(--color);
 	text-decoration: none;

@@ -38,7 +38,7 @@ beforeNavigate(nav => {
 afterNavigate(() => {
 	setTimeout(() => {
 		document.querySelector('meta[name="theme-color"][data-default]')?.remove()
-	}, 200)
+	}, 100)
 })
 </script>
 

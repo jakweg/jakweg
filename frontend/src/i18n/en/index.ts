@@ -26,6 +26,7 @@ const en = {
 		title: "This page doesn't exist",
 		link: 'Back to home page',
 	},
+	footer: ['Thanks for reading', 'Any questions, suggestions, opinion? Feel free to contact me'],
 
 	colorLines: {
 		title: 'Color lines',
@@ -86,8 +87,6 @@ const en = {
 			description:
 				"I've created Discord bot for recording a remote meeting on Webex or Teams. He joins, mutes self and sends a link to recording after the meeting is done.",
 			heading: 'Wojtek, a bot recording lectures',
-			quote:
-				'I think that everyone, at least once, overslept to school.<br />We just sometimes are too lazy to get up. How about using technology to make our lives easier?',
 			sections: [
 				{
 					title: 'But why?',
@@ -172,7 +171,6 @@ const en = {
 			title: 'Mobireg App · Android client for students and parents',
 			description: `I created an Android app for students and parents to use electronic grade book Mobireg. It's better then the official one as it has all the features people want.`,
 			heading: 'Mobireg App, Android client for students and parents',
-			quote: 'Probably the project I learn the most in the shortest time span.',
 			sections: [
 				{
 					title: 'A little bit of background - why?',
@@ -268,6 +266,15 @@ const en = {
 						`While creating this project I also appreciated <b>GIT version control system</b>. Not only I could experiment on separate branch - it also keeps my entire history. That saved me potentially hours of debugging. Once I had weird bug, only in release build, not noticeable at first, but totally breaking key feature of the app - it failed to synchronize. It worked in previous release despite me changing nothing about syncing… Thanks to GIT I quickly realized that the problem was in an updated dependency that broke syncing.`,
 						`The other skill I gained is <b>SQL</b>. This project utilized both SQLite and MySql. I enjoy writing raw SQL instead of using ORM queries, since writing anything more complicated results in too much hacking. Mobishit was the app I could learn a lot.`,
 						'Typical SQL query I wrote. It gets existing marks to be imported into average calculator, using Room library, Kotlin',
+					],
+				},
+				{
+					title: 'What next?',
+					content: [
+						`After two years of studying at ZSŁ some people started to claim that Mobireg would be replaced by Librus - competition do Mobireg. That would make Mobishit completely useless.`,
+						`And it has happened. Mobireg got purchased by Librus taking all schools which used their services.`,
+						`But every school? Actually no! For some reason Mobireg stayed for musical schools and they advertise it as a best grade book for musical schools. They've even changed logo to reflect that 😂`,
+						`While this move has reduced popularity of my application it haven't got rid of it completely. There still are some users. I must admit I was very surprise to receive email about GitHub Issue from one of the users. I was quick to solve the issue for him as It does my heart when someone still uses my products even though I don't support it for years 😊`,
 					],
 				},
 			],

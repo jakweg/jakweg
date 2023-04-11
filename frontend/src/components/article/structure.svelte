@@ -1,6 +1,7 @@
 <script lang="ts">
 import Head from '@components/head.svelte'
 import TopNavigation from '@components/top-navigation.svelte'
+import Footer from './footer.svelte'
 
 export let title: string
 export let description: string
@@ -21,11 +22,12 @@ export let plUrl: string
 	polishLink="{plUrl}"
 	englishLink="{enUrl}"
 />
+<Footer />
 
 <style>
 div {
 	display: grid;
-	grid-template-areas: 'header' 'content' 'nav';
+	grid-template-areas: 'header' 'content' 'nav' 'footer';
 	--margin-left: 0;
 }
 @media (min-width: 1100px) {
@@ -36,7 +38,7 @@ div {
 @media (min-width: 750px) {
 	div {
 		justify-content: center;
-		grid-template-areas: 'header header header' 'content  . nav';
+		grid-template-areas: 'header header header' 'content  . nav' 'footer footer footer';
 		grid-template-columns: 1fr auto 1fr;
 	}
 }

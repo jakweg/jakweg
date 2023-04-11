@@ -26,6 +26,7 @@ const pl = {
 		title: 'Ta strona nie istnieje',
 		link: 'Powrót na stronę główną',
 	},
+	footer: ['Dzięki za przeczytanie', 'Jakieś pytania, sugestie, opinie? Śmiało, napisz do mnie'],
 
 	colorLines: {
 		title: 'Kulki',
@@ -84,8 +85,6 @@ const pl = {
 			description:
 				'Stworzyłem bota na Discorda, któremu można kazać nagrywać zdalny wykład w Webex lub Teams. Sam wejdzie, wyciszy się i po zakończeniu wyśle linka do nagrania.',
 			heading: 'Wojtek, czyli bot nagrywający wykłady',
-			quote:
-				'Myślę, że każdej osobie zdarzyło się w życiu choć raz zaspać na lekcję.<br/>Po prostu czasami nie chce się wstać, może by tak wykorzystać technologię by żyło się łatwiej?',
 			sections: [
 				{
 					title: 'Ale po co?',
@@ -171,7 +170,6 @@ const pl = {
 			description:
 				'Stworzyłem aplikację na Androida dla uczniów i rodziców do dziennika elektronicznego Mobireg a do tego jest dużo lepsza niż oficjalna.',
 			heading: 'Mobishit, klient do edziennika Mobireg',
-			quote: 'Prawdopodobnie mój najbardziej rozwijający projekt w życiu.',
 			sections: [
 				{
 					title: 'Trochę tła, czyli czemu?',
@@ -268,6 +266,15 @@ const pl = {
 						'W tym projekcie doceniłem też <b>system kontroli wersji GIT</b>. Nie dość, że pozwala mi bezpiecznie eksperymentować na osobnej gałęzi to jeszcze zapisuje całą historię kodu. To potencjalnie uratowało mi wiele godzin szukania błędów. Raz miałem dziwny błąd, który miał miejsce tylko w opublikowanej wersji (release), nie był widoczny na pierwszy rzut oka, ale sprawiał, że aplikacja się nie synchronizowała, czyli można powiedzieć że całkowicie psuł funkcjonalność. Ale przecież w poprzedniej wersji działało, a nic nie zmieniałem z synchronizacją… Dzięki GITowi byłem w stanie namierzyć problem — zaktualizowałem jedną z bibliotek do nowszej wersji i okazało się, że to w niej jest problem. Może nie powinienem jej używać, bo była w wersji przedpremierowej, ale z drugiej strony super przydatna.',
 						'Inną nieoczywistą umiejętnością, którą nabyłem to <b>SQL</b>. W tym projekcie używałem baz SQLite oraz MySql. Pisałem zapytania „z palca” i nadal jestem fanem takiego pisania zamiast używania ORMów, które sprawiają, że troszkę bardziej skomplikowane zapytania, które można od tak napisać w czystym SQL to godziny „hakowania” ORMa.',
 						'Przykładowe zapytanie do bazy pobierające oceny z przedmiotu do kalkulatora średnich, biblioteka Room w Kotlinie',
+					],
+				},
+				{
+					title: 'Co dalej?',
+					content: [
+						`Po dwóch latach mojej nauki w szkole pojawiły się plotki, że Mobireg odchodzi do lamusa i zastąpi go Librus. To by oznaczało, że Mobishit będzie zupełnie nieprzydatny.`,
+						`I tak się stało. Mobireg został podobno wykupiony przez Librusa i wszystkie szkoły, które korzystały z ich rozwiązań Mobirega zostały przejęte przez Librusa.`,
+						`Wszystkie? Nie! Z jakiegoś powodu Mobireg pozostał w szkołach muzycznych i aktualnie reklamuje się jako Dziennik dla szkół muzycznych. Nawet zmienili logo, żeby to pokazać 😂`,
+						`Taki obrót spraw, zmniejszył popularność mojej aplikacji. Jednak są jej jacyś użytkownicy. Muszę przyznać, że bardzo zaskoczył mnie Issue na GitHubie od jednego z użytkowników po kilku latach niewspierania apki. Szybko udało mi się rozwiązać problem, niemniej pokazuje to, że apka wziąć jest w użyciu, co oczywiście jest miłe 😊`,
 					],
 				},
 			],

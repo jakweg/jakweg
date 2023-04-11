@@ -24,7 +24,7 @@ span {
 header {
 	display: grid;
 	place-items: center;
-	min-height: 60svh;
+	min-height: 50svh;
 	text-align: left;
 	max-width: 90ch;
 	margin-left: var(--margin-left);
