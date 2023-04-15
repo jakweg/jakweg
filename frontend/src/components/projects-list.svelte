@@ -32,6 +32,7 @@ import upload1 from '$lib/g/upload.s.webp'
 
 <div>
 	<ProjectHighlight
+		highPriority
 		href="{$LL.mobishit.url()}"
 		title="{$LL.mobishit.title()}"
 		date="{$LL.mobishit.date()}"
@@ -43,6 +44,7 @@ import upload1 from '$lib/g/upload.s.webp'
 	/>
 
 	<ProjectHighlight
+		highPriority
 		href="{$LL.wojtek.url()}"
 		title="{$LL.wojtek.title()}"
 		date="{$LL.wojtek.date()}"
@@ -54,6 +56,7 @@ import upload1 from '$lib/g/upload.s.webp'
 	/>
 
 	<ProjectHighlight
+		highPriority
 		href="https://kulki.wegrzyn.dev"
 		title="{$LL.colorLines.title()}"
 		date="{$LL.colorLines.date()}"

@@ -11,6 +11,7 @@ export let date: string
 export let description: string
 export let imgSrc2x: string
 export let techStack: TechnologyType[] = []
+export let highPriority = false
 </script>
 
 <article>
@@ -20,6 +21,7 @@ export let techStack: TechnologyType[] = []
 		rel="{href.startsWith('/') ? undefined : 'noreferrer'}"
 	>
 		<img
+			fetchpriority="{highPriority ? 'high' : 'low'}"
 			alt="{title}"
 			sizes="(max-width: 900px) 150px,200px"
 			srcset="{imgSrc} 200w, {imgSrc2x} 300w"
