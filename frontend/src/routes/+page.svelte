@@ -7,14 +7,12 @@ import TopNavigation from '@components/top-navigation.svelte'
 import LL from '@LL'
 </script>
 
-<div class="content">
-	<TopNavigation alternativeUrl="{$LL.altRootUrl()}" />
+<TopNavigation alternativeUrl="{$LL.altRootUrl()}" />
 
-	<HiThere />
+<HiThere />
 
-	<MyWorkSeparator />
-	<ProjectsList />
-</div>
+<MyWorkSeparator />
+<ProjectsList />
 <Head
 	title="Jakub Węgrzyn · {$LL.softwareEngineer()}"
 	description="{$LL.siteDescription()}"

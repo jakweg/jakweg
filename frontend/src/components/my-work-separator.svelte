@@ -12,6 +12,7 @@ import LL from '../i18n/i18n-svelte'
 
 <style>
 div {
+	margin-top: 1em;
 	display: grid;
 	gap: 1ch;
 	align-items: center;

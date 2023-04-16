@@ -119,7 +119,7 @@
 svg {
 	width: 256px;
 	aspect-ratio: 1 / 1;
-	max-width: 80vmin;
+	max-width: 60vmin;
 	border-radius: 50%;
 }
 
@@ -181,10 +181,10 @@ svg {
 		transform: rotate(0);
 	}
 	33% {
-		transform: rotate(2.4deg);
+		transform: rotate(1.6deg);
 	}
 	66% {
-		transform: rotate(-2.3deg);
+		transform: rotate(-1.4deg);
 	}
 }
 
