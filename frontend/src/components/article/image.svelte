@@ -8,7 +8,7 @@ export let figcaption: string
 const href = srcset?.match(/(([\/\w\.-]+)\.(avif|webp))/g)?.pop()
 </script>
 
-<a href="{href}">
+<a href="{href}" rel="external">
 	<figure>
 		<img width="{width}" height="{height}" alt="{alt}" srcset="{srcset}" />
 		<figcaption>{@html figcaption}</figcaption>

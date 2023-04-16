@@ -14,7 +14,7 @@ import LL from '@LL'
 <MyWorkSeparator />
 <ProjectsList />
 <Head
-	title="Jakub Węgrzyn · {$LL.softwareEngineer()}"
+	title="Jakub Węgrzyn · {$LL.title()}"
 	description="{$LL.siteDescription()}"
 	polishLink=""
 	englishLink=""

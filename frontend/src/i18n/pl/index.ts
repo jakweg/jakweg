@@ -5,6 +5,7 @@ const pl = {
 	altRootUrl: '/',
 	alternativeLang: 'EN',
 	mainPage: 'Strona główna',
+	title: 'Inżynier oprogramowania',
 	about: {
 		hi: 'Witaj!',
 		iam: 'Jestem',

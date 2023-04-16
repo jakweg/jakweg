@@ -47,9 +47,13 @@ h3 {
 h3 > span {
 	display: block;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
+	h3 {
+		font-size: 0.85em;
+	}
 	.bullet,
 	h3 > span {
+		white-space: pre;
 		display: unset;
 	}
 }

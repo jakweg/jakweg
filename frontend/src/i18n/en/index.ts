@@ -5,6 +5,7 @@ const en = {
 	altRootUrl: '/pl/',
 	alternativeLang: 'PL',
 	mainPage: 'Main page',
+	title: 'Software engineer',
 	about: {
 		iam: "I'm",
 		cracow: 'Cracow',

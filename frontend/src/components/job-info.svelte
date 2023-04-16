@@ -14,13 +14,15 @@ main {
 	text-align: center;
 }
 .role {
-	font-size: smaller;
-}
-.role:last-of-type {
-	font-size: small;
+	font-size: 0.8em;
 	opacity: 0.9;
 }
 p {
 	margin: 2px;
+}
+@media (min-width: 700px) {
+	main {
+		font-size: 1.1em;
+	}
 }
 </style>
