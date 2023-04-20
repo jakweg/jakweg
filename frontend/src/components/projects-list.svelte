@@ -28,6 +28,7 @@ import wojtekPl1 from '$lib/g/wojtek.pl.s.webp'
 
 import upload2 from '$lib/g/upload.m.webp'
 import upload1 from '$lib/g/upload.s.webp'
+import GithubTile from './github-tile.svelte'
 </script>
 
 <div>
@@ -121,6 +122,8 @@ import upload1 from '$lib/g/upload.s.webp'
 		imgSrc2x="{upload2}"
 		techStack="{['vue', 'firebase', 'pwa']}"
 	/>
+
+	<GithubTile />
 </div>
 
 <style>

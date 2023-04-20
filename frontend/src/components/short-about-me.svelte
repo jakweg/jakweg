@@ -42,7 +42,7 @@ h2 > span {
 h3 {
 	font-weight: normal;
 	font-size: small;
-	opacity: 0.9;
+	opacity: 0.6;
 	margin: 0;
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;

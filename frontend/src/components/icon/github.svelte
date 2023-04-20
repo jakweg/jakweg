@@ -1,4 +1,8 @@
-<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96"
+<script lang="ts">
+export let size: number = 24
+</script>
+
+<svg width="{size}" height="{size}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96"
 	><path
 		fill-rule="evenodd"
 		clip-rule="evenodd"
