@@ -8,9 +8,13 @@ import JobInfo from './job-info.svelte'
 	<h1>{$LL.about.hi()}</h1>
 	<h2>{$LL.about.iam()} <span>Jakub Węgrzyn</span> 🙃</h2>
 	<h3>
-		<span>{$LL.about.synonyms[0]()}</span>
-		<span class="bullet"><Bullet /></span>
+		<span class="l">{$LL.about.synonyms[0]()}</span>
+		<span><Bullet /></span>
 		<span>{$LL.about.synonyms[1]()}</span>
+		<span class="m"><Bullet /></span>
+		<span class="l">{$LL.about.synonyms[2]()}</span>
+		<span><Bullet /></span>
+		<span>{$LL.about.synonyms[3]()}</span>
 	</h3>
 
 	<JobInfo />
@@ -40,21 +44,20 @@ h3 {
 	font-size: small;
 	opacity: 0.9;
 	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	gap: 0.7ch;
+	justify-items: start;
 }
-.bullet {
+.l {
+	justify-self: end;
+}
+.m {
 	display: none;
-}
-h3 > span {
-	display: block;
 }
 @media (min-width: 700px) {
 	h3 {
 		font-size: 0.85em;
-	}
-	.bullet,
-	h3 > span {
-		white-space: pre;
-		display: unset;
 	}
 }
 </style>

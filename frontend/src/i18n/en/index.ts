@@ -12,8 +12,8 @@ const en = {
 		position: 'Fullstack software engineer',
 		hi: 'Hi There!',
 		synonyms: [
-			`Performance aficionado · Cybersecurity enthusiast`,
-			`Linux enjoyer · Marathon runner`,
+			`Performance aficionado`,`Cybersecurity enthusiast`,
+			`Linux enjoyer`,`Marathon runner`,
 		],
 	},
 	featuredProjects: 'Featured projects',

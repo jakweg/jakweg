@@ -12,8 +12,10 @@ const pl = {
 		cracow: 'Kraków',
 		position: 'Inżynier oprogramowania',
 		synonyms: [
-			`Entuzjasta wydajności · Fascynat Cyberbezpieczeństwa`,
-			`Sympatyk Linuxa · Hobbistycznie Maratończyk`,
+			`Entuzjasta wydajności`,
+			`Fascynat Cyberbezpieczeństwa`,
+			`Sympatyk Linuxa`,
+			`Hobbistycznie Maratończyk`,
 		],
 	},
 	featuredProjects: 'Wybrane projekty',
