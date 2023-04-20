@@ -1,6 +1,6 @@
 <script>
 import LL from '@LL'
-import Bullet from './bullet.svelte'
+import Bullet from '@components/bullet.svelte'
 import JobInfo from './job-info.svelte'
 </script>
 

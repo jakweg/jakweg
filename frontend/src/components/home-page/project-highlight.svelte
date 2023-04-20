@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { TechnologyType } from '$lib/technology-type'
-import Bullet from './bullet.svelte'
+import Bullet from '../bullet.svelte'
 import TechnologyTag from './technology-tag.svelte'
 
 export let href: string

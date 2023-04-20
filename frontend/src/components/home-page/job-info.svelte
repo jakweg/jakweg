@@ -1,6 +1,6 @@
 <script lang="ts">
 import LL from '@LL'
-import Bullet from './bullet.svelte'
+import Bullet from '../bullet.svelte'
 </script>
 
 <main>

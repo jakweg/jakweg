@@ -1,6 +1,6 @@
 <script lang="ts">
 import LL from '@LL'
-import Github from './icon/github.svelte'
+import Github from '@components/icon/github.svelte'
 </script>
 
 <article>

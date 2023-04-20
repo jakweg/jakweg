@@ -1,5 +1,5 @@
 <script>
-import LL, { locale } from '../i18n/i18n-svelte'
+import LL, { locale } from '@LL'
 import ProjectHighlight from './project-highlight.svelte'
 
 import kulki2 from '$lib/g/kulki.m.webp'
