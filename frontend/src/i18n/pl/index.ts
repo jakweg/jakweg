@@ -20,6 +20,10 @@ const pl = {
 	},
 	featuredProjects: 'Wybrane projekty',
 	checkoutGithub: 'Zobacz mojego GitHuba',
+	featuredMore: [
+		`Ciekawią cię inne projekty jakie robiłem?`,
+		`Odwiedź mojego GitHuba po więcej publicznych projektów`,
+	],
 	messageTelegram: 'Napisz na Telegramie',
 	siteDescription:
 		'Cześć! Jestem Jakub, młody i ambitny programista, obecnie pracuję w IBM. Robię wiele projektów w różnorodnych technologiach. Uwielbiam też biegać 💪',

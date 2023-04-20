@@ -12,12 +12,18 @@ const en = {
 		position: 'Fullstack software engineer',
 		hi: 'Hi There!',
 		synonyms: [
-			`Performance aficionado`,`Cybersecurity enthusiast`,
-			`Linux enjoyer`,`Marathon runner`,
+			`Performance aficionado`,
+			`Cybersecurity enthusiast`,
+			`Linux enjoyer`,
+			`Marathon runner`,
 		],
 	},
 	featuredProjects: 'Featured projects',
 	checkoutGithub: 'View my GitHub',
+	featuredMore: [
+		`Want to discover more projects?`,
+		`Checkout my Github to see my other public projects`,
+	],
 	messageTelegram: 'Message me on Telegram',
 	siteDescription:
 		"Hey! I'm Jakub, software developer from Poland, currently working at IBM. I do numerous projects in various technologies. I also like running 💪",

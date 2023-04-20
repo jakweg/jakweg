@@ -1,12 +1,13 @@
 <script lang="ts">
+import LL from '@LL'
 import Github from './icon/github.svelte'
 </script>
 
 <article>
 	<a href="https://github.com/jakweg" target="_blank" rel="noreferrer">
 		<Github size="{48}" />
-		<h2>Want to discover more projects?</h2>
-		<h3>Checkout my Github to see my other public projects</h3>
+		<h2>{$LL.featuredMore[0]()}</h2>
+		<h3>{$LL.featuredMore[1]()}</h3>
 	</a>
 </article>
 
