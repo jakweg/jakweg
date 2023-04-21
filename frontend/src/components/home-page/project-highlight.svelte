@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { TechnologyType } from '$lib/technology-type'
 import Bullet from '../bullet.svelte'
-import TechnologyTag from './technology-tag.svelte'
+import TechList from './tech-list.svelte'
 
 export let href: string
 export let imgSrc: string
@@ -35,11 +35,7 @@ export let highPriority = false
 			{date}
 		</aside>
 		<aside class="tech">
-			<slot name="tech">
-				{#each techStack as tech (tech)}
-					<TechnologyTag type="{tech}" />
-				{/each}
-			</slot>
+			<TechList stack="{techStack}" />
 		</aside>
 		<main>
 			<p>{@html description} </p>
@@ -85,10 +81,6 @@ p,
 .tech {
 	grid-area: tech;
 	margin: 8px 0;
-	display: flex;
-	flex-flow: row wrap;
-	gap: 0.7ch;
-	font-size: 0.9em;
 }
 main {
 	line-height: 150%;

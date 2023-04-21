@@ -130,7 +130,6 @@ import GithubTile from './github-tile.svelte'
 div {
 	display: grid;
 	justify-content: space-between;
-	align-items: flex-start;
 	gap: 3ch;
 	padding: 1ch;
 	grid-template-columns: auto;

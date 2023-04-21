@@ -12,6 +12,7 @@ div {
 	font-family: monospace;
 	display: inline-block;
 	padding: 4px 6px;
+	margin: 2px 0;
 	font-size: 0.9em;
 	border-radius: 8px;
 	background: var(--b);

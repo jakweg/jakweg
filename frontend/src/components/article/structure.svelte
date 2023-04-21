@@ -27,7 +27,7 @@ export let plUrl: string
 <style>
 div {
 	display: grid;
-	grid-template-areas: 'header' 'content' 'nav' 'footer';
+	grid-template-areas: 'header' 'nav' 'content' 'footer';
 	--margin-left: 0;
 }
 @media (min-width: 1100px) {

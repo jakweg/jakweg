@@ -1,14 +1,18 @@
 <script lang="ts">
+import type { TechnologyType } from '$lib/technology-type'
 import LL from '@LL'
 import HashAnchor from '../hash-anchor.svelte'
+import TechStack from './tech-stack.svelte'
 
 export let article: any
 const length = Array.from(article.sections).length
+export let techStack: TechnologyType[] = []
 </script>
 
 <aside>
-	<h2>{$LL.contents()}</h2>
+	<TechStack techStack="{techStack}" />
 	<nav>
+		<h2>{$LL.contents()}</h2>
 		<ul>
 			{#each Array(length) as _, i}
 				<li>
@@ -23,17 +27,23 @@ const length = Array.from(article.sections).length
 
 <style>
 aside {
-	display: none;
 	max-width: 40ch;
 	grid-area: nav;
-	position: sticky;
 	align-self: flex-start;
+	height: 100%;
+}
+nav {
+	padding-top: 0.5em;
+	display: none;
+	position: sticky;
 	top: 0;
 }
 @media (min-width: 750px) {
 	aside {
-		display: block;
 		justify-self: end;
+	}
+	nav {
+		display: block;
 	}
 }
 ul {

@@ -31,6 +31,7 @@ const pl = {
 	nativeApp: 'Natywna aplikacja',
 	discordBot: 'Bot Discordowy',
 	pwa: 'Aplikacja internetowa',
+	techStack: 'Użyte technologie:',
 	contents: 'Spis treści',
 	funFact: 'Ciekawostka',
 	androidApp: 'Androidowa aplikacja',

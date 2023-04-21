@@ -25,7 +25,10 @@ const which = $LL.articles.mobishit
 	plUrl="mobishit"
 >
 	<ArticleTitle title="{which.heading()}" />
-	<ArticleNav article="{which}" />
+	<ArticleNav
+		article="{which}"
+		techStack="{['kotlin', 'android', 'firebase', 'sql', 'linux', 'py']}"
+	/>
 	<ArticleContent article="{which}">
 		<Section0 />
 		<Section1 />

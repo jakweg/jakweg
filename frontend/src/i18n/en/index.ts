@@ -32,6 +32,7 @@ const en = {
 	discordBot: 'Discord Bot',
 	pwa: 'PWA',
 	androidApp: 'Android app',
+	techStack: 'Technologies used:',
 	contents: 'Contents',
 	funFact: 'Fun fact',
 	showMore: 'Show more',
