@@ -26,7 +26,7 @@ const techStack: TechnologyType[] = ['ts', 'puppeteer', 'node', 'docker', 'disco
 	title="{which.title()}"
 	description="{which.description()}"
 	enUrl="sleepy-student"
-	plUrl="pl/wojtek"
+	plUrl="wojtek"
 >
 	<ArticleTitle title="{which.heading()}" />
 	<ArticleNav article="{which}" techStack="{techStack}" />
