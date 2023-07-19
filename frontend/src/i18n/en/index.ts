@@ -427,7 +427,14 @@ const en = {
 				'Started working as a software engineer at IBM Lab Cracow',
 			],
 		],
-		2023: ['Life still continues'],
+		2023: [
+			'Life still continues',
+			[
+				'My first marathon',
+				'Took part in 20th Cracovia Royal Marathon <br>Successfully finished in 3:55:18',
+				'Marathon logo',
+			],
+		],
 	},
 } satisfies BaseTranslation
 
