@@ -26,7 +26,7 @@ const en = {
 	],
 	messageTelegram: 'Message me on Telegram',
 	siteDescription:
-		"Hey! I'm Jakub, software developer from Poland, currently working at IBM. I do numerous projects in various technologies. I also like running 💪",
+		"Hey! I'm Jakub, software developer from Poland. I do numerous projects in various technologies. I also like running 💪",
 	webGame: 'Web game',
 	nativeApp: 'Native app',
 	discordBot: 'Discord Bot',

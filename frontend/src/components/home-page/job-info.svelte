@@ -1,12 +1,7 @@
 <script lang="ts">
-import LL from '@LL'
-import Bullet from '../bullet.svelte'
 </script>
 
-<main>
-	<p>IBM <Bullet /> {$LL.about.cracow()}</p>
-	<p class="role">{$LL.about.position()}</p>
-</main>
+<main> </main>
 
 <style>
 main {

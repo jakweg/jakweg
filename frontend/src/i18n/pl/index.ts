@@ -26,7 +26,7 @@ const pl = {
 	],
 	messageTelegram: 'Napisz na Telegramie',
 	siteDescription:
-		'Cześć! Jestem Jakub, młody i ambitny programista, obecnie pracuję w IBM. Robię wiele projektów w różnorodnych technologiach. Uwielbiam też biegać 💪',
+		'Cześć! Jestem Jakub, młody i ambitny programista. Robię wiele projektów w różnorodnych technologiach. Uwielbiam też biegać 💪',
 	webGame: 'Gra internetowa',
 	nativeApp: 'Natywna aplikacja',
 	discordBot: 'Bot Discordowy',
